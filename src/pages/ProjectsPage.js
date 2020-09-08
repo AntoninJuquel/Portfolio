@@ -19,7 +19,7 @@ function ProjectsPage({ goToContent }) {
                             title: 'Sephora Lips',
                             subTitle: 'Appli de e-comerce cosmétique',
                             imgSrc: '',
-                            link: '/home',
+                            link: 'https://github.com/AntoninJuquel/Sephora-Lips/tree/master',
                             selected: false,
                             categorieIndex: 0
                         },
