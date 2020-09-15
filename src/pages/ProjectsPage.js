@@ -18,7 +18,7 @@ function ProjectsPage({ goToContent }) {
                             id: 0,
                             title: 'Sephora Lips',
                             subTitle: 'Appli de e-comerce cosmétique',
-                            imgSrc: '',
+                            imgSrc: 'https://www.shopcyco.com/upload/article/20200402/b7f8a8e8e66ece570e02eb30dd157c00.jpg',
                             link: 'https://github.com/AntoninJuquel/Sephora-Lips/tree/master',
                             selected: false,
                             categorieIndex: 0
@@ -27,7 +27,7 @@ function ProjectsPage({ goToContent }) {
                             id: 1,
                             title: 'CheatAlleycats',
                             subTitle: 'Calculateur de trajets',
-                            imgSrc: '',
+                            imgSrc: 'https://img-fotki.yandex.ru/get/5904/svezduh.5f/0_62d4a_13f4f01_XL',
                             link: 'https://github.com/AntoninJuquel/Cheat_Alleycat',
                             selected: false,
                             categorieIndex: 0
