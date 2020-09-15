@@ -7,7 +7,7 @@ function Footer() {
             <Container fluid={true}>
                 <Row className='border-top justify-content-between p-3'>
                     <Col className='p-0' md={3} sm={12}>
-                        Dernière mise à jour le 15/08/2020
+                        Dernière mise à jour le 15/09/2020
                     </Col>
                     <Col className='p-0 d-flex justify-content-end' md={3} sm={12}>
                         Copyright © 2020 Antonin JUQUEL
