@@ -1,5 +1,5 @@
 {
-  "homepage": "http://antoninjuquel.github.io/portfolio",
+  "homepage": "https://antoninjuquel.github.io/portfolio/",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -19,7 +19,7 @@
     "react-use": "^15.3.3"
   },
   "scripts": {
-    "predeploy": "yarn run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
