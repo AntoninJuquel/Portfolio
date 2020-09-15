@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import CardInfo from "./CardInfo";
 
 function Card({ items, item, setItems }) {
@@ -26,10 +27,13 @@ function Card({ items, item, setItems }) {
     // }
 
     return (
-        <div className='d-inline-block my-card' onClick={(e) => handleCardEnter(item.id)} /*onMouseEnter={(e) => handleCardEnter(item.id)}*/ /*onMouseOut={(e) => out(item)}*/>
-            <img className='my-card-img' src={item.imgSrc} alt={item.path} />
+
+        <div className='d-inline-block my-card' onClick={(e) => handleCardEnter(item.id)} onMouseEnter={(e) => handleCardEnter(item.id)} /*onMouseOut={(e) => out(item)}*/>
+            {item.path && <Link className='nav-link' to={item.path}><img className='my-card-img' src={item.imgSrc} alt={item.path} /></Link>}
+            {item.link && <a href={item.link} target='_blank' rel="noopener noreferrer" ><img className='my-card-img' src={item.imgSrc} alt={item.path} /></a>}
             {item.selected && <CardInfo title={item.title} subTitle={item.subTitle} path={item.path} link={item.link} />}
         </div>
+
     )
 }
 

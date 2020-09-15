@@ -10,8 +10,8 @@ function CardInfo({ title, subTitle, path, link }) {
         <animated.div className='my-card-info' style={style}>
             <p className='my-card-title'>{title}</p>
             <p className='my-card-subTitle'>{subTitle}</p>
-            {path && <Link className='nav-link' to={path}>Voir</Link>}
-            {link && <a href={link} target='_blank' rel="noopener noreferrer" >Voir</a>}
+            {/* {path && <Link className='nav-link' to={path}>Voir</Link>}
+            {link && <a href={link} target='_blank' rel="noopener noreferrer" >Voir</a>} */}
         </animated.div>
     )
 }

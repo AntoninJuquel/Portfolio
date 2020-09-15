@@ -28,7 +28,7 @@ function ProjectsPage({ goToContent }) {
                             title: 'CheatAlleycats',
                             subTitle: 'Calculateur de trajets',
                             imgSrc: '',
-                            link: '/home',
+                            link: 'https://github.com/AntoninJuquel/Cheat_Alleycat',
                             selected: false,
                             categorieIndex: 0
                         },
