@@ -52,6 +52,10 @@ function App() {
           <Redirect to='/home' />
         )} />
 
+        <Route exact path='/Portfolio' render={() => (
+          <Redirect to='/home' />
+        )} />
+
         {renderRoutes()}
 
         <ScrollToTop />
