@@ -48,8 +48,8 @@ function App() {
           </Navbar.Collapse>
         </Navbar>
 
-        <Route exact path='/' render={() => (
-          <Redirect to='/home' />
+        <Route exact path='/Portfolio/' render={() => (
+          <Redirect to='/Portfolio/home' />
         )} />
 
         {renderRoutes()}
