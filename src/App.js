@@ -13,9 +13,29 @@ function App() {
   const content = {
     title: 'Antonin JUQUEL',
     pages: [
-      { id: 1, title: 'Home', path: '/Portfolio/home', render: <HomePage title='Mon portfolio' subTitle='Développeur web et applications' catchPhrase='Prenez connaissance des mes projets ci-dessous' /> },
-      { id: 2, title: 'About', path: '/Portfolio/about', render: <AboutPage title='A propos de moi' /> },
-      { id: 3, title: 'Contact', path: '/Portfolio/contact', render: <ContactPage title='Me contacter' /> },
+      {
+        id: 1,
+        title: 'Home',
+        path: '/Portfolio/home',
+        render: <HomePage
+          title='Mon portfolio'
+          subTitle='Développeur web et applications'
+          catchPhrase='Prenez connaissance des mes projets ci-dessous'
+        />
+      },
+      {
+        id: 2,
+        title: 'About',
+        path: '/Portfolio/about',
+        render: <AboutPage title='A propos de moi'/>
+      },
+      {
+        id: 3,
+        title: 'Contact',
+        path: '/Portfolio/contact',
+        render: <ContactPage title='Me contacter'
+        />
+      },
     ]
   }
 
