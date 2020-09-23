@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Route, Link, Redirect } from 'react-router-dom
 import { Container, Navbar, Nav } from 'react-bootstrap';
 
 import Footer from './components/Footer';
-import HomePage from './pages/HomePage';
-import AboutPage from './pages/AboutPage';
-import ContactPage from './pages/ContactPage';
+import HomePage from './pages/main pages/HomePage';
+import AboutPage from './pages/main pages/AboutPage';
+import ContactPage from './pages/main pages/ContactPage';
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {

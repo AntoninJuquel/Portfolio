@@ -1,70 +1,17 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Route } from 'react-router-dom';
 
 import Card from "./Card";
-import Hero from "./Hero";
 
+function Carousel({itemsList}) {
 
-import cv from '../assets/images/cv.png';
-import monitoring from '../assets/images/monitoring.png';
-import internship from '../assets/images/internship.png';
-import projects from '../assets/images/projects.png';
-
-import CurriculumPage from "../pages/CurriculumPage";
-import ProjectsPage from "../pages/ProjectsPage";
-
-function Carousel() {
-
-    const goToContent = () => window.scrollTo({top: content.current.offsetTop, behavior: 'smooth'})
-
-    const [items, setItems] = useState(
-        [
-            {
-                id: 0,
-                title: 'Curriculum vitæ',
-                subTitle: 'Mes compétences et mon parcours',
-                imgSrc: cv,
-                path: '/Portfolio/home/cv',
-                selected: false,
-                render: <CurriculumPage goToContent={goToContent} />,
-            },
-            {
-                id: 1,
-                title: 'Veille technologique',
-                subTitle: 'La simulation informatique',
-                imgSrc: monitoring,
-                path: '/Portfolio/home/monitoring',
-                selected: false,
-                render: <Hero title="Veille technologique" />,
-            },
-            {
-                id: 2,
-                title: 'Stages',
-                subTitle: 'Découvrez mon parcours pro',
-                imgSrc: internship,
-                path: '/Portfolio/home/internships',
-                selected: false,
-                render: <Hero title="Stages" />,
-            },
-            {
-                id: 3,
-                title: 'Projets personnels',
-                subTitle: 'Voici les fruits de ma passion',
-                imgSrc: projects,
-                path: '/Portfolio/home/projects',
-                selected: false,
-                render: <ProjectsPage goToContent={goToContent} />,
-            },
-        ]
-    )
-
-    const content = useRef(null);
+    const [items, setItems] = useState(itemsList)
 
     const renderItems = (items) => {
-        return items.map(item => {
+        return items.map((item,index) => {
             return (
-                <Col key={item.id} className='my-center' xl={3} lg={6} md={6} sm={12}>
+                <Col key={index} className='my-center' xl={3} lg={6} md={6} sm={12}>
                     <Card items={items} item={item} setItems={setItems}/>
                 </Col>
             )
@@ -72,8 +19,8 @@ function Carousel() {
     }
 
     const renderRoutes = () => {
-        return items.map(route => {
-            return <Route key={route.id} path={route.path} render={() => route.render} />
+        return items.map((route,index) => {
+            return <Route key={index} path={route.path} render={() => route.render} />
         })
     }
 
@@ -82,7 +29,7 @@ function Carousel() {
             <Row>
                 {renderItems(items)}
             </Row>
-            <div ref={content} className='my-center'>
+            <div className='my-center'>
                 {renderRoutes()}
             </div>
         </Container>

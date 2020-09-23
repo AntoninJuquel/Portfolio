@@ -10,7 +10,7 @@ function Card({ items, item, setItems }) {
         newItems[index].selected = true
 
         newItems.forEach(item => {
-            if (item.id !== index) {
+            if (newItems.indexOf(item) !== index) {
                 item.selected = false
             }
         });
@@ -19,7 +19,7 @@ function Card({ items, item, setItems }) {
     }
 
     return (
-        <div className='d-inline-block my-card' onClick={(e) => handleCardEnter(item.id)} onMouseEnter={(e) => handleCardEnter(item.id)} /*onMouseOut={(e) => out(item)}*/>
+        <div className='d-inline-block my-card' onClick={(e) => handleCardEnter(items.indexOf(item))} onMouseEnter={(e) => handleCardEnter(items.indexOf(item))} /*onMouseOut={(e) => out(item)}*/>
             {item.path && <Link className='nav-link' to={item.path}><img className='my-card-img' src={item.imgSrc} alt={item.path} /></Link>}
             {item.link && <a href={item.link} target='_blank' rel="noopener noreferrer" ><img className='my-card-img' src={item.imgSrc} alt={item.path} /></a>}
 

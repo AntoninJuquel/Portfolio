@@ -14,7 +14,7 @@ const Projects =
             categoryId: 0,
             title: 'CheatAlleycats',
             subTitle: 'Calculateur de trajets',
-            imgSrc: 'https://img-fotki.yandex.ru/get/5904/svezduh.5f/0_62d4a_13f4f01_XL',
+            imgSrc: 'https://dgalywyr863hv.cloudfront.net/pictures/athletes/2023242/651949/9/full.jpg',
             link: 'https://github.com/AntoninJuquel/Cheat_Alleycat',
             selected: false,
         }, 
