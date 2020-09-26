@@ -11,7 +11,7 @@ import ScrollToTop from './components/ScrollToTop';
 function App() {
 
   const content = {
-    title: 'Antonin JUQUEL',
+    brand: 'JUQUEL Antonin',
     pages: [
       {
         id: 1,
@@ -27,7 +27,7 @@ function App() {
         id: 2,
         title: 'About',
         path: '/Portfolio/about',
-        render: <AboutPage title='A propos de moi'/>
+        render: <AboutPage title='A propos de moi' />
       },
       {
         id: 3,
@@ -58,7 +58,7 @@ function App() {
       <Container className='p-0' fluid={true}>
 
         <Navbar className='border-bottom' bg='transparent' expand='lg'>
-          <Navbar.Brand>JUQUEL Antonin</Navbar.Brand>
+          <Navbar.Brand>{content.brand}</Navbar.Brand>
 
           <Navbar.Toggle className='border-0' aria-controls='navbar-toggle' />
           <Navbar.Collapse id='navbar-toggle'>
