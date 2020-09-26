@@ -4,18 +4,17 @@ import { ScrollToRef } from "../../functions/Utilities";
 
 import Hero from '../../components/Hero';
 
-import Projects from '../../utils/Projects';
-import Categories from '../../utils/Categories';
+import { Projects, Categories } from '../../utils/Projects';
 import Carousel from '../../components/Carousel';
 
-function ProjectsPage({goToContent}) {
+function ProjectsPage({ goToContent }) {
 
     const contentRef = useRef(null);
 
-    useEffect(() =>  ScrollToRef(contentRef), [])
-    
+    useEffect(() => ScrollToRef(contentRef), [])
+
     const SortedProjects = [];
-    
+
     function sortProjects() {
         const uniqueID = []
         Projects.forEach(project => {
@@ -30,7 +29,7 @@ function ProjectsPage({goToContent}) {
 
     const renderCategories = () => {
         sortProjects()
-        return SortedProjects.map((projectsList,index) => {
+        return SortedProjects.map((projectsList, index) => {
             return (
                 <div key={index}>
                     <Hero subTitle={Categories[projectsList[0].categoryId].name} />
