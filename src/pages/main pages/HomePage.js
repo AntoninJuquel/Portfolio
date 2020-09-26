@@ -14,7 +14,6 @@ import InternshipsPage from "../second pages/InternshipsPage";
 import MonitoringPage from "../second pages/MonitoringPage";
 
 function HomePage({ title, subTitle, catchPhrase }) {
-
     return (
         <div>
             <Hero title={title} subTitle={subTitle} catchPhrase={catchPhrase} />
@@ -40,7 +39,7 @@ function HomePage({ title, subTitle, catchPhrase }) {
                     },
                     {
                         id: 2,
-                        title: 'Projets d\'école et personnels',
+                        title: 'Mes projets',
                         subTitle: 'Découvrez la liste de mes projets',
                         imgSrc: projects,
                         path: '/Portfolio/home/projects',

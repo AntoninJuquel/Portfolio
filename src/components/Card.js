@@ -1,10 +1,37 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import CardInfo from "./CardInfo";
+import { useSpring, animated } from "react-spring";
 
-function Card({ items, item, setItems }) {
+function Card({ items, item, setItems, setContent }) {
+
+    function CardInfo({ title, subTitle}) {
+
+        const style = useSpring({ opacity: 1, from: { opacity: 0 } })
+
+        return (
+
+            <animated.div style={style}>
+                <p className='my-card-title'>{title}</p>
+                <p className='my-card-subTitle'>{subTitle}</p>
+            </animated.div>
+        )
+    }
 
     const handleCardEnter = (index) => {
+        let newItems = [...items];
+
+        newItems[index].hover = true
+
+        newItems.forEach(item => {
+            if (newItems.indexOf(item) !== index) {
+                item.hover = false
+            }
+        });
+
+        setItems(newItems)
+    }
+
+    const handleCardClick = (index) => {
         let newItems = [...items];
 
         newItems[index].selected = true
@@ -19,13 +46,29 @@ function Card({ items, item, setItems }) {
     }
 
     return (
-        <div className='d-inline-block my-card' onClick={(e) => handleCardEnter(items.indexOf(item))} onMouseEnter={(e) => handleCardEnter(items.indexOf(item))} /*onMouseOut={(e) => out(item)}*/>
-            {item.path && <Link className='nav-link' to={item.path}><img className='my-card-img' src={item.imgSrc} alt={item.path} /></Link>}
-            {item.link && <a href={item.link} target='_blank' rel="noopener noreferrer" ><img className='my-card-img' src={item.imgSrc} alt={item.path} /></a>}
+        <div className='d-inline-block my-card' onMouseEnter={(e) => handleCardEnter(items.indexOf(item))}>
+
+            {
+                item.path ?
+                    <Link className='nav-link' to={item.path}>
+                        <img className='my-card-img' src={item.imgSrc} alt={item.path} />
+                    </Link> :
+                    <img onClick={(e) => handleCardClick(items.indexOf(item))} className='my-card-img' src={item.imgSrc} alt={item.path} />
+            }
 
             <div className='my-card-info'>
-                {item.selected && <CardInfo title={item.title} subTitle={item.subTitle} path={item.path} link={item.link} />}
+                {item.hover && <CardInfo title={item.title} subTitle={item.subTitle}/>}
             </div>
+
+            {/* <div>
+                {
+                    item.selected &&
+                    <div className='my-card-content'>
+                        <Hero title={item.title} />
+                        {item.link && <a href={item.link} target='_blank' rel="noopener noreferrer" >voir</a>}
+                    </div>
+                }
+            </div> */}
         </div>
 
     )
