@@ -13,10 +13,10 @@ import ProjectsPage from "../second pages/ProjectsPage";
 import InternshipsPage from "../second pages/InternshipsPage";
 import MonitoringPage from "../second pages/MonitoringPage";
 
-function HomePage({ title, subTitle, catchPhrase }) {
+function HomePage({ title, subTitle, sentence }) {
     return (
         <div>
-            <Hero title="Mon portfolio" subTitle='Développeur web et applications' catchPhrase='Prenez connaissance des mes projets ci-dessous'/>
+            <Hero title="Mon portfolio" subTitle='Développeur web et applications' sentence='Prenez connaissance des mes projets ci-dessous'/>
             <Carousel itemsList={
                 [
                     {
