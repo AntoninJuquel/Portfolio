@@ -13,7 +13,7 @@ import ProjectsPage from "../second pages/ProjectsPage";
 import InternshipsPage from "../second pages/InternshipsPage";
 import MonitoringPage from "../second pages/MonitoringPage";
 
-function HomePage({ title, subTitle, sentence }) {
+function HomePage() {
     return (
         <div>
             <Hero title="Mon portfolio" subTitle='Développeur web et applications' sentence='Prenez connaissance des mes projets ci-dessous'/>
@@ -25,7 +25,6 @@ function HomePage({ title, subTitle, sentence }) {
                         subTitle: 'Mes compétences et mon parcours',
                         imgSrc: cv,
                         path: '/Portfolio/home/cv',
-                        selected: false,
                         render: <CurriculumPage />,
                     },
                     {
@@ -34,7 +33,6 @@ function HomePage({ title, subTitle, sentence }) {
                         subTitle: 'Mes stages et autres expériences pro',
                         imgSrc: internship,
                         path: '/Portfolio/home/internships',
-                        selected: false,
                         render: <InternshipsPage />,
                     },
                     {
@@ -43,7 +41,6 @@ function HomePage({ title, subTitle, sentence }) {
                         subTitle: 'Découvrez la liste de mes projets',
                         imgSrc: projects,
                         path: '/Portfolio/home/projects',
-                        selected: false,
                         render: <ProjectsPage />,
                     },
                     {
@@ -52,7 +49,6 @@ function HomePage({ title, subTitle, sentence }) {
                         subTitle: 'La simulation 3D informatique',
                         imgSrc: monitoring,
                         path: '/Portfolio/home/monitoring',
-                        selected: false,
                         render: <MonitoringPage />,
                     },
                 ]
