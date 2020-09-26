@@ -8,11 +8,13 @@ function Carousel({itemsList}) {
 
     const [items, setItems] = useState(itemsList)
 
+    const [content, setContent] = useState({})
+
     const renderItems = (items) => {
         return items.map((item,index) => {
             return (
                 <Col key={index} className='my-center' xl={3} lg={6} md={6} sm={12}>
-                    <Card items={items} item={item} setItems={setItems}/>
+                    <Card items={items} item={item} setItems={setItems} setContent={setContent}/>
                 </Col>
             )
         })
@@ -31,6 +33,9 @@ function Carousel({itemsList}) {
             </Row>
             <div className='my-center'>
                 {renderRoutes()}
+            </div>
+            <div>
+                <p>TEST</p>
             </div>
         </Container>
     )

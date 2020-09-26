@@ -115,3 +115,8 @@ code {
     transform: translateY(-1px);
   }
 }
+
+.my-card-content{
+  border-width: 1px;
+  box-shadow: 0px 0px 3px 3px #00ff9d;
+}
