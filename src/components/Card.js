@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useSpring, animated } from "react-spring";
 
-function Card({ items, item, setItems, setContent }) {
+function Card({ items, item, setItems, setDescription }) {
 
     function CardInfo({ title, subTitle}) {
 
@@ -43,6 +43,7 @@ function Card({ items, item, setItems, setContent }) {
         });
 
         setItems(newItems)
+        setDescription(newItems[index].description)
     }
 
     return (
@@ -59,16 +60,6 @@ function Card({ items, item, setItems, setContent }) {
             <div className='my-card-info'>
                 {item.hover && <CardInfo title={item.title} subTitle={item.subTitle}/>}
             </div>
-
-            {/* <div>
-                {
-                    item.selected &&
-                    <div className='my-card-content'>
-                        <Hero title={item.title} />
-                        {item.link && <a href={item.link} target='_blank' rel="noopener noreferrer" >voir</a>}
-                    </div>
-                }
-            </div> */}
         </div>
 
     )
