@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import { usePdf } from '@mikecousins/react-pdf';
+import { ScrollToRef } from '../../functions/Utilities';
 
 function CurriculumPage({ goToContent }) {
 
@@ -9,7 +10,7 @@ function CurriculumPage({ goToContent }) {
         file: require('../../assets/documents/CV.pdf'),
         page: 1,
         canvasRef,
-        onPageRenderSuccess: () => window.scrollTo({top: canvasRef.current.offsetTop, behavior: 'smooth'}),
+        onPageRenderSuccess: () => ScrollToRef(canvasRef),
         scale: 1.15
     });
 

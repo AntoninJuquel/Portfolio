@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 
+import { ScrollToRef } from "../../functions/Utilities";
+
 import Hero from '../../components/Hero';
 
 import Projects from '../../utils/Projects';
@@ -10,7 +12,7 @@ function ProjectsPage({goToContent}) {
 
     const contentRef = useRef(null);
 
-    useEffect(() =>  window.scrollTo({top: contentRef.current.offsetTop, behavior: 'smooth'}), [])
+    useEffect(() =>  ScrollToRef(contentRef), [])
     
     const SortedProjects = [];
     
