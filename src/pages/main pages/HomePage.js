@@ -16,7 +16,7 @@ import MonitoringPage from "../second pages/MonitoringPage";
 function HomePage({ title, subTitle, catchPhrase }) {
     return (
         <div>
-            <Hero title={title} subTitle={subTitle} catchPhrase={catchPhrase} />
+            <Hero title="Mon portfolio" subTitle='Développeur web et applications' catchPhrase='Prenez connaissance des mes projets ci-dessous'/>
             <Carousel itemsList={
                 [
                     {

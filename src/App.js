@@ -17,32 +17,27 @@ function App() {
         id: 1,
         title: 'Home',
         path: '/Portfolio/home',
-        render: <HomePage
-          title='Mon portfolio'
-          subTitle='Développeur web et applications'
-          catchPhrase='Prenez connaissance des mes projets ci-dessous'
-        />
+        render: <HomePage />
       },
       {
         id: 2,
         title: 'About',
         path: '/Portfolio/about',
-        render: <AboutPage title='A propos de moi' />
+        render: <AboutPage />
       },
       {
         id: 3,
         title: 'Contact',
         path: '/Portfolio/contact',
-        render: <ContactPage title='Me contacter'
-        />
+        render: <ContactPage />
       },
     ]
   }
 
 
   const renderLinks = () => {
-    return content.pages.map(link => {
-      return <Link key={link.id} className='nav-link' to={link.path}>{link.title}</Link>
+    return content.pages.map(page => {
+      return <Link key={page.id} className='nav-link' to={page.path}>{page.title}</Link>
     })
   }
 
