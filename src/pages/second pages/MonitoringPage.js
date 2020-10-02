@@ -1,8 +1,12 @@
 import React from 'react';
+import Carousel from '../../components/Carousel';
+import { Monitorings } from "../../utils/Monitorings";
 
 function MonitoringPage(params) {
-    return(
-        <p>MonitoringPage works</p>
+    return (
+        <div>
+            <Carousel itemsList={Monitorings} />
+        </div>
     )
 }
 

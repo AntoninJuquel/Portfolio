@@ -1,21 +1,14 @@
-import React, { useEffect, useRef } from 'react';
-
-import { ScrollToRef } from "../../functions/Utilities";
+import React from 'react';
 
 import Hero from '../../components/Hero';
 
 import { Projects, Categories } from '../../utils/Projects';
 import Carousel from '../../components/Carousel';
 
-function ProjectsPage({ goToContent }) {
-
-    const contentRef = useRef(null);
-
-    useEffect(() => ScrollToRef(contentRef), [])
-
-    const SortedProjects = [];
-
-    function sortProjects() {
+function ProjectsPage() {
+    
+    function sortedProjects() {
+        const SortedProjects = [];
         const uniqueID = []
         Projects.forEach(project => {
             if (uniqueID.includes(project.categoryId)) {
@@ -25,22 +18,22 @@ function ProjectsPage({ goToContent }) {
                 SortedProjects.push([project])
             }
         });
+        return SortedProjects;
     }
 
     const renderCategories = () => {
-        sortProjects()
-        return SortedProjects.map((projectsList, index) => {
+        return sortedProjects().map((projectsList, index) => {
             return (
                 <div key={index}>
-                    <Hero subTitle={Categories[projectsList[0].categoryId].name} />
-                    <Carousel itemsList={SortedProjects[Categories[projectsList[0].categoryId].id]} />
+                    <Hero title={Categories[projectsList[0].categoryId].name} />
+                    <Carousel itemsList={sortedProjects()[Categories[projectsList[0].categoryId].id]} />
                 </div>
             )
         })
     }
 
     return (
-        <div ref={contentRef}>
+        <div>
             {renderCategories()}
         </div>
     )
