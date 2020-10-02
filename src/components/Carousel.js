@@ -14,7 +14,9 @@ function Carousel({itemsList}) {
 
     const mySetRender = (render) => {
         setRender(render)
-        ScrollToRef(renderRef)
+        setTimeout(() => {
+            ScrollToRef(renderRef)
+          }, 100);
     }
 
     const renderItems = (items) => {
