@@ -12,16 +12,17 @@ import CurriculumPage from "../second pages/CurriculumPage";
 import ProjectsPage from "../second pages/ProjectsPage";
 import InternshipsPage from "../second pages/InternshipsPage";
 import MonitoringPage from "../second pages/MonitoringPage";
+import { Box } from '@material-ui/core';
 
 function HomePage() {
     return (
-        <div>
+        <Box>
             <Hero title="Mon portfolio" subTitle='Développeur web et applications' sentence='Prenez connaissance des mes projets ci-dessous'/>
             <Carousel itemsList={
                 [
                     {
                         id: 0,
-                        title: 'Curriculum vitæ',
+                        title: 'Mon parcours',
                         subTitle: 'Mes compétences et mon parcours',
                         imgSrc: cv,
                         render: <CurriculumPage />,
@@ -50,7 +51,7 @@ function HomePage() {
                     },
                 ]
             } />
-        </div>
+        </Box>
     );
 }
 
