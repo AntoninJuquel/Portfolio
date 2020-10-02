@@ -24,7 +24,6 @@ function HomePage() {
                         title: 'Curriculum vitæ',
                         subTitle: 'Mes compétences et mon parcours',
                         imgSrc: cv,
-                        path: '/Portfolio/home/cv',
                         render: <CurriculumPage />,
                     },
                     {
@@ -32,7 +31,6 @@ function HomePage() {
                         title: 'Parcours professionnel',
                         subTitle: 'Mes stages et autres expériences pro',
                         imgSrc: internship,
-                        path: '/Portfolio/home/internships',
                         render: <InternshipsPage />,
                     },
                     {
@@ -46,9 +44,8 @@ function HomePage() {
                     {
                         id: 3,
                         title: 'Veilles technologiques',
-                        subTitle: 'La simulation 3D informatique',
+                        subTitle: 'Découvrez mes sujets étudiés',
                         imgSrc: monitoring,
-                        path: '/Portfolio/home/monitoring',
                         render: <MonitoringPage />,
                     },
                 ]

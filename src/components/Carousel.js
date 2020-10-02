@@ -1,28 +1,29 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { Route } from 'react-router-dom';
+import { ScrollToRef } from "../functions/Utilities";
 
 import Card from "./Card";
 
 function Carousel({itemsList}) {
 
+    const renderRef = useRef(null);
+
     const [items, setItems] = useState(itemsList)
 
-    const [description, setDescription] = useState()
+    const [render, setRender] = useState()
+
+    const mySetRender = (render) => {
+        setRender(render)
+        ScrollToRef(renderRef)
+    }
 
     const renderItems = (items) => {
         return items.map((item,index) => {
             return (
                 <Col key={index} className='my-center' xl={3} lg={6} md={6} sm={12}>
-                    <Card items={items} item={item} setItems={setItems} setDescription={setDescription}/>
+                    <Card items={items} item={item} setItems={setItems} setRender={mySetRender}/>
                 </Col>
             )
-        })
-    }
-
-    const renderRoutes = () => {
-        return items.map((route,index) => {
-            return <Route key={index} path={route.path} render={() => route.render} />
         })
     }
 
@@ -31,11 +32,8 @@ function Carousel({itemsList}) {
             <Row>
                 {renderItems(items)}
             </Row>
-            <div className='my-center'>
-                {renderRoutes()}
-            </div>
-            <div>
-                {description}
+            <div ref={renderRef}>
+                {render}
             </div>
         </Container>
     )

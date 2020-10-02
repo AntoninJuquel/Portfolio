@@ -23,7 +23,7 @@ export const Projects =
             imgSrc: 'https://www.shopcyco.com/upload/article/20200402/b7f8a8e8e66ece570e02eb30dd157c00.jpg',
             url: 'https://github.com/AntoninJuquel/Sephora-Lips/tree/master',
             
-            description: ''
+            render: ''
             
         },
         {
@@ -33,7 +33,7 @@ export const Projects =
             subTitle: 'Calculateur de trajets',
             imgSrc: 'https://dgalywyr863hv.cloudfront.net/pictures/athletes/2023242/651949/9/full.jpg',
             url: 'https://github.com/AntoninJuquel/Cheat_Alleycat',
-            description: ''
+            render: ''
         },
         {
             id: 2,
@@ -42,7 +42,7 @@ export const Projects =
             subTitle: 'Bullet hell',
             imgSrc: 'https://img.itch.zone/aW1nLzMzMzY5MTMucG5n/315x250%23c/%2FEjA15.png',
             url: 'https://somindras.itch.io/crazy-lights',
-            description: ''
+            render: ''
         },
         {
             id: 3,
@@ -51,7 +51,7 @@ export const Projects =
             subTitle: 'Tower defense',
             imgSrc: 'https://img.itch.zone/aW1nLzM0MzAxMDkucG5n/315x250%23c/zfBCp1.png',
             url: 'https://somindras.itch.io/island-invasion',
-            description: ''
+            render: ''
         },
         {
             id: 4,
@@ -60,7 +60,7 @@ export const Projects =
             subTitle: 'Puzzle game',
             imgSrc: 'https://img.itch.zone/aW1nLzM1OTk5MzAucG5n/315x250%23c/5IOjSk.png',
             url: 'https://somindras.itch.io/train-your-mind',
-            description: ''
+            render: ''
         },
         {
             id: 5,
@@ -69,7 +69,7 @@ export const Projects =
             subTitle: 'Roguelike',
             imgSrc: 'https://img.itch.zone/aW1nLzM3MjMwMDcucG5n/315x250%23c/FRfmbU.png',
             url: 'https://somindras.itch.io/cupgrade',
-            description: ''
+            render: ''
         }, {
             id: 6,
             categoryId: 2,
@@ -77,7 +77,7 @@ export const Projects =
             subTitle: 'Roll the dice',
             imgSrc: 'https://antoninjuquel.github.io/fingerdice/images/dice6.png',
             url: 'https://antoninjuquel.github.io/fingerdice/',
-            description: ''
+            render: ''
         },
         {
             id: 7,
@@ -86,7 +86,7 @@ export const Projects =
             subTitle: 'Classic simon game',
             imgSrc: 'https://p1.hiclipart.com/preview/138/573/156/simon-area-game-simon-says-smile-smiley-circle-symbol-png-clipart.jpg',
             url: 'https://antoninjuquel.github.io/simon/',
-            description: ''
+            render: ''
         },
         {
             id: 8,
@@ -95,7 +95,7 @@ export const Projects =
             subTitle: 'Make your music',
             imgSrc: 'https://image.flaticon.com/icons/svg/860/860162.svg',
             url: 'https://antoninjuquel.github.io/drumkit/',
-            description: ''
+            render: ''
         },
         {
             id: 9,
@@ -104,7 +104,7 @@ export const Projects =
             subTitle: 'Social media for dogs',
             imgSrc: 'https://image.flaticon.com/icons/svg/616/616408.svg',
             url: 'https://antoninjuquel.github.io/tindog/',
-            description: ''
+            render: ''
         },
         {
             id: 10,
@@ -113,6 +113,6 @@ export const Projects =
             subTitle: 'Test for uballers',
             imgSrc: 'https://image.flaticon.com/icons/svg/725/725289.svg',
             url: 'https://antoninjuquel.github.io/test-for-Uballers/',
-            description: ''
+            render: ''
         },
     ]

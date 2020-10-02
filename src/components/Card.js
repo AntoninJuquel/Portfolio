@@ -1,8 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { useSpring, animated } from "react-spring";
 
-function Card({ items, item, setItems, setDescription }) {
+function Card({ items, item, setItems, setRender }) {
 
     const handleCardEnter = (index) => {
         let newItems = [...items];
@@ -30,29 +29,23 @@ function Card({ items, item, setItems, setDescription }) {
         });
 
         setItems(newItems)
-        setDescription(newItems[index].description)
+        setRender(newItems[index].render)
     }
 
     return (
         <div className='d-inline-block my-card' onMouseEnter={(e) => handleCardEnter(items.indexOf(item))}>
 
-            {
-                item.path ?
-                    <Link className='nav-link' to={item.path}>
-                        <img className='my-card-img' src={item.imgSrc} alt={item.path} />
-                    </Link> :
-                    <img onClick={(e) => handleCardClick(items.indexOf(item))} className='my-card-img' src={item.imgSrc} alt={item.path} />
-            }
+            <img onClick={(e) => handleCardClick(items.indexOf(item))} className='my-card-img' src={item.imgSrc} alt={item.path} />
 
             <div className='my-card-info'>
-                {item.hover && <CardInfo title={item.title} subTitle={item.subTitle}/>}
+                {item.hover && <CardInfo title={item.title} subTitle={item.subTitle} />}
             </div>
         </div>
 
     )
 }
 
-function CardInfo({ title, subTitle}) {
+function CardInfo({ title, subTitle }) {
 
     const style = useSpring({ opacity: 1, from: { opacity: 0 } })
 
