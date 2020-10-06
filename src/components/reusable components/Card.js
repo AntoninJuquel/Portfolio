@@ -1,5 +1,6 @@
 import React from "react";
 import { useSpring, animated } from "react-spring";
+import styles from "./card.module.css";
 
 function Card({ items, item, setItems, setRender }) {
 
@@ -33,11 +34,11 @@ function Card({ items, item, setItems, setRender }) {
     }
 
     return (
-        <div className='d-inline-block my-card' onMouseEnter={(e) => handleCardEnter(items.indexOf(item))}>
+        <div className={styles.card} onMouseEnter={(e) => handleCardEnter(items.indexOf(item))}>
 
-            <img onClick={(e) => handleCardClick(items.indexOf(item))} className='my-card-img' src={item.imgSrc} alt={item.path} />
+            <img onClick={(e) => handleCardClick(items.indexOf(item))} className={styles.img} src={item.imgSrc} alt={item.path} />
 
-            <div className='my-card-info'>
+            <div className={styles.info}>
                 {item.hover && <CardInfo title={item.title} subTitle={item.subTitle} />}
             </div>
         </div>
@@ -52,8 +53,8 @@ function CardInfo({ title, subTitle }) {
     return (
 
         <animated.div style={style}>
-            <p className='my-card-title'>{title}</p>
-            <p className='my-card-subTitle'>{subTitle}</p>
+            <p className={styles.title}>{title}</p>
+            <p className={styles.subTitle}>{subTitle}</p>
         </animated.div>
     )
 }
