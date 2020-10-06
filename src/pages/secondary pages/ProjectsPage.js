@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Hero from '../../components/Hero';
+import Hero from '../../components/reusable components/Hero';
+import Carousel from '../../components/reusable components/Carousel';
 
 import { Projects, Categories } from '../../utils/Projects';
-import Carousel from '../../components/Carousel';
 
 function ProjectsPage() {
     

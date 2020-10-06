@@ -1,5 +1,5 @@
 import React from 'react';
-import Carousel from '../../components/Carousel';
+import Carousel from '../../components/reusable components/Carousel';
 import { Monitorings } from "../../utils/Monitorings";
 
 function MonitoringPage(params) {

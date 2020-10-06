@@ -2,11 +2,12 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link, Redirect } from 'react-router-dom';
 import { Container, Navbar, Nav } from 'react-bootstrap';
 
-import Footer from './components/Footer';
-import HomePage from './pages/main pages/HomePage';
-import AboutPage from './pages/main pages/AboutPage';
-import ContactPage from './pages/main pages/ContactPage';
-import ScrollToTop from './components/ScrollToTop';
+import HomePage from './pages/primary pages/HomePage';
+import AboutPage from './pages/primary pages/AboutPage';
+import ContactPage from './pages/primary pages/ContactPage';
+
+import Footer from './components/static components/Footer';
+import ScrollToTop from './components/static components/ScrollToTop';
 
 function App() {
 

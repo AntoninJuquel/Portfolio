@@ -1,17 +1,17 @@
 import React from 'react';
 
-import Hero from "../../components/Hero";
-import Carousel from '../../components/Carousel';
+import Hero from "../../components/reusable components/Hero";
+import Carousel from '../../components/reusable components/Carousel';
 
 import cv from '../../assets/images/cv.png';
 import monitoring from '../../assets/images/monitoring.png';
 import internship from '../../assets/images/internship.png';
 import projects from '../../assets/images/projects.png';
 
-import CurriculumPage from "../second pages/CurriculumPage";
-import ProjectsPage from "../second pages/ProjectsPage";
-import InternshipsPage from "../second pages/InternshipsPage";
-import MonitoringPage from "../second pages/MonitoringPage";
+import CurriculumPage from "../secondary pages/CurriculumPage";
+import ProjectsPage from "../secondary pages/ProjectsPage";
+import InternshipsPage from "../secondary pages/InternshipsPage";
+import MonitoringPage from "../secondary pages/MonitoringPage";
 import { Box } from '@material-ui/core';
 
 function HomePage() {

@@ -1,5 +1,5 @@
 import React from "react";
-import MonitoringRender from "../components/MonitoringRender";
+import MonitoringRender from "../components/reusable components/MonitoringRender";
 
 export const Monitorings =
     [

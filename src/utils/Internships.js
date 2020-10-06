@@ -1,5 +1,5 @@
 import React from "react";
-import InternshipRender from "../components/InternshipRender";
+import InternshipRender from "../components/reusable components/InternshipRender";
 
 const InternShips =
     [

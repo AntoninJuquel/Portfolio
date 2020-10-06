@@ -1,5 +1,5 @@
 import React from "react";
-import Hero from "../components/Hero";
+import Hero from "./Hero";
 
 function InternshipRender({ title, sentence, introduction, skills }) {
     return (

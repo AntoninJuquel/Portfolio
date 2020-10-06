@@ -3,10 +3,11 @@ import React /*, { useRef }*/ from 'react';
 
 // import pdf from "../../assets/documents/CV.pdf";
 // import { ScrollToRef } from '../../functions/Utilities';
-import MyTimeline from '../../components/MyTimeline';
+import MyTimeline from '../../components/reusable components/MyTimeline';
+import Hero from '../../components/reusable components/Hero';
+
 import { Col, Row } from 'react-bootstrap';
 import { Box} from '@material-ui/core';
-import Hero from '../../components/Hero';
 
 function CurriculumPage() {
 

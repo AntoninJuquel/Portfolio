@@ -1,7 +1,7 @@
 import { Box } from '@material-ui/core';
 import React from 'react';
 
-import Carousel from "../../components/Carousel";
+import Carousel from "../../components/reusable components/Carousel";
 import InternShips from '../../utils/Internships';
 
 function InternshipsPage() {

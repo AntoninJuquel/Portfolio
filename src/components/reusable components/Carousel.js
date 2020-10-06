@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { ScrollToRef } from "../functions/Utilities";
+import { ScrollToRef } from "../../functions/Utilities";
 
 import Card from "./Card";
 
