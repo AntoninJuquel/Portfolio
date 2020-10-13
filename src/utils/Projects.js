@@ -70,7 +70,8 @@ export const Projects =
             imgSrc: 'https://img.itch.zone/aW1nLzM3MjMwMDcucG5n/315x250%23c/FRfmbU.png',
             url: 'https://somindras.itch.io/cupgrade',
             render: ''
-        }, {
+        }, 
+        {
             id: 6,
             categoryId: 2,
             title: 'Finger dice',
@@ -115,4 +116,12 @@ export const Projects =
             url: 'https://antoninjuquel.github.io/test-for-Uballers/',
             render: ''
         },
+        {
+            categoryId: 1,
+            title: 'Voltventure',
+            subTitle: '2D platformer',
+            imgSrc: "https://img.itch.zone/aW1nLzQ0MDAyOTQucG5n/315x250%23c/QrWZaG.png",
+            url: 'https://somindras.itch.io/voltventure',
+            render: ''
+        }
     ]
