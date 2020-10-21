@@ -17,7 +17,7 @@ const InternShips =
                     [
                         {
                             title: "A1.2.1 Élaboration et présentation d'un dossier de choix de solution",
-                            rewording: "",
+                            rewording: "Une réunion pour comparer les différents framework de Material Design: Paper, ... (Faire une synthèse)",
                             imgUrl: ""
                         },
                         {
@@ -32,7 +32,7 @@ const InternShips =
                         },
                         {
                             title: "A1.4.1 Participation à un projet",
-                            rewording: "",
+                            rewording: "Mettre les tâches quotidiennes sur l'outil de gestion de projet en ligne Trello. Mise au point quotidien sur ce que l'on a fait de la journée",
                             imgUrl: ""
                         },
                         {
@@ -56,13 +56,18 @@ const InternShips =
                             imgUrl: ""
                         },
                         {
+                            title: "A4.1.7 Développement, utilisation ou adaptation de composants logiciels",
+                            rewording: "Coder des composants informatiques dans le framework React Native",
+                            imgUrl: ""
+                        },
+                        {
                             title: "A4.1.8 Réalisation des tests nécessaires à la validation d'éléments",
                             rewording: "",
                             imgUrl: ""
                         },
                         {
                             title: "A4.1.9 Rédaction d'une documentation technique",
-                            rewording: "",
+                            rewording: "Ecrire dans la documentation technique l'installation du projet React Native, les méthodes de développement(règle de nommage des fichiers ...), le rôle de chaque fichier",
                             imgUrl: ""
                         },
                         {
@@ -72,7 +77,7 @@ const InternShips =
                         },
                         {
                             title: "A4.2.1 Analyse et correction d'un dysfonctionnement, d'un problème",
-                            rewording: "",
+                            rewording: "Corriger les bugs de JavaScript",
                             imgUrl: ""
                         },
                         {
@@ -82,7 +87,7 @@ const InternShips =
                         },
                         {
                             title: "A4.2.4 Mise à jour d'une documentation technique",
-                            rewording: "",
+                            rewording: "Lire la documentation du site web. Lorsqu'on développe une fonctionnalité, on consulte la documentation technique. Ainsi, on peut repèrer les éléments à compléter dans la documentation technique",
                             imgUrl: ""
                         },
                         {
@@ -92,12 +97,12 @@ const InternShips =
                         },
                         {
                             title: "A5.2.3 Repérage des compléments de formation ou d'auto-formation",
-                            rewording: "",
+                            rewording: "Comme je fait partie des premières personnes qui ont travaillé sur le projet React Native, Je dois identifier les chapitres importants afin de maîtriser le framework React Native",
                             imgUrl: ""
                         },
                         {
-                            title: "A5.2.4 Étude d‘une technologie, d'un composant, d'un outi",
-                            rewording: "",
+                            title: "A5.2.4 Étude d‘une technologie, d'un composant, d'un outil",
+                            rewording: "Analyser la documentation en anglais de React et de React Native. Auto-formation sur le cours de React Native de l'entreprise.",
                             imgUrl: ""
                         },
                     ]
