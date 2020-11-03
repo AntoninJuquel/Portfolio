@@ -4,28 +4,34 @@ import { Col, Row } from "react-bootstrap";
 import Hero from "./Hero";
 import MyTimeline from "./MyTimeline";
 
-function MonitoringRender({ presentation, definition, content,timeline }) {
+function MonitoringRender({ title, subTitle, sentence, presentation, definition, content, timeline }) {
     return (
-        <Box style={{ backgroundColor: "#ddd" }}>
+        <Box style={{ backgroundColor: "#ddd"}}>
             <Box textAlign="center">
-                <Hero subTitle="La simulation informatique 3D" sentence="Focus sur la technologie du Ray Tracing" />
+                <Hero subTitle={subTitle} sentence={sentence} />
                 <Row>
-                    <Col>
+                    <Col md={6}>
                         <p>Présentation :</p>
                         <p>{presentation}</p>
                     </Col>
-                    <Col>
+                    <Col md={6}>
                         <p>Définition :</p>
                         <p>{definition}</p>
                     </Col>
                 </Row>
                 {
                     content &&
-                    content.map(el => {
-                        return(
+                    content.map((el, i) => {
+                        return (
                             <Box>
-                                <p>{el.text}</p>
-                                <img alt={el.text} src={el.imgSrc} />
+                                <Row>
+                                    <Col>
+                                        {i % 2 === 0 ? <p>{el.text}</p> : <img alt={el.text} src={el.imgSrc} />}
+                                    </Col>
+                                    <Col>
+                                        {i % 2 !== 0 ? <p>{el.text}</p> : <img alt={el.text} src={el.imgSrc} />}
+                                    </Col>
+                                </Row>
                             </Box>
                         )
                     })
