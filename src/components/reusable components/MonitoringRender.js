@@ -4,7 +4,7 @@ import { Col, Row } from "react-bootstrap";
 import Hero from "./Hero";
 import MyTimeline from "./MyTimeline";
 
-function MonitoringRender({ presentation, definition, timeline }) {
+function MonitoringRender({ presentation, definition, content,timeline }) {
     return (
         <Box style={{ backgroundColor: "#ddd" }}>
             <Box textAlign="center">
@@ -19,7 +19,17 @@ function MonitoringRender({ presentation, definition, timeline }) {
                         <p>{definition}</p>
                     </Col>
                 </Row>
-
+                {
+                    content &&
+                    content.map(el => {
+                        return(
+                            <Box>
+                                <p>{el.text}</p>
+                                <img alt={el.text} src={el.imgSrc} />
+                            </Box>
+                        )
+                    })
+                }
                 <MyTimeline align="alternate" items={timeline} />
             </Box>
 
