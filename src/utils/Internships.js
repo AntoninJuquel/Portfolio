@@ -18,12 +18,12 @@ const InternShips =
                         {
                             title: "A1.2.1 Élaboration et présentation d'un dossier de choix de solution",
                             rewording: "Une réunion pour comparer les différents framework de Material Design: Paper, ... (Faire une synthèse)",
-                            imgUrl: ""
+                            imgUrl: "https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg"
                         },
                         {
                             title: "A1.3.3 Accompagnement de la mise en place d'un nouveau service",
-                            rewording: "",
-                            imgUrl: ""
+                            rewording: "test",
+                            imgUrl: "https://d1fmx1rbmqrxrr.cloudfront.net/cnet/optim/i/edit/2019/04/eso1644bsmall__w770.jpg"
                         },
                         {
                             title: "A1.3.4 Déploiement d'un service",
@@ -103,6 +103,26 @@ const InternShips =
                         {
                             title: "A5.2.4 Étude d‘une technologie, d'un composant, d'un outil",
                             rewording: "Analyser la documentation en anglais de React et de React Native. Auto-formation sur le cours de React Native de l'entreprise.",
+                            imgUrl: ""
+                        },
+                    ]
+                } />
+        },
+        {
+            id: 1,
+            title: 'Woody technologies',
+            subTitle: 'Filiale de Askida',
+            imgSrc: 'https://pbs.twimg.com/profile_images/989857722874122240/8KayUmuM_400x400.jpg',
+            link: 'https://uballers.com/home',
+            render: <InternshipRender
+                title="Woody technologies"
+                introduction="INTRO"
+                sentence="SENTENCE"
+                skills={
+                    [
+                        {
+                            title: "SKILL 1",
+                            rewording: "REWORD",
                             imgUrl: ""
                         },
                     ]
