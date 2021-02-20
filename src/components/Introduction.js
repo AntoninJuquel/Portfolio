@@ -7,7 +7,6 @@ import styles from "./Introduction.module.css";
 
 function Introduction() {
     const socials = [
-        ,
         {
             icon: (props) => <FaLinkedin {...props} />,
             url: "https://www.linkedin.com/in/antonin-juquel/"
@@ -53,7 +52,7 @@ function Introduction() {
                     </Container >
                 </Col>
                 <Col sm={12} lg={6}>
-                    <img src="https://ih0.redbubble.net/image.725661211.7020/flat,1000x1000,075,f.jpg" width="100%"/>
+                    <img alt="MyImage" src="https://ih0.redbubble.net/image.725661211.7020/flat,1000x1000,075,f.jpg" width="100%"/>
                 </Col>
             </Row>
         </Container >
