@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
 
-import NavBar from "./components/Navbar";
+import NavBar from './components/Navbar';
+import Introduction from './components/Introduction';
 
 function App() {
 
@@ -24,7 +25,10 @@ function App() {
   }
 
   return (
-    <NavBar sections={sections} />
+    <>
+      <NavBar sections={sections} />
+      <Introduction />
+    </>
   )
 }
 

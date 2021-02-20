@@ -1,0 +1,21 @@
+.title{
+    font-weight: bold;
+    font-size: 52px;
+}
+
+.subTitle{
+    font-size: 32px;
+}
+
+.url{
+    margin: 0px 5px;
+}
+
+.icon{
+    font-size: 28px;
+    color: white;
+}
+
+.icon:hover{
+    color: #777777;
+}
