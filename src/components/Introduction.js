@@ -1,12 +1,25 @@
 import React from "react";
 
 import { Col, Container, Row } from "react-bootstrap";
-import { FaFacebookSquare, FaTwitterSquare, FaYoutubeSquare, FaLinkedin } from "react-icons/fa";
+import { FaFacebookSquare, FaTwitterSquare, FaYoutubeSquare, FaLinkedin , FaItchIo, FaGithubSquare} from "react-icons/fa";
 
 import styles from "./Introduction.module.css";
 
 function Introduction() {
     const socials = [
+        ,
+        {
+            icon: (props) => <FaLinkedin {...props} />,
+            url: "https://www.linkedin.com/in/antonin-juquel/"
+        },
+        {
+            icon: (props) => <FaItchIo {...props} />,
+            url: "https://somindras.itch.io"
+        },
+        {
+            icon: (props) => <FaGithubSquare {...props} />,
+            url: "https://github.com/AntoninJuquel"
+        },
         {
             icon: (props) => <FaFacebookSquare {...props} />,
             url: "https://www.facebook.com/AntoninJuquel/"
@@ -18,10 +31,6 @@ function Introduction() {
         {
             icon: (props) => <FaYoutubeSquare {...props} />,
             url: "https://www.youtube.com/channel/UCsgdfHWgax10z-av8KwzLlw"
-        },
-        {
-            icon: (props) => <FaLinkedin {...props} />,
-            url: "https://www.linkedin.com/in/antonin-juquel/"
         }
     ]
 
