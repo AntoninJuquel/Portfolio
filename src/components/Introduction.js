@@ -35,8 +35,8 @@ function Introduction() {
         <Container>
             <Row>
                 <Col sm={12} lg={6}>
-                    <h1 className={styles.title}>I'm Antonin</h1>
-                    <p className={styles.subTitle}>Indie Developper</p>
+                    <h1 className="title">I'm Antonin</h1>
+                    <p className="subTitle">Indie Developper</p>
                     <Container fluid="md">
                         <Row>
                             {SocialButtons()}
