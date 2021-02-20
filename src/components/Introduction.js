@@ -1,7 +1,7 @@
 import React from "react";
 
-import { Col, Container, Row } from "react-bootstrap";
-import { FaFacebookSquare, FaTwitterSquare, FaYoutubeSquare, FaLinkedin , FaItchIo, FaGithubSquare} from "react-icons/fa";
+import { Container, Grid, } from "@material-ui/core";
+import { FaFacebookSquare, FaTwitterSquare, FaYoutubeSquare, FaLinkedin, FaItchIo, FaGithubSquare } from "react-icons/fa";
 
 import styles from "./Introduction.module.css";
 
@@ -40,21 +40,19 @@ function Introduction() {
     )
 
     return (
-        <Container>
-            <Row>
-                <Col sm={12} lg={6}>
+        <Container className="container">
+            <Grid container>
+                <Grid item sm={12} lg={6}>
                     <h1 className="title">I'm Antonin</h1>
                     <p className="subTitle">Indie Developper</p>
-                    <Container fluid="md">
-                        <Row>
-                            {SocialButtons()}
-                        </Row>
-                    </Container >
-                </Col>
-                <Col sm={12} lg={6}>
-                    <img alt="MyImage" src="https://ih0.redbubble.net/image.725661211.7020/flat,1000x1000,075,f.jpg" width="100%"/>
-                </Col>
-            </Row>
+                    <Grid container>
+                        {SocialButtons()}
+                    </Grid>
+                </Grid>
+                <Grid item sm={12} lg={6}>
+                    <img alt="MyImage" src="https://ih0.redbubble.net/image.725661211.7020/flat,1000x1000,075,f.jpg" width="100%" />
+                </Grid>
+            </Grid>
         </Container >
     )
 }
