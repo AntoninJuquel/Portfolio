@@ -45,7 +45,7 @@ function NavBar({ sections }) {
                 open={open}
                 onClose={() => setAnchorEl(null)}
             >
-                {Object.keys(sections).map((section,i) =>
+                {Object.keys(sections).map((section, i) =>
                     <MenuItem key={i} onClick={() => handleButtonsClick(section)}>
                         {section}
                     </MenuItem>
