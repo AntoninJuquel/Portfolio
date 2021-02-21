@@ -12,20 +12,16 @@ function Experience(props) {
             name: "BTS SIO",
             location: "Lycée Louis Armand",
             year: "2019 - 2021",
-            icon: <FaSchool />
-            
         },
         {
             name: "CPGE MPSI",
             location: "Lycée Michelet",
             year: "2018 - 2019",
-            icon: <FaSchool />
         },
         {
             name: "BAC S",
             location: "Lycée Politzer",
             year: "2018",
-            icon: <FaSchool />
         }
     ]
 
@@ -34,13 +30,11 @@ function Experience(props) {
             name: "Front end dev",
             location: "WOODY",
             year: "2021 (2 months)",
-            icon: <FaBuilding />
         },
         {
             name: "Mobile dev",
             location: "Uballers",
             year: "2020 (2 months)",
-            icon: <FaBuilding />
         }
     ]
 
@@ -59,7 +53,7 @@ function Experience(props) {
                         </TimelineOppositeContent>
                         <TimelineSeparator>
                             <TimelineDot color="inherit" variant="outlined">
-                                {experience.icon && experience.icon}
+                                {props.icon}
                             </TimelineDot>
                             <TimelineConnector />
                         </TimelineSeparator>
@@ -82,10 +76,10 @@ function Experience(props) {
             <h1 className="title">Experiences</h1>
             <Grid container>
                 <Grid item sm={12} lg={6}>
-                    <MyTimeLine title="School" align="right" experiences={school} />
+                    <MyTimeLine title="School" align="right" experiences={school} icon={<FaSchool />} />
                 </Grid>
                 <Grid item sm={12} lg={6}>
-                    <MyTimeLine title="Pro" align="left" experiences={work} />
+                    <MyTimeLine title="Pro" align="left" experiences={work} icon={<FaBuilding />} />
                 </Grid>
             </Grid>
         </Container>
