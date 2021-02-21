@@ -11,7 +11,7 @@ function Projects(props) {
     const ProjectsCategory = ({ category }) => ProjectsList[category].map((project, i) =>
         <Grid item lg={3} md={6} sm={12} key={i} >
             <Container className={styles.container}>
-                <img src={project.img} width="250" />
+                <img src={project.img} width="250" alt={project.title} />
                 <Hero subTitle={project.title} center />
             </Container>
         </Grid>
