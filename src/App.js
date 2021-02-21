@@ -5,11 +5,13 @@ import NavBar from './components/Navbar';
 import Introduction from './components/Introduction';
 import About from './components/About';
 import Experience from './components/Experience';
+import Projects from './components/Projects';
 
 function App() {
 
   const aboutRef = useRef(null)
   const experienceRef = useRef(null)
+  const projectsRef = useRef(null)
 
   const sections = {
     "About": {
@@ -19,7 +21,7 @@ function App() {
       ref: experienceRef
     },
     "Projects": {
-
+      ref: projectsRef
     },
     "Blog": {
 
@@ -35,6 +37,7 @@ function App() {
       <Introduction />
       <About refProp={aboutRef} />
       <Experience refProp={experienceRef} />
+      <Projects refProp={projectsRef} />
     </>
   )
 }
