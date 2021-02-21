@@ -3,6 +3,8 @@ import { Timeline, TimelineItem, TimelineSeparator, TimelineDot, TimelineConnect
 import { Container, Grid, Paper, Typography } from "@material-ui/core";
 import { FaSchool, FaBuilding } from "react-icons/fa";
 
+import Hero from "./Hero";
+
 import styles from "./Experience.module.css";
 
 function Experience(props) {
@@ -73,7 +75,7 @@ function Experience(props) {
 
     return (
         <Container ref={props.refProp}>
-            <h1 className="title">Experiences</h1>
+            <Hero title="Experiences"/>
             <Grid container>
                 <Grid item sm={12} lg={6}>
                     <MyTimeLine title="School" align="right" experiences={school} icon={<FaSchool />} />

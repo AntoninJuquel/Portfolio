@@ -3,6 +3,8 @@ import React from "react";
 import { Container, Grid, } from "@material-ui/core";
 import { FaFacebookSquare, FaTwitterSquare, FaYoutubeSquare, FaLinkedin, FaItchIo, FaGithubSquare } from "react-icons/fa";
 
+import Hero from "./Hero";
+
 import styles from "./Introduction.module.css";
 
 function Introduction() {
@@ -43,8 +45,7 @@ function Introduction() {
         <Container className="container">
             <Grid container>
                 <Grid item sm={12} lg={6}>
-                    <h1 className="title">I'm Antonin</h1>
-                    <p className="subTitle">Indie Developper</p>
+                    <Hero title="I'm Antonin" subTitle="Indie Developper" />
                     <Grid container>
                         {SocialButtons()}
                     </Grid>
