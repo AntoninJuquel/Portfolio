@@ -4,7 +4,7 @@ import { FaBars } from "react-icons/fa";
 
 import styles from "./NavBar.module.css";
 
-function MyNavBar({ sections }) {
+function NavBar({ sections }) {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -67,4 +67,4 @@ function MyNavBar({ sections }) {
     )
 }
 
-export default MyNavBar
+export default NavBar
