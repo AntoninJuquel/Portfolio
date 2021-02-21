@@ -75,7 +75,7 @@ function Experience(props) {
 
     return (
         <Container ref={props.refProp}>
-            <Hero title="Experiences"/>
+            <Hero title="My Experiences"/>
             <Grid container>
                 <Grid item sm={12} lg={6}>
                     <MyTimeLine title="School" align="right" experiences={school} icon={<FaSchool />} />
