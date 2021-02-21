@@ -1,11 +1,10 @@
 import React from "react";
-import { Container } from "@material-ui/core";
 
-function Hero({ title, subTitle }) {
+function Hero({ title, subTitle, center }) {
     return (
         <>
-            <h1 className="title">{title}</h1>
-            <p className="subTitle">{subTitle}</p>
+            <h1 className="title" style={center && { textAlign: "center" }}>{title}</h1>
+            <p className="subTitle" style={center && { textAlign: "center" }}>{subTitle}</p>
         </>
     )
 }
