@@ -59,10 +59,10 @@ function Contact(props) {
             <form onSubmit={SendEmail}>
                 <Grid container spacing={3}>
                     <Grid item xs={12} lg={6} >
-                        <MyTextField name="first_name" label="First Name" />
+                        <MyTextField required name="first_name" label="First Name" />
                     </Grid>
                     <Grid item xs={12} lg={6}>
-                        <MyTextField required name="last_name" label="Last Name" />
+                        <MyTextField name="last_name" label="Last Name" />
                     </Grid>
                     <Grid item xs={12}>
                         <MyTextField required name="email" label="Email" />
