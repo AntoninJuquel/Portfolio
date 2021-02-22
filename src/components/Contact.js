@@ -1,7 +1,9 @@
-import React from "react";
-import { Container, Grid, TextField, makeStyles, Button } from "@material-ui/core";
+import React, { useState } from "react";
+import { Container, Grid, TextField, makeStyles, Button, Modal, CircularProgress } from "@material-ui/core";
 import emailjs from "emailjs-com";
 import Hero from "./Hero";
+
+import styles from "./Contact.module.css";
 
 const useStyles = makeStyles({
     textField: {
@@ -13,44 +15,70 @@ const useStyles = makeStyles({
 });
 
 function Contact(props) {
+    const [open, setOpen] = useState(null)
     const classes = useStyles();
 
     function SendEmail(e) {
+        const { target } = e
         e.preventDefault()
-        emailjs.sendForm("service_outlook", "template_contact", e.target, "user_l1Qb3tJvE4nAlYoJdTisr")
+        setOpen(<CircularProgress color="inherit"/>)
+        emailjs.sendForm("service_outlook", "template_contact", target, "user_l1Qb3tJvE4nAlYoJdTisr")
             .then((res) => {
+                setOpen(
+                    <>
+                        <p>Email Sent !</p>
+                        <Button variant="contained" size="large" onClick={() => setOpen(null)}>OK</Button>
+                    </>
+                )
                 console.log(res.text)
+                target.reset()
             }, (err) => {
                 console.log(err)
             })
     }
 
+    const MyTextField = (props) =>
+        <TextField
+            variant="filled"
+            fullWidth
+            className={classes.textField}
+            {...props}
+        />
+
+    const MyModal = () =>
+        <Modal open={open !== null} onClose={() => setOpen(null)}>
+            <Container className={styles.modal}>
+                {open}
+            </Container>
+        </Modal>
+
     return (
         <Container ref={props.refProp} className="container">
+            <MyModal />
             <Hero title="Contact Me" />
             <form onSubmit={SendEmail}>
                 <Grid container spacing={3}>
                     <Grid item xs={12} lg={6} >
-                        <TextField variant="filled" label="First Name" fullWidth className={classes.textField} name="first_name" required />
+                        <MyTextField name="first_name" label="First Name" />
                     </Grid>
                     <Grid item xs={12} lg={6}>
-                        <TextField variant="filled" label="Last Name" fullWidth className={classes.textField} name="last_name" />
+                        <MyTextField required name="last_name" label="Last Name" />
                     </Grid>
                     <Grid item xs={12}>
-                        <TextField variant="filled" label="Email" fullWidth className={classes.textField} name="email" required />
+                        <MyTextField required name="email" label="Email" />
                     </Grid>
                     <Grid item xs={6}>
-                        <TextField variant="filled" label="Subject" fullWidth className={classes.textField} name="subject" required />
+                        <MyTextField required name="subject" label="Subject" />
                     </Grid>
                     <Grid item xs={12}>
-                        <TextField variant="filled" label="Message" multiline fullWidth rows={10} className={classes.textField} name="message" required />
+                        <MyTextField required multiline rows={10} name="message" label="Message" />
                     </Grid>
                     <Grid item xs={12}>
                         <Button type="submit" variant="contained" size="large"><strong>SEND</strong></Button>
                     </Grid>
                 </Grid>
             </form>
-        </Container>
+        </Container >
     )
 }
 
