@@ -50,7 +50,7 @@ function App() {
       <Introduction classes={classes} />
       <About refProp={aboutRef} contactRef={contactRef} classes={classes} />
       <Experience refProp={experienceRef} classes={classes} />
-      <Projects refProp={projectsRef} classes={classes} />
+      <Projects refProp={projectsRef} classes={classes} isMobile={isMobile} />
       <Blog refProp={blogRef} classes={classes} />
       <Contact refProp={contactRef} classes={classes} />
     </ThemeProvider>

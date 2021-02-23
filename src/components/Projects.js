@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Grid, useMediaQuery, useTheme } from "@material-ui/core";
+import { Container, Grid } from "@material-ui/core";
 
 import Hero from "./Hero";
 
@@ -7,10 +7,7 @@ import projects from "../json/projects.json";
 
 function Projects(props) {
 
-    const { classes } = props
-
-    const theme = useTheme();
-    const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+    const { classes, isMobile } = props
 
     const ProjectsCategory = ({ category }) => projects[category].map((project, i) =>
         <Grid item lg={3} md={6} sm={12} key={i} style={{ textAlign: "center" }}>
