@@ -1,0 +1,43 @@
+{
+    "about": {
+        "title": "About me",
+        "hire": "Hire me",
+        "cv": "Download CV",
+        "story": ""
+    },
+    "blog": {
+        "title": "Blog"
+    },
+    "contact": {
+        "title": "Contact me",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email": "Email",
+        "subject": "Subject",
+        "message": "Message",
+        "send": "Send"
+    },
+    "experience": {
+        "title": "My experience",
+        "school": "School",
+        "pro": "Pro"
+    },
+    "introduction": {
+        "who": "I'm Antonin",
+        "what": "An Independant Developper"
+    },
+    "navbar": {
+        "about": "About",
+        "experience": "Experience",
+        "projects": "Projects",
+        "blog": "Blog",
+        "contact": "Contact"
+    },
+    "projects": {
+        "school": "School",
+        "pro": "Pro",
+        "games": "Games",
+        "web": "Web",
+        "mobiles": "Mobiles"
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "about": {
+        "title": "À props de moi",
+        "hire": "Recrutez moi !",
+        "cv": "Télécharger mon CV",
+        "story": ""
+    },
+    "blog": {
+        "title": "Blog"
+    },
+    "contact": {
+        "title": "Me contacter",
+        "firstName": "Prénom",
+        "lastName": "Nom de famille",
+        "email": "Email",
+        "subject": "Sujet",
+        "message": "Message",
+        "send": "Envoyer"
+    },
+    "experience": {
+        "title": "Mon experience",
+        "school": "Ecole",
+        "pro": "Pro"
+    },
+    "introduction":{
+        "who": "Je suis Antonin",
+        "what": "Un developper indépendant"
+    },
+    "navbar": {
+        "about": "À propos",
+        "experience": "Experience",
+        "projects": "Projects",
+        "blog": "Blog",
+        "contact": "Contact"
+    },
+    "projects": {
+        "school": "Ecole",
+        "pro": "Pro",
+        "games": "Jeux",
+        "web": "Web",
+        "mobiles": "Mobiles"
+    }
+}
