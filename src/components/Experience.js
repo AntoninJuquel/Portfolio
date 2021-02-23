@@ -5,41 +5,11 @@ import { FaSchool, FaBuilding } from "react-icons/fa";
 
 import Hero from "./Hero";
 
+import experiences from "../json/experiences.json";
+
 function Experience(props) {
-
     const { classes } = props
-
-    const school = [
-        {
-            name: "BTS SIO",
-            location: "Lycée Louis Armand",
-            year: "2019 - 2021",
-        },
-        {
-            name: "CPGE MPSI",
-            location: "Lycée Michelet",
-            year: "2018 - 2019",
-        },
-        {
-            name: "BAC S",
-            location: "Lycée Politzer",
-            year: "2018",
-        }
-    ]
-
-    const work = [
-        {
-            name: "Front end dev",
-            location: "WOODY",
-            year: "2021 (2 months)",
-        },
-        {
-            name: "Mobile dev",
-            location: "Uballers",
-            year: "2020 (2 months)",
-        }
-    ]
-
+    
     const MyTimeLine = (props) =>
         <Container>
             <Typography style={{ textAlign: "center" }} variant="h4">
@@ -78,10 +48,10 @@ function Experience(props) {
             <Hero classes={classes} title="My Experiences" />
             <Grid container>
                 <Grid item sm={12} lg={6}>
-                    <MyTimeLine title="School" align="right" experiences={school} icon={<FaSchool />} />
+                    <MyTimeLine title="School" align="right" experiences={experiences.school} icon={<FaSchool />} />
                 </Grid>
                 <Grid item sm={12} lg={6}>
-                    <MyTimeLine title="Pro" align="left" experiences={work} icon={<FaBuilding />} />
+                    <MyTimeLine title="Pro" align="left" experiences={experiences.work} icon={<FaBuilding />} />
                 </Grid>
             </Grid>
         </Container>

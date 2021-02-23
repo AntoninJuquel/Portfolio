@@ -1,0 +1,31 @@
+{
+    "school": [
+        {
+            "name": "BTS SIO",
+            "location": "Lycée Louis Armand",
+            "year": "2019 - 2021"
+        },
+        {
+            "name": "CPGE MPSI",
+            "location": "Lycée Michelet",
+            "year": "2018 - 2019"
+        },
+        {
+            "name": "BAC S",
+            "location": "Lycée Politzer",
+            "year": "2018"
+        }
+    ],
+    "work": [
+        {
+            "name": "Front end dev",
+            "location": "WOODY",
+            "year": "2021 (8 weeks)"
+        },
+        {
+            "name": "Mobile dev",
+            "location": "Uballers",
+            "year": "2020 (8 weeks)"
+        }
+    ]
+}
