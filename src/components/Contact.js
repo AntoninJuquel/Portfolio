@@ -65,7 +65,7 @@ function Contact(props) {
                         <MyTextField name="last_name" label="Last Name" />
                     </Grid>
                     <Grid item xs={12}>
-                        <MyTextField required name="email" label="Email" />
+                        <MyTextField required name="email" label="Email" type="email"/>
                     </Grid>
                     <Grid item xs={6}>
                         <MyTextField required name="subject" label="Subject" />
