@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import './App.css';
 
 import { ThemeProvider, createMuiTheme, makeStyles, useTheme, useMediaQuery } from "@material-ui/core";
-import { orange } from '@material-ui/core/colors';
+import { orange, red } from '@material-ui/core/colors';
 
 import NavBar from './components/Navbar';
 import Introduction from './components/Introduction';
@@ -21,6 +21,17 @@ const theme = createMuiTheme({
 })
 
 const useStyles = makeStyles({
+  title: {
+    fontWeight: 'bold',
+    fontSize: 52
+  },
+  subTitle:{
+    fontSize: 32
+  },
+  container:{
+    marginTop: 250,
+    marginBottom: 250
+  },
   textField: {
     background: 'linear-gradient(90deg, #cccccc,#FFFFFF, #cccccc)',
     border: 0,
@@ -79,7 +90,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <NavBar sections={sections} classes={classes} isMobile={useMediaQuery(useTheme().breakpoints.down("sm"))} />
-      <Introduction classes />
+      <Introduction classes={classes} />
       <About refProp={aboutRef} contactRef={contactRef} classes={classes} />
       <Experience refProp={experienceRef} classes={classes} />
       <Projects refProp={projectsRef} classes={classes} />

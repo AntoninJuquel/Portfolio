@@ -6,19 +6,21 @@ import ProjectsList from "./ProjectsList";
 
 function Projects(props) {
 
+    const { classes } = props
+
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
     const ProjectsCategory = ({ category }) => ProjectsList[category].map((project, i) =>
-        <Grid item lg={3} md={6} sm={12} key={i} style={{textAlign : "center"}}>
+        <Grid item lg={3} md={6} sm={12} key={i} style={{ textAlign: "center" }}>
             <img src={project.img} width="250" alt={project.title} />
-            <Hero subTitle={project.title} center />
+            <Hero classes={classes} subTitle={project.title} center />
         </Grid>
     )
 
     const MyProjects = () => Object.keys(ProjectsList).map((project, i) =>
         <Container key={i}>
-            <Hero title={project} />
+            <Hero classes={classes} title={project} />
             <Grid style={{ justifyContent: isMobile ? "center" : "normal" }} container>
                 <ProjectsCategory category={project} />
             </Grid>
@@ -26,8 +28,8 @@ function Projects(props) {
     )
 
     return (
-        <Container ref={props.refProp} className="container">
-            <Hero title="My Projects" />
+        <Container ref={props.refProp} className={classes.container}>
+            <Hero classes={classes} title="My Projects" />
             <MyProjects />
         </Container>
     )

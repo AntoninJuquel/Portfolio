@@ -42,9 +42,9 @@ function Contact(props) {
         </Modal>
 
     return (
-        <Container ref={props.refProp} className="container">
+        <Container ref={props.refProp} className={classes.container}>
             <MyModal />
-            <Hero title="Contact Me" />
+            <Hero classes={classes} title="Contact Me" />
             <form onSubmit={SendEmail}>
                 <Grid container spacing={3}>
                     <Grid item xs={12} lg={6} >

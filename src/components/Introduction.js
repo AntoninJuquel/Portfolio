@@ -1,13 +1,14 @@
 import React from "react";
 
-import { Container, Grid, } from "@material-ui/core";
+import { Container, Grid } from "@material-ui/core";
 import { FaFacebookSquare, FaTwitterSquare, FaYoutubeSquare, FaLinkedin, FaItchIo, FaGithubSquare } from "react-icons/fa";
 
 import Hero from "./Hero";
 
 import styles from "./Introduction.module.css";
 
-function Introduction() {
+function Introduction(props) {
+    const { classes } = props
     const socials = [
         {
             icon: (props) => <FaLinkedin {...props} />,
@@ -42,10 +43,10 @@ function Introduction() {
     )
 
     return (
-        <Container className="container">
+        <Container className={classes.container}>
             <Grid container>
                 <Grid item sm={12} lg={6}>
-                    <Hero title="I'm Antonin" subTitle="Indie Developper" />
+                    <Hero classes={classes} title="I'm Antonin" subTitle="Indie Developper" />
                     <Grid container>
                         {SocialButtons()}
                     </Grid>

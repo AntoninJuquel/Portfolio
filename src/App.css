@@ -13,17 +13,3 @@ html, body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
-
-.title {
-  font-weight: bold;
-  font-size: 52px;
-}
-
-.subTitle {
-  font-size: 32px;
-}
-
-.container {
-  margin-top: 250px;
-  margin-bottom: 250px;
-}
