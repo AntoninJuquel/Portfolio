@@ -5,9 +5,9 @@ import { FaSchool, FaBuilding } from "react-icons/fa";
 
 import Hero from "./Hero";
 
-import styles from "./Experience.module.css";
-
 function Experience(props) {
+
+    const { classes } = props
 
     const school = [
         {
@@ -60,7 +60,7 @@ function Experience(props) {
                             <TimelineConnector />
                         </TimelineSeparator>
                         <TimelineContent>
-                            <Paper elevation={3} className={styles.paper} >
+                            <Paper elevation={3} className={classes.paper} >
                                 <Typography variant="h6" component="h1">
                                     {experience.name}
                                 </Typography>
@@ -75,7 +75,7 @@ function Experience(props) {
 
     return (
         <Container ref={props.refProp}>
-            <Hero title="My Experiences"/>
+            <Hero title="My Experiences" />
             <Grid container>
                 <Grid item sm={12} lg={6}>
                     <MyTimeLine title="School" align="right" experiences={school} icon={<FaSchool />} />

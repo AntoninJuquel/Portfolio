@@ -1,27 +1,16 @@
 import React, { useState } from "react";
-import { Container, Grid, TextField, makeStyles, Button, Modal, CircularProgress } from "@material-ui/core";
+import { Container, Grid, TextField, Button, Modal, CircularProgress } from "@material-ui/core";
 import emailjs from "emailjs-com";
 import Hero from "./Hero";
 
-import styles from "./Contact.module.css";
-
-const useStyles = makeStyles({
-    textField: {
-        background: 'linear-gradient(90deg, #cccccc 10%,#FFFFFF 40%, #cccccc 90%)',
-        border: 0,
-        borderRadius: 3,
-        color: 'white',
-    },
-});
-
 function Contact(props) {
     const [open, setOpen] = useState(null)
-    const classes = useStyles();
+    const { classes } = props
 
     function SendEmail(e) {
         const { target } = e
         e.preventDefault()
-        setOpen(<CircularProgress color="inherit"/>)
+        setOpen(<CircularProgress color="inherit" />)
         emailjs.sendForm("service_outlook", "template_contact", target, "user_l1Qb3tJvE4nAlYoJdTisr")
             .then((res) => {
                 setOpen(
@@ -47,7 +36,7 @@ function Contact(props) {
 
     const MyModal = () =>
         <Modal open={open !== null} onClose={() => setOpen(null)}>
-            <Container className={styles.modal}>
+            <Container className={classes.modal}>
                 {open}
             </Container>
         </Modal>
@@ -65,7 +54,7 @@ function Contact(props) {
                         <MyTextField name="last_name" label="Last Name" />
                     </Grid>
                     <Grid item xs={12}>
-                        <MyTextField required name="email" label="Email" type="email"/>
+                        <MyTextField required name="email" label="Email" type="email" />
                     </Grid>
                     <Grid item xs={6}>
                         <MyTextField required name="subject" label="Subject" />

@@ -1,12 +1,9 @@
 import React from "react";
-import { AppBar, Box, IconButton, Menu, MenuItem, Toolbar, Typography, useMediaQuery, useTheme } from "@material-ui/core";
+import { AppBar, Box, IconButton, Menu, MenuItem, Toolbar, Typography } from "@material-ui/core";
 import { FaBars } from "react-icons/fa";
 
-import styles from "./NavBar.module.css";
-
-function NavBar({ sections }) {
-    const theme = useTheme();
-    const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+function NavBar(props) {
+    const { sections, classes, isMobile } = props
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
     const handleMenu = event => {
@@ -56,8 +53,8 @@ function NavBar({ sections }) {
     return (
         <AppBar color="default" style={{ backgroundColor: "#121212", color: "white" }}>
             <Toolbar>
-                <Box className={styles.brand}>
-                    <Typography display="inline" variant="h4" className={styles.brandText} onClick={() => window.scrollTo({ top: 0 })}>
+                <Box className={classes.brand}>
+                    <Typography display="inline" variant="h4" className={classes.brandText} onClick={() => window.scrollTo({ top: 0 })}>
                         Antonin J.
                     </Typography>
                 </Box>
