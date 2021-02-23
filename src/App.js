@@ -1,8 +1,10 @@
 import React, { useRef } from 'react';
 import './App.css';
 
-import { ThemeProvider, createMuiTheme, makeStyles, useTheme, useMediaQuery } from "@material-ui/core";
-import { orange, red } from '@material-ui/core/colors';
+import { ThemeProvider, useTheme, useMediaQuery } from "@material-ui/core";
+
+import useStyles from "./utilities/Styles";
+import theme from "./utilities/Theme";
 
 import NavBar from './components/Navbar';
 import Introduction from './components/Introduction';
@@ -12,56 +14,11 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Blog from './components/Blog';
 
-const theme = createMuiTheme({
-  palette: {
-    primary: {
-      main: orange[500]
-    }
-  }
-})
-
-const useStyles = makeStyles({
-  title: {
-    fontWeight: 'bold',
-    fontSize: 52
-  },
-  subTitle:{
-    fontSize: 32
-  },
-  container:{
-    marginTop: 250,
-    marginBottom: 250
-  },
-  textField: {
-    background: 'linear-gradient(90deg, #cccccc,#FFFFFF, #cccccc)',
-    border: 0,
-    borderRadius: 3,
-    color: 'white',
-  },
-  buttonWrapper: {
-    marginTop: 10
-  },
-  modal: {
-    textAlign: 'center',
-    position: 'absolute',
-    left: '50%',
-    top: '50%',
-    transform: 'translate(-50%, -50%)'
-  },
-  paper: {
-    padding: '6px 16px',
-  },
-  brand: {
-    flexGrow: 1
-  },
-  brandText: {
-    cursor: 'pointer'
-  }
-});
-
 function App() {
 
   const classes = useStyles()
+
+  const isMobile = useMediaQuery(useTheme().breakpoints.down("sm"))
 
   const aboutRef = useRef(null)
   const experienceRef = useRef(null)
@@ -89,7 +46,7 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <NavBar sections={sections} classes={classes} isMobile={useMediaQuery(useTheme().breakpoints.down("sm"))} />
+      <NavBar sections={sections} classes={classes} isMobile={isMobile} />
       <Introduction classes={classes} />
       <About refProp={aboutRef} contactRef={contactRef} classes={classes} />
       <Experience refProp={experienceRef} classes={classes} />

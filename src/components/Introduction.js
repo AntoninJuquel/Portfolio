@@ -5,8 +5,6 @@ import { FaFacebookSquare, FaTwitterSquare, FaYoutubeSquare, FaLinkedin, FaItchI
 
 import Hero from "./Hero";
 
-import styles from "./Introduction.module.css";
-
 function Introduction(props) {
     const { classes } = props
     const socials = [
@@ -37,8 +35,8 @@ function Introduction(props) {
     ]
 
     const SocialButtons = () => socials.map((social, i) =>
-        <a className={styles.url} key={i} target="_blank" href={social.url} rel="noopener noreferrer">
-            <social.icon className={styles.icon} />
+        <a style={{ margin: "0px 5px 15px" }} key={i} target="_blank" href={social.url} rel="noopener noreferrer">
+            <social.icon style={{ fontSize: 28, color: "white" }} />
         </a>
     )
 
