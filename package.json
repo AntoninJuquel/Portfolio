@@ -5,7 +5,6 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.3",
-    "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.57",
     "@mikecousins/react-pdf": "^5.5.1",
     "@testing-library/jest-dom": "^4.2.4",
