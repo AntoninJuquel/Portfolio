@@ -1,4 +1,5 @@
 import { makeStyles } from "@material-ui/core";
+import { purple } from "@material-ui/core/colors";
 
 const useStyles = makeStyles({
   title: {
@@ -30,6 +31,8 @@ const useStyles = makeStyles({
   },
   paper: {
     padding: '6px 16px',
+    backgroundColor: purple[900],
+    color: "white",
   },
   brand: {
     flexGrow: 1

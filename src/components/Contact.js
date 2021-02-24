@@ -63,7 +63,7 @@ function Contact(props) {
                         <MyTextField required multiline rows={10} name="message" label="Message" />
                     </Grid>
                     <Grid item xs={12}>
-                        <Button type="submit" variant="contained" size="large"><strong>SEND</strong></Button>
+                        <Button color="primary" type="submit" variant="contained" size="large"><strong>SEND</strong></Button>
                     </Grid>
                 </Grid>
             </form>
