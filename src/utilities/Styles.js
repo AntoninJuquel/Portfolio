@@ -1,5 +1,4 @@
 import { makeStyles } from "@material-ui/core";
-import { purple } from "@material-ui/core/colors";
 
 const useStyles = makeStyles({
   title: {
