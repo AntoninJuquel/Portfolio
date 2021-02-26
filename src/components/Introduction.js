@@ -34,11 +34,15 @@ function Introduction(props) {
         }
     ]
 
-    const SocialButtons = () => socials.map((social, i) =>
-        <a style={{ margin: "0px 5px 15px" }} key={i} target="_blank" href={social.url} rel="noopener noreferrer">
-            <social.icon style={{ fontSize: 28, color: "white" }} />
-        </a>
-    )
+    function SocialButtons() {
+        return (
+            socials.map((social, i) =>
+                <a style={{ margin: "0px 5px 15px" }} key={i} target="_blank" href={social.url} rel="noopener noreferrer">
+                    <social.icon style={{ fontSize: 28, color: "white" }} />
+                </a>
+            )
+        )
+    }
 
     return (
         <Container className={classes.container}>
@@ -46,7 +50,7 @@ function Introduction(props) {
                 <Grid item sm={12} lg={6}>
                     <Hero classes={classes} title="I'm Antonin" subTitle="Indie Developper" />
                     <Grid container>
-                        {SocialButtons()}
+                        <SocialButtons />
                     </Grid>
                 </Grid>
                 <Grid item sm={12} lg={6}>
