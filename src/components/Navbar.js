@@ -6,6 +6,7 @@ function NavBar(props) {
     const { sections, classes, isMobile } = props
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
+    
     const handleMenu = event => {
         setAnchorEl(event.currentTarget);
     };
@@ -34,7 +35,6 @@ function NavBar(props) {
                     <FaBars />
                 </IconButton>
                 <Menu
-                    id="menu-appbar"
                     anchorEl={anchorEl}
                     anchorOrigin={{
                         vertical: "top",
