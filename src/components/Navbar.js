@@ -13,42 +13,50 @@ function NavBar(props) {
         window.scrollTo({ top: sections[section].ref.current.offsetTop - 64 })
         setAnchorEl(null);
     };
-    const NavBarButtons = () => Object.keys(sections).map(
-        (section, i) => <IconButton color="inherit" key={i} onClick={() => handleButtonsClick(section)} >{section}</IconButton>
-    )
 
-    const MobileNavBarButtons = () =>
-        <>
-            <IconButton
-                edge="start"
-                color="inherit"
-                aria-label="menu"
-                onClick={handleMenu}
-            >
-                <FaBars />
-            </IconButton>
-            <Menu
-                id="menu-appbar"
-                anchorEl={anchorEl}
-                anchorOrigin={{
-                    vertical: "top",
-                    horizontal: "right"
-                }}
-                keepMounted
-                transformOrigin={{
-                    vertical: "top",
-                    horizontal: "right"
-                }}
-                open={open}
-                onClose={() => setAnchorEl(null)}
-            >
-                {Object.keys(sections).map((section, i) =>
-                    <MenuItem key={i} onClick={() => handleButtonsClick(section)}>
-                        {section}
-                    </MenuItem>
-                )}
-            </Menu>
-        </>
+    function NavBarButtons() {
+        return (
+            Object.keys(sections).map(
+                (section, i) => <IconButton color="inherit" key={i} onClick={() => handleButtonsClick(section)} >{section}</IconButton>
+            )
+        )
+    }
+
+    function MobileNavBarButtons() {
+        return (
+            <>
+                <IconButton
+                    edge="start"
+                    color="inherit"
+                    aria-label="menu"
+                    onClick={handleMenu}
+                >
+                    <FaBars />
+                </IconButton>
+                <Menu
+                    id="menu-appbar"
+                    anchorEl={anchorEl}
+                    anchorOrigin={{
+                        vertical: "top",
+                        horizontal: "right"
+                    }}
+                    keepMounted
+                    transformOrigin={{
+                        vertical: "top",
+                        horizontal: "right"
+                    }}
+                    open={open}
+                    onClose={() => setAnchorEl(null)}
+                >
+                    {Object.keys(sections).map((section, i) =>
+                        <MenuItem key={i} onClick={() => handleButtonsClick(section)}>
+                            {section}
+                        </MenuItem>
+                    )}
+                </Menu>
+            </>
+        )
+    }
 
     return (
         <AppBar color="default" className={classes.navbar}>
