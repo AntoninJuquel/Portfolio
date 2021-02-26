@@ -1,5 +1,5 @@
 import React from "react";
-import { AppBar, Box, IconButton, Menu, MenuItem, Toolbar, Typography } from "@material-ui/core";
+import { AppBar, Box, Grid, IconButton, Menu, MenuItem, Toolbar, Typography, Switch } from "@material-ui/core";
 import { FaBars } from "react-icons/fa";
 
 function NavBar(props) {
@@ -51,7 +51,7 @@ function NavBar(props) {
         </>
 
     return (
-        <AppBar color="default" style={{ backgroundColor: "#121212", color: "white" }}>
+        <AppBar color="default" className={classes.navbar}>
             <Toolbar>
                 <Box className={classes.brand}>
                     <Typography display="inline" variant="h4" className={classes.brandText} onClick={() => window.scrollTo({ top: 0 })}>

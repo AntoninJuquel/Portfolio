@@ -28,6 +28,7 @@ function Contact(props) {
 
     const MyTextField = (props) =>
         <TextField
+            color="primary"
             variant="filled"
             fullWidth
             className={classes.textField}
