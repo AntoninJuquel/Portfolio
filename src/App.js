@@ -1,7 +1,7 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import './App.css';
 
-import { ThemeProvider, useTheme, useMediaQuery } from "@material-ui/core";
+import { Modal, Container, ThemeProvider, useTheme, useMediaQuery, Typography, Button } from "@material-ui/core";
 import { LanguageProvider } from './providers/LanguageContext';
 
 import useStyles from "./utilities/Styles";
@@ -16,6 +16,8 @@ import Contact from './components/Contact';
 import Blog from './components/Blog';
 
 function App() {
+  const [modal, setModal] = useState(null)
+
   const classes = useStyles()
 
   const isMobile = useMediaQuery(useTheme().breakpoints.down("sm"))
@@ -43,16 +45,25 @@ function App() {
       ref: contactRef
     }
   }
+
+  const MyModal = () =>
+    <Modal open={modal !== null} onClose={() => setModal(null)}>
+      <Container className={classes.modal}>
+        {modal}
+      </Container>
+    </Modal>
+
   return (
     <LanguageProvider >
       <ThemeProvider theme={theme}>
+        <MyModal />
         <NavBar sections={sections} classes={classes} isMobile={isMobile} />
         <Introduction classes={classes} />
         <About refProp={aboutRef} contactRef={contactRef} classes={classes} />
         <Experience refProp={experienceRef} classes={classes} />
         <Projects refProp={projectsRef} classes={classes} isMobile={isMobile} />
         <Blog refProp={blogRef} classes={classes} />
-        <Contact refProp={contactRef} classes={classes} />
+        <Contact refProp={contactRef} classes={classes} setModal={setModal} />
       </ThemeProvider>
     </LanguageProvider>
   )
