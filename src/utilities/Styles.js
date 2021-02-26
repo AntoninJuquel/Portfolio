@@ -17,7 +17,6 @@ const useStyles = makeStyles({
     background: 'linear-gradient(90deg, #cccccc,#FFFFFF, #cccccc)',
     border: 0,
     borderRadius: 3,
-    color: 'white',
   },
   buttonWrapper: {
     marginTop: 10
@@ -31,8 +30,11 @@ const useStyles = makeStyles({
   },
   paper: {
     padding: '6px 16px',
-    backgroundColor: purple[900],
     color: "white",
+  },
+  navbar: {
+    backgroundColor: "#121212",
+    color: "white"
   },
   brand: {
     flexGrow: 1
