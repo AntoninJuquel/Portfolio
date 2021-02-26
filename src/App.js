@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import './App.css';
 
 import { ThemeProvider, useTheme, useMediaQuery } from "@material-ui/core";
+import { LanguageProvider } from './providers/LanguageContext';
 
 import useStyles from "./utilities/Styles";
 import theme from "./utilities/Theme";
@@ -15,7 +16,6 @@ import Contact from './components/Contact';
 import Blog from './components/Blog';
 
 function App() {
-
   const classes = useStyles()
 
   const isMobile = useMediaQuery(useTheme().breakpoints.down("sm"))
@@ -43,17 +43,18 @@ function App() {
       ref: contactRef
     }
   }
-
   return (
-    <ThemeProvider theme={theme}>
-      <NavBar sections={sections} classes={classes} isMobile={isMobile} />
-      <Introduction classes={classes} />
-      <About refProp={aboutRef} contactRef={contactRef} classes={classes} />
-      <Experience refProp={experienceRef} classes={classes} />
-      <Projects refProp={projectsRef} classes={classes} isMobile={isMobile} />
-      <Blog refProp={blogRef} classes={classes} />
-      <Contact refProp={contactRef} classes={classes} />
-    </ThemeProvider>
+    <LanguageProvider >
+      <ThemeProvider theme={theme}>
+        <NavBar sections={sections} classes={classes} isMobile={isMobile} />
+        <Introduction classes={classes} />
+        <About refProp={aboutRef} contactRef={contactRef} classes={classes} />
+        <Experience refProp={experienceRef} classes={classes} />
+        <Projects refProp={projectsRef} classes={classes} isMobile={isMobile} />
+        <Blog refProp={blogRef} classes={classes} />
+        <Contact refProp={contactRef} classes={classes} />
+      </ThemeProvider>
+    </LanguageProvider>
   )
 }
 
