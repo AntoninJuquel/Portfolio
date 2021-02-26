@@ -1,22 +1,21 @@
 import React, { useState } from "react";
-import { Container, Grid, TextField, Button, Modal, CircularProgress } from "@material-ui/core";
+import { Container, Grid, TextField, Button, Modal, CircularProgress, Typography } from "@material-ui/core";
 import emailjs from "emailjs-com";
 import Hero from "./Hero";
 
 function Contact(props) {
-    const [open, setOpen] = useState(null)
-    const { classes } = props
+    const { classes, setModal } = props
 
     function SendEmail(e) {
         const { target } = e
         e.preventDefault()
-        setOpen(<CircularProgress color="inherit" />)
+        setModal(<CircularProgress color="inherit" />)
         emailjs.sendForm("service_outlook", "template_contact", target, "user_l1Qb3tJvE4nAlYoJdTisr")
             .then((res) => {
-                setOpen(
+                setModal(
                     <>
-                        <p>Email Sent !</p>
-                        <Button variant="contained" size="large" onClick={() => setOpen(null)}>OK</Button>
+                        <Typography variant="h6">Email Sent !</Typography>
+                        <Button variant="contained" size="large" onClick={() => setModal(null)}>OK</Button>
                     </>
                 )
                 console.log(res.text)
@@ -35,16 +34,8 @@ function Contact(props) {
             {...props}
         />
 
-    const MyModal = () =>
-        <Modal open={open !== null} onClose={() => setOpen(null)}>
-            <Container className={classes.modal}>
-                {open}
-            </Container>
-        </Modal>
-
     return (
         <Container ref={props.refProp} className={classes.container}>
-            <MyModal />
             <Hero classes={classes} title="Contact Me" />
             <form onSubmit={SendEmail}>
                 <Grid container spacing={3}>
