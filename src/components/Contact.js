@@ -25,14 +25,18 @@ function Contact(props) {
             })
     }
 
-    const MyTextField = (props) =>
-        <TextField
-            color="primary"
-            variant="filled"
-            fullWidth
-            className={classes.textField}
-            {...props}
-        />
+    function MyTextField(props) {
+        return (
+            <TextField
+                color="primary"
+                variant="filled"
+                fullWidth
+                className={classes.textField}
+                {...props}
+            />
+        )
+    }
+
 
     return (
         <Container ref={props.refProp} className={classes.container}>

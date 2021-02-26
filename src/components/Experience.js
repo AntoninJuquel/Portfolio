@@ -9,39 +9,42 @@ import experiences from "../json/experiences.json";
 
 function Experience(props) {
     const { classes } = props
-    
-    const MyTimeLine = (props) =>
-        <Container>
-            <Typography style={{ textAlign: "center" }} variant="h4">
-                {props.title}
-            </Typography>
-            <Timeline {...props}>
-                {props.experiences.map((experience, i) =>
-                    <TimelineItem key={i}>
-                        <TimelineOppositeContent>
-                            <Typography color="inherit">
-                                {experience.year}
-                            </Typography>
-                        </TimelineOppositeContent>
-                        <TimelineSeparator>
-                            <TimelineDot color="inherit" variant="outlined">
-                                {props.icon}
-                            </TimelineDot>
-                            <TimelineConnector />
-                        </TimelineSeparator>
-                        <TimelineContent>
-                            <Paper elevation={3} className={classes.paper} >
-                                <Typography variant="h6" component="h1">
-                                    {experience.name}
-                                </Typography>
-                                <Typography>{experience.location}</Typography>
-                            </Paper>
-                        </TimelineContent>
 
-                    </TimelineItem>
-                )}
-            </Timeline>
-        </Container>
+    function MyTimeLine(props) {
+        return (
+            <Container>
+                <Typography style={{ textAlign: "center" }} variant="h4">
+                    {props.title}
+                </Typography>
+                <Timeline {...props}>
+                    {props.experiences.map((experience, i) =>
+                        <TimelineItem key={i}>
+                            <TimelineOppositeContent>
+                                <Typography color="inherit">
+                                    {experience.year}
+                                </Typography>
+                            </TimelineOppositeContent>
+                            <TimelineSeparator>
+                                <TimelineDot color="inherit" variant="outlined">
+                                    {props.icon}
+                                </TimelineDot>
+                                <TimelineConnector />
+                            </TimelineSeparator>
+                            <TimelineContent>
+                                <Paper elevation={3} className={classes.paper} >
+                                    <Typography variant="h6" component="h1">
+                                        {experience.name}
+                                    </Typography>
+                                    <Typography>{experience.location}</Typography>
+                                </Paper>
+                            </TimelineContent>
+
+                        </TimelineItem>
+                    )}
+                </Timeline>
+            </Container>
+        )
+    }
 
     return (
         <Container ref={props.refProp} className={classes.container}>
