@@ -11,7 +11,7 @@ function NavBar(props) {
         setAnchorEl(event.currentTarget);
     };
     const handleButtonsClick = section => {
-        window.scrollTo({ top: sections[section].ref.current.offsetTop - 64 })
+        window.scrollTo({ behavior: "smooth", top: sections[section].ref.current.offsetTop - 64 })
         setAnchorEl(null);
     };
 
@@ -62,7 +62,7 @@ function NavBar(props) {
         <AppBar color="default" className={classes.navbar}>
             <Toolbar>
                 <Box className={classes.brand}>
-                    <Typography display="inline" variant="h4" className={classes.brandText} onClick={() => window.scrollTo({ top: 0 })}>
+                    <Typography display="inline" variant="h4" className={classes.brandText} onClick={() => window.scrollTo({ behavior: "smooth", top: 0 })}>
                         Antonin J.
                     </Typography>
                 </Box>
