@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Grid, Typography } from "@material-ui/core";
+import { Container, Grid, Typography, ButtonBase } from "@material-ui/core";
 
 import Hero from "./Hero";
 
@@ -28,7 +28,9 @@ function Projects(props) {
         return (
             projects[category].map((project, i) =>
                 <Grid item lg={3} md={6} sm={12} key={i} style={{ textAlign: "center" }}>
-                    <img src={project.img} width="250" alt={project.title} onClick={() => modal.current.setModal(<ProjectModal project={project} />)} />
+                    <ButtonBase>
+                        <img src={project.img} width="250" alt={project.title} onClick={() => modal.current.setModal(<ProjectModal project={project} />)} />
+                    </ButtonBase>
                     <Hero classes={classes} subTitle={project.title} center />
                 </Grid>
             )
