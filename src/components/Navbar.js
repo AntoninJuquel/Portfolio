@@ -59,7 +59,7 @@ function NavBar(props) {
     }
 
     return (
-        <AppBar  className={classes.navbar}>
+        <AppBar color="default" className={classes.navbar}>
             <Toolbar>
                 <Box className={classes.brand}>
                     <Typography display="inline" variant="h4" className={classes.brandText} onClick={() => window.scrollTo({ behavior: "smooth", top: 0 })}>

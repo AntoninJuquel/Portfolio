@@ -9,14 +9,14 @@ const theme = createMuiTheme({
     secondary: {
       main: teal[500]
     },
-    background:{
+    background: {
       default: "#121212",
       paper: purple[900]
     },
-    text:{
+    text: {
       primary: "#000"
     }
   }
-})
+}, { index: 1 })
 
 export default theme

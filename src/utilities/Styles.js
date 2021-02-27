@@ -43,6 +43,6 @@ const useStyles = makeStyles({
   brandText: {
     cursor: 'pointer'
   }
-});
+}, { index: 1 });
 
 export default useStyles
