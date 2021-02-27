@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import './App.css';
 
-import { Modal, Container, ThemeProvider, useTheme, useMediaQuery, Typography, Button } from "@material-ui/core";
+import { Modal, Container, ThemeProvider, useTheme, useMediaQuery } from "@material-ui/core";
 import { LanguageProvider } from './providers/LanguageContext';
 
 import useStyles from "./utilities/Styles";

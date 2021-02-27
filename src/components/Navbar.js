@@ -1,5 +1,5 @@
 import React from "react";
-import { AppBar, Box, Grid, IconButton, Menu, MenuItem, Toolbar, Typography, Switch } from "@material-ui/core";
+import { AppBar, Box, IconButton, Menu, MenuItem, Toolbar, Typography } from "@material-ui/core";
 import { FaBars } from "react-icons/fa";
 
 function NavBar(props) {

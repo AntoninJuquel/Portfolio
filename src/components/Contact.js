@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Container, Grid, TextField, Button, Modal, CircularProgress, Typography } from "@material-ui/core";
+import React from "react";
+import { Container, Grid, TextField, Button, CircularProgress, Typography } from "@material-ui/core";
 import emailjs from "emailjs-com";
 import Hero from "./Hero";
 

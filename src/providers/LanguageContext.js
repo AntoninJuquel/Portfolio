@@ -1,4 +1,4 @@
-import React, { createContext, useState, useMemo, useContext } from "react";
+import React, { createContext, useState, useMemo, useContext, useCallback } from "react";
 
 const LanguageContext = createContext(null);
 
@@ -10,7 +10,7 @@ export function LanguageProvider({ children }) {
         "francais": require("../languages/fr-FR.json")
     }
 
-    const GetLanguageFile = () => languageFiles[language]
+    const GetLanguageFile = useCallback(() => languageFiles[language], [language, languageFiles])
 
     const value = useMemo(() => ({ language, setLanguage, GetLanguageFile }), [language, setLanguage, GetLanguageFile]);
 
