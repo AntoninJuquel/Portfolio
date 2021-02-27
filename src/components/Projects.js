@@ -9,7 +9,7 @@ import { useModal } from "../providers/ModalContext";
 function Projects(props) {
     const modal = useModal()
 
-    const { classes, isMobile, modalRef } = props
+    const { classes, isMobile } = props
 
     function ProjectsRenderer() {
         return (
