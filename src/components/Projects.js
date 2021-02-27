@@ -4,8 +4,10 @@ import { Container, Grid, Typography } from "@material-ui/core";
 import Hero from "./Hero";
 
 import projects from "../json/projects.json";
+import { useModal } from "../providers/ModalContext";
 
 function Projects(props) {
+    const modal = useModal()
 
     const { classes, isMobile, modalRef } = props
 
@@ -26,7 +28,7 @@ function Projects(props) {
         return (
             projects[category].map((project, i) =>
                 <Grid item lg={3} md={6} sm={12} key={i} style={{ textAlign: "center" }}>
-                    <img src={project.img} width="250" alt={project.title} onClick={() => modalRef.current.setModal(<ProjectModal project={project} />)} />
+                    <img src={project.img} width="250" alt={project.title} onClick={() => modal.current.setModal(<ProjectModal project={project} />)} />
                     <Hero classes={classes} subTitle={project.title} center />
                 </Grid>
             )

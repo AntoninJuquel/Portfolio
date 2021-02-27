@@ -1,8 +1,9 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import './App.css';
 
 import { ThemeProvider, useTheme, useMediaQuery } from "@material-ui/core";
 import { LanguageProvider } from './providers/LanguageContext';
+import { ModalProvider } from './providers/ModalContext';
 
 import useStyles from "./utilities/Styles";
 import theme from "./utilities/Theme";
@@ -14,11 +15,8 @@ import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Blog from './components/Blog';
-import MyModal from './components/Modal';
 
 function App() {
-  const [modal, setModal] = useState(null)
-
   const classes = useStyles()
 
   const isMobile = useMediaQuery(useTheme().breakpoints.down("sm"))
@@ -28,7 +26,6 @@ function App() {
   const projectsRef = useRef(null)
   const contactRef = useRef(null)
   const blogRef = useRef(null)
-  const modalRef = useRef(null)
 
   const sections = {
     "About": {
@@ -51,14 +48,15 @@ function App() {
   return (
     <LanguageProvider >
       <ThemeProvider theme={theme}>
-        <MyModal ref={modalRef} classes={classes} />
-        <NavBar sections={sections} classes={classes} isMobile={isMobile} />
-        <Introduction classes={classes} />
-        <About refProp={aboutRef} contactRef={contactRef} classes={classes} />
-        <Experience refProp={experienceRef} classes={classes} modalRef={modalRef} />
-        <Projects refProp={projectsRef} classes={classes} isMobile={isMobile} modalRef={modalRef} />
-        <Blog refProp={blogRef} classes={classes} />
-        <Contact refProp={contactRef} classes={classes} modalRef={modalRef} />
+        <ModalProvider classes={classes}>
+          <NavBar sections={sections} classes={classes} isMobile={isMobile} />
+          <Introduction classes={classes} />
+          <About refProp={aboutRef} contactRef={contactRef} classes={classes} />
+          <Experience refProp={experienceRef} classes={classes} />
+          <Projects refProp={projectsRef} classes={classes} isMobile={isMobile} />
+          <Blog refProp={blogRef} classes={classes} />
+          <Contact refProp={contactRef} classes={classes} />
+        </ModalProvider>
       </ThemeProvider>
     </LanguageProvider>
   )

@@ -2,20 +2,22 @@ import React from "react";
 import { Container, Grid, TextField, Button, CircularProgress, Typography } from "@material-ui/core";
 import emailjs from "emailjs-com";
 import Hero from "./Hero";
+import { useModal } from "../providers/ModalContext";
 
 function Contact(props) {
-    const { classes, modalRef } = props
+    const modal = useModal()
+    const { classes } = props
 
     function SendEmail(e) {
         const { target } = e
         e.preventDefault()
-        modalRef.current.setModal(<CircularProgress color="inherit" />)
+        modal.current.setModal(<CircularProgress color="inherit" />)
         emailjs.sendForm("service_outlook", "template_contact", target, "user_l1Qb3tJvE4nAlYoJdTisr")
             .then((res) => {
-                modalRef.current.setModal(
+                modal.current.setModal(
                     <>
                         <Typography variant="h6">Email Sent !</Typography>
-                        <Button variant="contained" size="large" onClick={() => modalRef.current.setModal(null)}>OK</Button>
+                        <Button variant="contained" size="large" onClick={() => modal.current.setModal(null)}>OK</Button>
                     </>
                 )
                 console.log(res.text)

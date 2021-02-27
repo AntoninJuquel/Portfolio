@@ -7,9 +7,11 @@ import Hero from "./Hero";
 
 import experiences from "../json/experiences.json";
 
+import { useModal } from "../providers/ModalContext";
+
 function Experience(props) {
-    console.log("Experience")
-    const { classes, modalRef } = props
+    const modal = useModal()
+    const { classes } = props
 
     function MyTimeLine(props) {
         return (
@@ -32,7 +34,7 @@ function Experience(props) {
                                 <TimelineConnector />
                             </TimelineSeparator>
                             <TimelineContent>
-                                <ButtonBase style={{ width: "100%", height: "100%" }} onClick={() => modalRef.current.setModal(<ExperienceModal experience={experience} />)}>
+                                <ButtonBase style={{ width: "100%", height: "100%" }} onClick={() => modal.current.setModal(<ExperienceModal experience={experience} />)}>
                                     <Paper elevation={3} className={classes.paper}>
                                         <Typography variant="h6" component="h1">
                                             {experience.name}
