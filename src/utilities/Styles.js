@@ -25,7 +25,8 @@ const useStyles = makeStyles({
     position: 'absolute',
     left: '50%',
     top: '50%',
-    transform: 'translate(-50%, -50%)'
+    transform: 'translate(-50%, -50%)',
+    outline: "none"
   },
   paper: {
     padding: '6px 16px',
