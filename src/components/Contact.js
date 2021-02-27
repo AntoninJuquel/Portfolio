@@ -4,18 +4,18 @@ import emailjs from "emailjs-com";
 import Hero from "./Hero";
 
 function Contact(props) {
-    const { classes, setModal } = props
+    const { classes, modalRef } = props
 
     function SendEmail(e) {
         const { target } = e
         e.preventDefault()
-        setModal(<CircularProgress color="inherit" />)
+        modalRef.current.setModal(<CircularProgress color="inherit" />)
         emailjs.sendForm("service_outlook", "template_contact", target, "user_l1Qb3tJvE4nAlYoJdTisr")
             .then((res) => {
-                setModal(
+                modalRef.current.setModal(
                     <>
                         <Typography variant="h6">Email Sent !</Typography>
-                        <Button variant="contained" size="large" onClick={() => setModal(null)}>OK</Button>
+                        <Button variant="contained" size="large" onClick={() => modalRef.current.setModal(null)}>OK</Button>
                     </>
                 )
                 console.log(res.text)

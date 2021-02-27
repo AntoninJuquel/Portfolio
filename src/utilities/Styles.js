@@ -31,6 +31,7 @@ const useStyles = makeStyles({
   paper: {
     padding: '6px 16px',
     color: "white",
+    width: "100%"
   },
   navbar: {
     backgroundColor: "#121212",

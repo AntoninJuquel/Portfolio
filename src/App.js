@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import './App.css';
 
-import { Modal, Container, ThemeProvider, useTheme, useMediaQuery } from "@material-ui/core";
+import { ThemeProvider, useTheme, useMediaQuery } from "@material-ui/core";
 import { LanguageProvider } from './providers/LanguageContext';
 
 import useStyles from "./utilities/Styles";
@@ -14,6 +14,7 @@ import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Blog from './components/Blog';
+import MyModal from './components/Modal';
 
 function App() {
   const [modal, setModal] = useState(null)
@@ -27,6 +28,7 @@ function App() {
   const projectsRef = useRef(null)
   const contactRef = useRef(null)
   const blogRef = useRef(null)
+  const modalRef = useRef(null)
 
   const sections = {
     "About": {
@@ -46,24 +48,17 @@ function App() {
     }
   }
 
-  const MyModal = () =>
-    <Modal open={modal !== null} onClose={() => setModal(null)}>
-      <Container className={classes.modal}>
-        {modal}
-      </Container>
-    </Modal>
-
   return (
     <LanguageProvider >
       <ThemeProvider theme={theme}>
-        <MyModal />
+        <MyModal ref={modalRef} classes={classes} />
         <NavBar sections={sections} classes={classes} isMobile={isMobile} />
         <Introduction classes={classes} />
         <About refProp={aboutRef} contactRef={contactRef} classes={classes} />
-        <Experience refProp={experienceRef} classes={classes} />
-        <Projects refProp={projectsRef} classes={classes} isMobile={isMobile} setModal={setModal} />
+        <Experience refProp={experienceRef} classes={classes} modalRef={modalRef} />
+        <Projects refProp={projectsRef} classes={classes} isMobile={isMobile} modalRef={modalRef} />
         <Blog refProp={blogRef} classes={classes} />
-        <Contact refProp={contactRef} classes={classes} setModal={setModal} />
+        <Contact refProp={contactRef} classes={classes} modalRef={modalRef} />
       </ThemeProvider>
     </LanguageProvider>
   )

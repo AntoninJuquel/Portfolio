@@ -1,6 +1,6 @@
 import React from "react";
 import { Timeline, TimelineItem, TimelineSeparator, TimelineDot, TimelineConnector, TimelineContent, TimelineOppositeContent } from "@material-ui/lab";
-import { Container, Grid, Paper, Typography } from "@material-ui/core";
+import { ButtonBase, Container, Grid, Paper, Typography } from "@material-ui/core";
 import { FaSchool, FaBuilding } from "react-icons/fa";
 
 import Hero from "./Hero";
@@ -8,7 +8,8 @@ import Hero from "./Hero";
 import experiences from "../json/experiences.json";
 
 function Experience(props) {
-    const { classes } = props
+    console.log("Experience")
+    const { classes, modalRef } = props
 
     function MyTimeLine(props) {
         return (
@@ -31,18 +32,30 @@ function Experience(props) {
                                 <TimelineConnector />
                             </TimelineSeparator>
                             <TimelineContent>
-                                <Paper elevation={3} className={classes.paper} >
-                                    <Typography variant="h6" component="h1">
-                                        {experience.name}
-                                    </Typography>
-                                    <Typography>{experience.location}</Typography>
-                                </Paper>
+                                <ButtonBase style={{ width: "100%", height: "100%" }} onClick={() => modalRef.current.setModal(<ExperienceModal experience={experience} />)}>
+                                    <Paper elevation={3} className={classes.paper}>
+                                        <Typography variant="h6" component="h1">
+                                            {experience.name}
+                                        </Typography>
+                                        <Typography>{experience.location}</Typography>
+                                    </Paper>
+                                </ButtonBase>
                             </TimelineContent>
 
                         </TimelineItem>
                     )}
                 </Timeline>
             </Container>
+        )
+    }
+
+    function ExperienceModal({ experience }) {
+        return (
+            <>
+                {experience.name}
+                {experience.location}
+                {experience.year}
+            </>
         )
     }
 
