@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Grid, TextField, Button, CircularProgress, Typography } from "@material-ui/core";
 import emailjs from "emailjs-com";
-import Hero from "./Hero";
+import { Hero } from "./CustomComponents";
 import { useModal } from "../providers/ModalContext";
 
 function Contact(props) {

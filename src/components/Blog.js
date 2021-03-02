@@ -1,7 +1,7 @@
 import { Container } from "@material-ui/core";
 import React from "react";
 
-import Hero from "./Hero";
+import { Hero } from "./CustomComponents";
 
 function Blog(props) {
     const { classes } = props

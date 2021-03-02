@@ -3,7 +3,10 @@
         {
             "title": "Sephora Lips",
             "img": "https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/033b81b839890e8e47434f5aee579e02",
-            "url": ""
+            "url": "",
+            "carousel": [
+                "/logo192.png"
+            ]
         },
         {
             "title": "AC19",

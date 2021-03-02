@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Grid, Button } from "@material-ui/core";
 import { useLanguage } from "../providers/LanguageContext";
 
-import Hero from "./Hero";
+import { Hero } from "./CustomComponents";
 
 function About(props) {
     const { classes } = props

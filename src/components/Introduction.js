@@ -3,7 +3,7 @@ import React from "react";
 import { Container, Grid } from "@material-ui/core";
 import { FaFacebookSquare, FaTwitterSquare, FaYoutubeSquare, FaLinkedin, FaItchIo, FaGithubSquare } from "react-icons/fa";
 
-import Hero from "./Hero";
+import { Hero } from "./CustomComponents";
 
 function Introduction(props) {
     const { classes } = props

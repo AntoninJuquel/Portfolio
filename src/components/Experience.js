@@ -3,7 +3,7 @@ import { Timeline, TimelineItem, TimelineSeparator, TimelineDot, TimelineConnect
 import { ButtonBase, Container, Grid, Paper, Typography } from "@material-ui/core";
 import { FaSchool, FaBuilding } from "react-icons/fa";
 
-import Hero from "./Hero";
+import { Hero } from "./CustomComponents";
 
 import experiences from "../json/experiences.json";
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Grid, Typography, ButtonBase } from "@material-ui/core";
 
-import Hero from "./Hero";
+import { Hero } from "./CustomComponents";
 
 import projects from "../json/projects.json";
 import { useModal } from "../providers/ModalContext";
@@ -41,7 +41,7 @@ function Projects(props) {
         return (
             <>
                 <Typography>{project.title}</Typography>
-                <img src={project.img} width="250" alt={project.title} />
+                <img src={process.env.PUBLIC_URL + project.carousel[0]} width="250" alt={project.title} />
             </>
         )
     }
