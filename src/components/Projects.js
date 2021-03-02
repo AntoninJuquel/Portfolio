@@ -41,7 +41,7 @@ function Projects(props) {
         return (
             <>
                 <Typography>{project.title}</Typography>
-                {/* <img src={process.env.PUBLIC_URL + project.carousel[0]} width="250" alt={project.title} /> */}
+                <img src={"https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg"} width="500" alt={project.title} />
             </>
         )
     }
