@@ -1,24 +1,28 @@
 import React from "react";
 import { AppBar, Box, IconButton, Menu, MenuItem, Toolbar, Typography } from "@material-ui/core";
 import { FaBars } from "react-icons/fa";
+import { useLanguage } from "../providers/LanguageContext";
 
 function NavBar(props) {
     const { sections, classes, isMobile } = props
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
+    const { GetLanguageFile } = useLanguage()
 
     const handleMenu = event => {
         setAnchorEl(event.currentTarget);
     };
     const handleButtonsClick = section => {
-        window.scrollTo({ behavior: "smooth", top: sections[section].ref.current.offsetTop - 64 })
+        window.scrollTo({ behavior: "smooth", top: sections[section].ref.current.offsetTop - 250 })
         setAnchorEl(null);
     };
 
     function NavBarButtons() {
         return (
             Object.keys(sections).map(
-                (section, i) => <IconButton color="inherit" key={i} onClick={() => handleButtonsClick(section)} >{section}</IconButton>
+                (section, i) => <IconButton color="inherit" key={i} onClick={() => handleButtonsClick(section)} >
+                    {GetLanguageFile().navbar[section.toLowerCase()]}
+                </IconButton>
             )
         )
     }
