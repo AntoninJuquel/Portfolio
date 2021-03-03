@@ -5,10 +5,11 @@ import { Carousel, Hero } from "./CustomComponents";
 
 import projects from "../json/projects.json";
 import { useModal } from "../providers/ModalContext";
+import { useLanguage } from "../providers/LanguageContext";
 
 function Projects(props) {
     const modal = useModal()
-
+    const { language } = useLanguage();
     const { classes, isMobile } = props
 
     function ProjectsRenderer() {
@@ -43,8 +44,8 @@ function Projects(props) {
                 <Typography>{project.title}</Typography>
                 <Carousel>
                     {
-                        project.carousel.map((url, i) =>
-                            <img key={i} src={url} alt={i} />)
+                        project.carousel[language].map((url, i) =>
+                            <img key={i} src={process.env.PUBLIC_URL + url} alt={i} />)
                     }
                 </Carousel>
             </>

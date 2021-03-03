@@ -3,11 +3,11 @@ import React, { createContext, useState, useMemo, useContext, useCallback } from
 const LanguageContext = createContext(null);
 
 export function LanguageProvider({ children }) {
-    const [language, setLanguage] = useState("francais")
+    const [language, setLanguage] = useState("fr")
 
     const languageFiles = {
-        "english": require("../languages/en-US.json"),
-        "francais": require("../languages/fr-FR.json")
+        "en": require("../languages/en-US.json"),
+        "fr": require("../languages/fr-FR.json")
     }
 
     const GetLanguageFile = useCallback(() => languageFiles[language], [language, languageFiles])
