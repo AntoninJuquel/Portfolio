@@ -73,7 +73,7 @@ function NavBar(props) {
                     <Typography display="inline" variant="h4" className={classes.brandText} onClick={() => window.scrollTo({ behavior: "smooth", top: 0 })}>
                         Antonin J.
                     </Typography>
-                    <ButtonBase onClick={handleLanguageMenu}>
+                    <ButtonBase style={{marginLeft: 25}} onClick={handleLanguageMenu}>
                         <ReactCountryFlag countryCode={GetLanguageFlag()} svg />
                     </ButtonBase>
                     <LanguageMenu />
