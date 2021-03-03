@@ -24,9 +24,9 @@ export const MyModal = forwardRef((props, ref) => {
         <Modal disableEnforceFocus disableAutoFocus open={modal !== null} onClose={() => setModal(null)}>
             <Container className={classes.modal}>
                 {modal}
-                <Button color="primary" variant="contained" size="large" onClick={() => setModal(null)}>
+                {/* <Button color="primary" variant="contained" size="large" onClick={() => setModal(null)}>
                     Close
-                </Button>
+                </Button> */}
             </Container>
         </Modal>
     )
