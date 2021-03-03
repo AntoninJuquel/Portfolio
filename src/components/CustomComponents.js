@@ -4,8 +4,8 @@ import { Typography, Modal, Container, Box, Button, Grid } from "@material-ui/co
 export function Hero({ title, subTitle, center, classes }) {
     return (
         <Box>
-            <Typography variant="h1" className={classes.title} style={center && { textAlign: "center" }}>{title}</Typography>
-            <Typography variant="h4" paragraph style={center && { textAlign: "center" }}>{subTitle}</Typography>
+            <Typography variant="h1" className={classes.title} style={{ textAlign: center ? "center" : "left" }}>{title}</Typography>
+            <Typography variant="h4" paragraph style={{ textAlign: center ? "center" : "left", whiteSpace: "pre-line" }}>{subTitle}</Typography>
         </Box>
     )
 }
