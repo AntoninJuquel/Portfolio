@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Grid, Typography, ButtonBase } from "@material-ui/core";
 
-import { Hero } from "./CustomComponents";
+import { Carousel, Hero } from "./CustomComponents";
 
 import projects from "../json/projects.json";
 import { useModal } from "../providers/ModalContext";
@@ -41,10 +41,16 @@ function Projects(props) {
         return (
             <>
                 <Typography>{project.title}</Typography>
-                <img src={"https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg"} width="500" alt={project.title} />
+                <Carousel>
+                    {
+                        project.carousel.map((url, i) =>
+                            <img key={i} src={url} alt={i} />)
+                    }
+                </Carousel>
             </>
         )
     }
+
 
     return (
         <Container ref={props.refProp} className={classes.container}>
