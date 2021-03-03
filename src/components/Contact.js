@@ -3,10 +3,12 @@ import { Container, Grid, TextField, Button, CircularProgress, Typography } from
 import emailjs from "emailjs-com";
 import { Hero } from "./CustomComponents";
 import { useModal } from "../providers/ModalContext";
+import { useLanguage } from "../providers/LanguageContext";
 
 function Contact(props) {
     const modal = useModal()
     const { classes } = props
+    const { GetLanguageFile } = useLanguage()
 
     function SendEmail(e) {
         const { target } = e
@@ -42,26 +44,26 @@ function Contact(props) {
 
     return (
         <Container ref={props.refProp} className={classes.container}>
-            <Hero classes={classes} title="Contact Me" />
+            <Hero classes={classes} title={GetLanguageFile().contact.title}/>
             <form onSubmit={SendEmail}>
                 <Grid container spacing={3}>
                     <Grid item xs={12} lg={6} >
-                        <MyTextField required name="first_name" label="First Name" />
+                        <MyTextField required name="first_name" label={GetLanguageFile().contact.firstName} />
                     </Grid>
                     <Grid item xs={12} lg={6}>
-                        <MyTextField name="last_name" label="Last Name" />
+                        <MyTextField name="last_name" label={GetLanguageFile().contact.lastName} />
                     </Grid>
                     <Grid item xs={12}>
                         <MyTextField required name="email" label="Email" type="email" />
                     </Grid>
                     <Grid item xs={6}>
-                        <MyTextField required name="subject" label="Subject" />
+                        <MyTextField required name="subject" label={GetLanguageFile().contact.subject} />
                     </Grid>
                     <Grid item xs={12}>
                         <MyTextField required multiline rows={5} name="message" label="Message" />
                     </Grid>
                     <Grid item xs={12}>
-                        <Button color="primary" type="submit" variant="contained" size="large"><strong>SEND</strong></Button>
+                        <Button color="primary" type="submit" variant="contained" size="large"><strong>{GetLanguageFile().contact.send}</strong></Button>
                     </Grid>
                 </Grid>
             </form>

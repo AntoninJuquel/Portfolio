@@ -23,8 +23,8 @@
         "pro": "Pro"
     },
     "introduction": {
-        "who": "I'm Antonin",
-        "what": "An Independant Developper"
+        "title": "I'm Antonin",
+        "subTitle": "An Independant Developper"
     },
     "navbar": {
         "about": "About",
@@ -34,6 +34,7 @@
         "contact": "Contact"
     },
     "projects": {
+        "title": "Mes projets",
         "school": "School",
         "pro": "Pro",
         "games": "Games",

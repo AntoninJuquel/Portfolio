@@ -8,10 +8,12 @@ import { Hero } from "./CustomComponents";
 import experiences from "../json/experiences.json";
 
 import { useModal } from "../providers/ModalContext";
+import { useLanguage } from "../providers/LanguageContext";
 
 function Experience(props) {
     const modal = useModal()
     const { classes } = props
+    const { GetLanguageFile } = useLanguage()
 
     function MyTimeLine(props) {
         return (
@@ -63,13 +65,13 @@ function Experience(props) {
 
     return (
         <Container ref={props.refProp} className={classes.container}>
-            <Hero classes={classes} title="My Experiences" />
+            <Hero classes={classes} title={GetLanguageFile().experience.title} />
             <Grid container>
                 <Grid item sm={12} lg={6}>
-                    <MyTimeLine title="School" align="right" experiences={experiences.school} icon={<FaSchool />} />
+                    <MyTimeLine title={GetLanguageFile().experience.school} align="right" experiences={experiences.school} icon={<FaSchool />} />
                 </Grid>
                 <Grid item sm={12} lg={6}>
-                    <MyTimeLine title="Pro" align="left" experiences={experiences.work} icon={<FaBuilding />} />
+                    <MyTimeLine title={GetLanguageFile().experience.pro} align="left" experiences={experiences.work} icon={<FaBuilding />} />
                 </Grid>
             </Grid>
         </Container>

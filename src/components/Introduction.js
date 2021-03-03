@@ -4,9 +4,11 @@ import { Container, Grid } from "@material-ui/core";
 import { FaFacebookSquare, FaTwitterSquare, FaYoutubeSquare, FaLinkedin, FaItchIo, FaGithubSquare } from "react-icons/fa";
 
 import { Hero } from "./CustomComponents";
+import { useLanguage } from "../providers/LanguageContext";
 
 function Introduction(props) {
     const { classes } = props
+    const { GetLanguageFile } = useLanguage()
     const socials = [
         {
             icon: (props) => <FaLinkedin {...props} />,
@@ -48,7 +50,7 @@ function Introduction(props) {
         <Container className={classes.container}>
             <Grid container>
                 <Grid item sm={12} lg={6}>
-                    <Hero classes={classes} title="I'm Antonin" subTitle="Indie Developper" />
+                    <Hero classes={classes} title={GetLanguageFile().introduction.title} subTitle={GetLanguageFile().introduction.subTitle} />
                     <Grid container>
                         <SocialButtons />
                     </Grid>

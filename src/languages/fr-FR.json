@@ -19,12 +19,12 @@
     },
     "experience": {
         "title": "Mon experience",
-        "school": "Ecole",
-        "pro": "Pro"
+        "school": "Scolaire",
+        "pro": "Professionnel"
     },
     "introduction": {
-        "who": "Je suis Antonin",
-        "what": "Un developper indépendant"
+        "title": "Je suis Antonin",
+        "subTitle": "Un developper indépendant"
     },
     "navbar": {
         "about": "À propos",
@@ -34,9 +34,10 @@
         "contact": "Contact"
     },
     "projects": {
-        "school": "Ecole",
-        "pro": "Pro",
-        "games": "Jeux",
+        "title": "Mes projets",
+        "school": "Scolaire",
+        "pro": "Professionnel",
+        "games": "Jeux vidéos",
         "web": "Web",
         "mobiles": "Mobiles"
     }

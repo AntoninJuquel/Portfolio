@@ -17,7 +17,9 @@ function About(props) {
                     </Button>
                 </Grid>
                 <Grid item>
-                    <Button color="primary" variant="contained" size="large"><strong>{GetLanguageFile().about.cv}</strong></Button>
+                    <Button color="primary" variant="contained" size="large" href={process.env.PUBLIC_URL + "/documents/cv.pdf"} download>
+                        <strong>{GetLanguageFile().about.cv}</strong>
+                    </Button>
                 </Grid>
             </Grid>
         </Container>

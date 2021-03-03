@@ -9,14 +9,14 @@ import { useLanguage } from "../providers/LanguageContext";
 
 function Projects(props) {
     const modal = useModal()
-    const { language } = useLanguage();
+    const { language, GetLanguageFile } = useLanguage();
     const { classes, isMobile } = props
 
     function ProjectsRenderer() {
         return (
             Object.keys(projects).map((category, i) =>
                 <Container key={i}>
-                    <Hero classes={classes} title={category} />
+                    <Hero classes={classes} title={GetLanguageFile().projects[category.toLowerCase()]} />
                     <Grid style={{ justifyContent: isMobile ? "center" : "normal" }} container>
                         <ProjectsCategory category={category} />
                     </Grid>
@@ -55,7 +55,7 @@ function Projects(props) {
 
     return (
         <Container ref={props.refProp} className={classes.container}>
-            <Hero classes={classes} title="My Projects" />
+            <Hero classes={classes} title={GetLanguageFile().projects.title} />
             <ProjectsRenderer />
         </Container>
     )
