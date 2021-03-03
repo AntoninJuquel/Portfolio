@@ -18,11 +18,10 @@ function Contact(props) {
             .then((res) => {
                 modal.current.setModal(
                     <>
-                        <Typography variant="h6">Email Sent !</Typography>
+                        <Typography variant="h6">{GetLanguageFile().contact.sent}</Typography>
                         <Button variant="contained" size="large" onClick={() => modal.current.setModal(null)}>OK</Button>
                     </>
                 )
-                console.log(res.text)
                 target.reset()
             }, (err) => {
                 console.log(err)

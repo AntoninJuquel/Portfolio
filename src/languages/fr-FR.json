@@ -15,7 +15,8 @@
         "email": "Email",
         "subject": "Sujet",
         "message": "Message",
-        "send": "Envoyer"
+        "send": "Envoyer",
+        "sent": "Mail envoyé !"
     },
     "experience": {
         "title": "Mon experience",
