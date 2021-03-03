@@ -3,7 +3,7 @@
         "title": "About me",
         "hire": "Hire me",
         "cv": "Download CV",
-        "story": "\nI am a rooky developer.\nI started by learning Python, since then i leant C# with Unity and Javascript with React and React Native\nDevelopment is my passion, so I have my hand on all kind of projects : \n\n- web \n- softwares \n- video games"
+        "story": "\nI am a rooky developer.\nI started by learning Python, since then I learnt C# with Unity and Javascript with React and React Native\nDevelopment is my passion, so I have my hand on all kind of projects : \n\n- web \n- softwares \n- video games"
     },
     "blog": {
         "title": "Blog"
@@ -34,7 +34,7 @@
         "contact": "Contact"
     },
     "projects": {
-        "title": "Mes projets",
+        "title": "My projects",
         "school": "School",
         "pro": "Pro",
         "games": "Games",

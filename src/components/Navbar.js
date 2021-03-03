@@ -1,20 +1,21 @@
-import React from "react";
-import { AppBar, Box, Drawer, IconButton, Menu, MenuItem, Toolbar, Typography } from "@material-ui/core";
+import React, { useState } from "react";
+import { AppBar, Box, ButtonBase, Drawer, IconButton, Menu, MenuItem, Toolbar, Typography } from "@material-ui/core";
 import { FaBars } from "react-icons/fa";
 import { useLanguage } from "../providers/LanguageContext";
+import ReactCountryFlag from "react-country-flag"
 
 function NavBar(props) {
     const { sections, classes, isMobile } = props
-    const [anchorEl, setAnchorEl] = React.useState(null);
-    const open = Boolean(anchorEl);
-    const { GetLanguageFile } = useLanguage()
+    const [drawer, setDrawer] = useState(false);
+    const [anchorEl, setAnchorEl] = useState(false);
+    const { GetLanguageFile, GetLanguageFlag, GetFlags, setLanguage } = useLanguage()
 
-    const handleMenu = event => {
+    const handleLanguageMenu = event => {
         setAnchorEl(event.currentTarget);
     };
     const handleButtonsClick = section => {
         window.scrollTo({ behavior: "smooth", top: sections[section].ref.current.offsetTop - 100 })
-        setAnchorEl(null);
+        setDrawer(false);
     };
 
     function NavBarButtons() {
@@ -34,15 +35,14 @@ function NavBar(props) {
                     edge="start"
                     color="inherit"
                     aria-label="menu"
-                    onClick={handleMenu}
+                    onClick={() => setDrawer(true)}
                 >
                     <FaBars />
                 </IconButton>
                 <Drawer
-                    style={{color: "aqua"}}
                     anchor="right"
-                    open={open}
-                    onClose={() => setAnchorEl(null)}
+                    open={drawer}
+                    onClose={() => setDrawer(false)}
                 >
                     {Object.keys(sections).map((section, i) =>
                         <MenuItem key={i} onClick={() => handleButtonsClick(section)}>
@@ -54,13 +54,29 @@ function NavBar(props) {
         )
     }
 
+    function LanguageMenu() {
+        return (
+            <Menu open={Boolean(anchorEl)} anchorEl={anchorEl} onClose={() => setAnchorEl(null)} >
+                {GetFlags().map((lang, i) =>
+                    <MenuItem key={i} onClick={() => { setLanguage(lang.language); setAnchorEl(null) }}>
+                        <ReactCountryFlag countryCode={lang.flag} svg />
+                    </MenuItem>
+                )}
+            </Menu>
+        )
+    }
+
     return (
         <AppBar color="default" className={classes.navbar}>
             <Toolbar>
-                <Box className={classes.brand}>
+                <Box container className={classes.brand} spacing={5}>
                     <Typography display="inline" variant="h4" className={classes.brandText} onClick={() => window.scrollTo({ behavior: "smooth", top: 0 })}>
                         Antonin J.
                     </Typography>
+                    <ButtonBase onClick={handleLanguageMenu}>
+                        <ReactCountryFlag countryCode={GetLanguageFlag()} svg />
+                    </ButtonBase>
+                    <LanguageMenu />
                 </Box>
                 {isMobile ? MobileNavBarButtons() : NavBarButtons()}
             </Toolbar>

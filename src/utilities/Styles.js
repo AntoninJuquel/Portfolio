@@ -39,7 +39,8 @@ const useStyles = makeStyles({
     color: "white"
   },
   brand: {
-    flexGrow: 1
+    flexGrow: 1,
+    display: "flex"
   },
   brandText: {
     cursor: 'pointer'

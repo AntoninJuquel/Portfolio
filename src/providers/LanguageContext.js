@@ -5,14 +5,29 @@ const LanguageContext = createContext(null);
 export function LanguageProvider({ children }) {
     const [language, setLanguage] = useState("fr")
 
-    const languageFiles = {
-        "en": require("../languages/en-US.json"),
-        "fr": require("../languages/fr-FR.json")
+    const languages = {
+        "en": {
+            flag: "US",
+            file: require("../languages/en-US.json")
+        },
+        "fr": {
+            flag: "FR",
+            file: require("../languages/fr-FR.json")
+        }
     }
 
-    const GetLanguageFile = useCallback(() => languageFiles[language], [language, languageFiles])
+    const GetFlags = useCallback(() => Object.keys(languages).map(key => {
+        return (
+            {
+                flag: languages[key].flag,
+                language: key
+            }
+        )
+    }), [languages])
+    const GetLanguageFlag = useCallback(() => languages[language].flag, [language, languages])
+    const GetLanguageFile = useCallback(() => languages[language].file, [language, languages])
 
-    const value = useMemo(() => ({ language, setLanguage, GetLanguageFile }), [language, setLanguage, GetLanguageFile]);
+    const value = useMemo(() => ({ language, setLanguage, GetLanguageFile, GetLanguageFlag, GetFlags }), [language, setLanguage, GetLanguageFile, GetLanguageFlag, GetFlags]);
 
     return (
         <LanguageContext.Provider value={value}>

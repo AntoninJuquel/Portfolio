@@ -22,6 +22,11 @@ const theme = createMuiTheme({
       paperAnchorRight: {
         color: "white"
       }
+    },
+    MuiMenuItem:{
+      root:{
+        color: "white"
+      }
     }
   }
 }, { index: 1 })
