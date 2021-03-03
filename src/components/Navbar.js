@@ -1,5 +1,5 @@
 import React from "react";
-import { AppBar, Box, IconButton, Menu, MenuItem, Toolbar, Typography } from "@material-ui/core";
+import { AppBar, Box, Drawer, IconButton, Menu, MenuItem, Toolbar, Typography } from "@material-ui/core";
 import { FaBars } from "react-icons/fa";
 import { useLanguage } from "../providers/LanguageContext";
 
@@ -13,7 +13,7 @@ function NavBar(props) {
         setAnchorEl(event.currentTarget);
     };
     const handleButtonsClick = section => {
-        window.scrollTo({ behavior: "smooth", top: sections[section].ref.current.offsetTop - 250 })
+        window.scrollTo({ behavior: "smooth", top: sections[section].ref.current.offsetTop - 100 })
         setAnchorEl(null);
     };
 
@@ -38,17 +38,9 @@ function NavBar(props) {
                 >
                     <FaBars />
                 </IconButton>
-                <Menu
-                    anchorEl={anchorEl}
-                    anchorOrigin={{
-                        vertical: "top",
-                        horizontal: "right"
-                    }}
-                    keepMounted
-                    transformOrigin={{
-                        vertical: "top",
-                        horizontal: "right"
-                    }}
+                <Drawer
+                    style={{color: "aqua"}}
+                    anchor="right"
                     open={open}
                     onClose={() => setAnchorEl(null)}
                 >
@@ -57,7 +49,7 @@ function NavBar(props) {
                             {section}
                         </MenuItem>
                     )}
-                </Menu>
+                </Drawer>
             </>
         )
     }

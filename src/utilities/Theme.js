@@ -11,10 +11,17 @@ const theme = createMuiTheme({
     },
     background: {
       default: "#121212",
-      paper: purple[900]
+      paper: "#121212"
     },
     text: {
       primary: "#000"
+    }
+  },
+  overrides: {
+    MuiDrawer: {
+      paperAnchorRight: {
+        color: "white"
+      }
     }
   }
 }, { index: 1 })

@@ -1,4 +1,5 @@
 import { makeStyles } from "@material-ui/core";
+import { purple } from "@material-ui/core/colors";
 
 const useStyles = makeStyles({
   title: {
@@ -30,7 +31,8 @@ const useStyles = makeStyles({
   paper: {
     padding: '6px 16px',
     color: "white",
-    width: "100%"
+    width: "100%",
+    backgroundColor: purple[900]
   },
   navbar: {
     backgroundColor: "#121212",
