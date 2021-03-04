@@ -45,7 +45,7 @@ function Projects(props) {
                 <Carousel>
                     {
                         project.carousel[language].map((url, i) =>
-                            <img key={i} src={process.env.PUBLIC_URL + url} alt={i} />)
+                            <img key={i} src={process.env.PUBLIC_URL + url} alt={i} width={isMobile ? "360" : "1080"} />)
                     }
                 </Carousel>
             </>

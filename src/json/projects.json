@@ -5,7 +5,18 @@
             "img": "https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/033b81b839890e8e47434f5aee579e02",
             "url": "",
             "carousel": {
-                "fr": [],
+                "fr": [
+                    "/images/projects/SephoraLips/1.jpg",
+                    "/images/projects/SephoraLips/2.jpg",
+                    "/images/projects/SephoraLips/3.jpg",
+                    "/images/projects/SephoraLips/4.jpg",
+                    "/images/projects/SephoraLips/5.jpg",
+                    "/images/projects/SephoraLips/6.jpg",
+                    "/images/projects/SephoraLips/7.jpg",
+                    "/images/projects/SephoraLips/8.jpg",
+                    "/images/projects/SephoraLips/9.jpg",
+                    "/images/projects/SephoraLips/10.jpg"
+                ],
                 "en": []
             }
         },
