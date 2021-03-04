@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Container, Grid } from "@material-ui/core";
-import { FaFacebookSquare, FaTwitterSquare, FaYoutubeSquare, FaLinkedin, FaItchIo, FaGithubSquare } from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaYoutube, FaLinkedin, FaItchIo, FaGithub, FaInstagram } from "react-icons/fa";
 
 import { Hero } from "./CustomComponents";
 import { useLanguage } from "../providers/LanguageContext";
@@ -19,19 +19,23 @@ function Introduction(props) {
             url: "https://somindras.itch.io"
         },
         {
-            icon: (props) => <FaGithubSquare {...props} />,
+            icon: (props) => <FaGithub {...props} />,
             url: "https://github.com/AntoninJuquel"
         },
         {
-            icon: (props) => <FaFacebookSquare {...props} />,
+            icon: (props) => <FaFacebook {...props} />,
             url: "https://www.facebook.com/AntoninJuquel/"
         },
         {
-            icon: (props) => <FaTwitterSquare {...props} />,
+            icon: (props) => <FaTwitter {...props} />,
             url: "https://twitter.com/Somindras"
         },
         {
-            icon: (props) => <FaYoutubeSquare {...props} />,
+            icon: (props) => <FaInstagram {...props} />,
+            url: "https://www.instagram.com/antoninjuquel/"
+        },
+        {
+            icon: (props) => <FaYoutube {...props} />,
             url: "https://www.youtube.com/channel/UCsgdfHWgax10z-av8KwzLlw"
         }
     ]

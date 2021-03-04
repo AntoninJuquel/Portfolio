@@ -36,7 +36,10 @@ function Experience(props) {
                                 <TimelineConnector />
                             </TimelineSeparator>
                             <TimelineContent>
-                                <ButtonBase style={{ width: "100%", height: "100%" }} onClick={() => modal.current.setModal(<ExperienceModal experience={experience} />)}>
+                                <ButtonBase
+                                    style={{ width: "100%", height: "100%" }}
+                                    onClick={() => modal.current.setModal(<ExperienceModal experience={experience} />)}
+                                >
                                     <Paper elevation={3} className={classes.paper}>
                                         <Typography variant="h6" component="h1">
                                             {experience.name}
