@@ -1,5 +1,5 @@
 import React, { forwardRef, useImperativeHandle, useState } from "react";
-import { Typography, Modal, Container, Box, Button, Grid } from "@material-ui/core";
+import { Typography, Modal, Container, Box, Button, Grid, Icon } from "@material-ui/core";
 
 export function Hero({ title, subTitle, center, classes }) {
     return (
@@ -38,17 +38,17 @@ export function Carousel({ children }) {
 
     return (
         <Grid container style={{ alignItems: "center", textAlign: "center", justifyContent: "center", alignContent: "center" }}>
-            <Grid item sm={12} md={3}>
+            <Grid item sm={12} md={1}>
                 <Button color="primary" variant="contained" size="large" onClick={() => setIndex(index === 0 ? length - 1 : index - 1)}>
-                    Previous
+                    <Icon>arrow_left</Icon>
                 </Button>
             </Grid>
-            <Grid item sm={12} md={6} >
+            <Grid item sm={12} md={10} style={{ justifyContent: "center", display: "flex" }}>
                 {children[index]}
             </Grid>
-            <Grid item sm={12} md={3}>
+            <Grid item sm={12} md={1}>
                 <Button color="primary" variant="contained" size="large" onClick={() => setIndex((index + 1) % length)}>
-                    Next
+                    <Icon>arrow_right</Icon>
                 </Button>
             </Grid>
         </Grid>

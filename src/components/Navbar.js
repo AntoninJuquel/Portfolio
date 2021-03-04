@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { AppBar, Box, ButtonBase, Drawer, IconButton, Menu, MenuItem, Toolbar, Typography } from "@material-ui/core";
+import { AppBar, Box, ButtonBase, Drawer, Icon, IconButton, Menu, MenuItem, Toolbar } from "@material-ui/core";
 import { FaBars } from "react-icons/fa";
 import { useLanguage } from "../providers/LanguageContext";
 import ReactCountryFlag from "react-country-flag"
@@ -70,11 +70,12 @@ function NavBar(props) {
         <AppBar color="default" className={classes.navbar}>
             <Toolbar>
                 <Box container className={classes.brand} spacing={5}>
-                    <Typography display="inline" variant="h4" className={classes.brandText} onClick={() => window.scrollTo({ behavior: "smooth", top: 0 })}>
+                    <h2 className={classes.brandText} onClick={() => window.scrollTo({ behavior: "smooth", top: 0 })}>
                         Antonin J.
-                    </Typography>
-                    <ButtonBase style={{marginLeft: 25}} onClick={handleLanguageMenu}>
+                    </h2>
+                    <ButtonBase style={{ marginLeft: 25 }} onClick={handleLanguageMenu}>
                         <ReactCountryFlag countryCode={GetLanguageFlag()} svg />
+                        <Icon>expand_more</Icon>
                     </ButtonBase>
                     <LanguageMenu />
                 </Box>

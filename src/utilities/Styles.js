@@ -43,7 +43,9 @@ const useStyles = makeStyles({
     display: "flex"
   },
   brandText: {
-    cursor: 'pointer'
+    cursor: 'pointer',
+    marginBottom: 0,
+    display: "inline"
   }
 }, { index: 1 });
 
