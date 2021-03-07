@@ -1,5 +1,6 @@
 import React, { forwardRef, useImperativeHandle, useState } from "react";
 import { Typography, Modal, Container, Box, Button, Grid, Icon } from "@material-ui/core";
+import { useModal } from "../providers/ModalContext";
 
 export function Hero({ title, subTitle, center, classes }) {
     return (
@@ -24,9 +25,6 @@ export const MyModal = forwardRef((props, ref) => {
         <Modal disableEnforceFocus disableAutoFocus open={modal !== null} onClose={() => setModal(null)}>
             <Container className={classes.modal}>
                 {modal}
-                {/* <Button color="primary" variant="contained" size="large" onClick={() => setModal(null)}>
-                    Close
-                </Button> */}
             </Container>
         </Modal>
     )
@@ -35,7 +33,8 @@ export const MyModal = forwardRef((props, ref) => {
 export function Carousel({ children }) {
     const [index, setIndex] = useState(0)
     const length = children && children.length
-
+    const modal = useModal()
+    
     return (
         <Grid container style={{ alignItems: "center", textAlign: "center", justifyContent: "center", alignContent: "center" }}>
             <Grid item sm={12} md={1}>
@@ -51,6 +50,9 @@ export function Carousel({ children }) {
                     <Icon>arrow_right</Icon>
                 </Button>
             </Grid>
+            <Button color="primary" variant="contained" size="large" onClick={() => modal.current.setModal(null)}>
+                Close
+            </Button>
         </Grid>
     )
 }
