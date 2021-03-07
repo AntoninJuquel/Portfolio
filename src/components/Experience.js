@@ -1,6 +1,6 @@
 import React from "react";
 import { Timeline, TimelineItem, TimelineSeparator, TimelineDot, TimelineConnector, TimelineContent, TimelineOppositeContent } from "@material-ui/lab";
-import { ButtonBase, Container, Grid, Paper, Typography } from "@material-ui/core";
+import { Button, ButtonBase, Container, Grid, Paper, Typography } from "@material-ui/core";
 import { FaSchool, FaBuilding } from "react-icons/fa";
 
 import { Hero } from "./CustomComponents";
@@ -62,6 +62,9 @@ function Experience(props) {
                 {experience.name}
                 {experience.location}
                 {experience.year}
+                <Button color="primary" variant="contained" size="large" onClick={() => modal.current.setModal(null)}>
+                    Close
+                </Button>
             </>
         )
     }

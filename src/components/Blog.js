@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, ButtonBase, Grid, Typography } from "@material-ui/core";
+import { Container, ButtonBase, Grid, Typography, Button } from "@material-ui/core";
 
 import { Carousel, Hero } from "./CustomComponents";
 
@@ -10,7 +10,7 @@ import blogs from "../json/blogs.json";
 
 function Blog(props) {
     const modal = useModal()
-    const { language} = useLanguage();
+    const { language } = useLanguage();
     const { classes } = props
 
     function Blogs() {
@@ -36,6 +36,9 @@ function Blog(props) {
                             <img key={i} src={process.env.PUBLIC_URL + url} alt={i} />)
                     }
                 </Carousel>
+                <Button color="primary" variant="contained" size="large" onClick={() => modal.current.setModal(null)}>
+                    Close
+                </Button>
             </>
         )
     }

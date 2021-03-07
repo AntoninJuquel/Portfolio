@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Grid, Typography, ButtonBase } from "@material-ui/core";
+import { Container, Grid, Typography, ButtonBase, Button } from "@material-ui/core";
 
 import { Carousel, Hero } from "./CustomComponents";
 
@@ -41,13 +41,16 @@ function Projects(props) {
     function ProjectModal({ project }) {
         return (
             <>
-                <Typography>{project.title}</Typography>
+                <a href={project.url} target="_blank" rel="noopener noreferrer">{project.title}</a>
                 <Carousel>
                     {
                         project.carousel[language].map((url, i) =>
                             <img key={i} src={process.env.PUBLIC_URL + url} alt={i} width={isMobile ? "360" : "1080"} />)
                     }
                 </Carousel>
+                <Button color="primary" variant="contained" size="large" onClick={() => modal.current.setModal(null)}>
+                    Close
+                </Button>
             </>
         )
     }

@@ -48,23 +48,15 @@ export function Carousel({ children }) {
             </Grid>
             <Grid item sm={12} md={1}>
                 {isMobile ?
-                    <>
-                        <Button color="primary" variant="contained" size="large" onClick={() => setIndex(index === 0 ? length - 1 : index - 1)}>
-                            <Icon>arrow_left</Icon>
-                        </Button>
-                        <Button color="primary" variant="contained" size="large" onClick={() => modal.current.setModal(null)}>
-                            Close
-                        </Button>
-                    </>
+                    <Button color="primary" variant="contained" size="large" onClick={() => setIndex(index === 0 ? length - 1 : index - 1)}>
+                        <Icon>arrow_left</Icon>
+                    </Button>
                     : null
                 }
                 <Button color="primary" variant="contained" size="large" onClick={() => setIndex((index + 1) % length)}>
                     <Icon>arrow_right</Icon>
                 </Button>
             </Grid>
-            {isMobile ? null : <Button color="primary" variant="contained" size="large" onClick={() => modal.current.setModal(null)}>
-                Close
-            </Button>}
         </Grid>
     )
 }
