@@ -1,5 +1,5 @@
 import React, { forwardRef, useImperativeHandle, useState } from "react";
-import { Typography, Modal, Container, Box, Button, Grid, Icon } from "@material-ui/core";
+import { Typography, Modal, Container, Box, Button, Grid, Icon, useMediaQuery, useTheme } from "@material-ui/core";
 import { useModal } from "../providers/ModalContext";
 
 export function Hero({ title, subTitle, center, classes }) {
@@ -34,25 +34,37 @@ export function Carousel({ children }) {
     const [index, setIndex] = useState(0)
     const length = children && children.length
     const modal = useModal()
-    
+    const isMobile = useMediaQuery(useTheme().breakpoints.down("sm"))
+
     return (
         <Grid container style={{ alignItems: "center", textAlign: "center", justifyContent: "center", alignContent: "center" }}>
             <Grid item sm={12} md={1}>
-                <Button color="primary" variant="contained" size="large" onClick={() => setIndex(index === 0 ? length - 1 : index - 1)}>
+                {isMobile ? null : <Button color="primary" variant="contained" size="large" onClick={() => setIndex(index === 0 ? length - 1 : index - 1)}>
                     <Icon>arrow_left</Icon>
-                </Button>
+                </Button>}
             </Grid>
             <Grid item sm={12} md={10} style={{ justifyContent: "center", display: "flex" }}>
                 {children[index]}
             </Grid>
             <Grid item sm={12} md={1}>
+                {isMobile ?
+                    <>
+                        <Button color="primary" variant="contained" size="large" onClick={() => setIndex(index === 0 ? length - 1 : index - 1)}>
+                            <Icon>arrow_left</Icon>
+                        </Button>
+                        <Button color="primary" variant="contained" size="large" onClick={() => modal.current.setModal(null)}>
+                            Close
+                        </Button>
+                    </>
+                    : null
+                }
                 <Button color="primary" variant="contained" size="large" onClick={() => setIndex((index + 1) % length)}>
                     <Icon>arrow_right</Icon>
                 </Button>
             </Grid>
-            <Button color="primary" variant="contained" size="large" onClick={() => modal.current.setModal(null)}>
+            {isMobile ? null : <Button color="primary" variant="contained" size="large" onClick={() => modal.current.setModal(null)}>
                 Close
-            </Button>
+            </Button>}
         </Grid>
     )
 }
