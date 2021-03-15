@@ -37,7 +37,7 @@ export function Carousel({ children }) {
     return (
         <Grid container style={{ alignItems: "center", textAlign: "center", justifyContent: "center", alignContent: "center" }}>
             <Grid item sm={12} md={1}>
-                {isMobile ? null : <Button color="primary" variant="contained" size="large" onClick={() => setIndex(index === 0 ? length - 1 : index - 1)}>
+                {isMobile ? null : <Button color="inherit" variant="text" onClick={() => setIndex(index === 0 ? length - 1 : index - 1)}>
                     <Icon>arrow_left</Icon>
                 </Button>}
             </Grid>
@@ -46,12 +46,12 @@ export function Carousel({ children }) {
             </Grid>
             <Grid item sm={12} md={1}>
                 {isMobile ?
-                    <Button color="primary" variant="contained" size="large" onClick={() => setIndex(index === 0 ? length - 1 : index - 1)}>
+                    <Button color="inherit" variant="text" onClick={() => setIndex(index === 0 ? length - 1 : index - 1)}>
                         <Icon>arrow_left</Icon>
                     </Button>
                     : null
                 }
-                <Button color="primary" variant="contained" size="large" onClick={() => setIndex((index + 1) % length)}>
+                <Button color="inherit" variant="text" onClick={() => setIndex((index + 1) % length)}>
                     <Icon>arrow_right</Icon>
                 </Button>
             </Grid>

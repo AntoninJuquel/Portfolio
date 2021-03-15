@@ -17,7 +17,18 @@
                     "/images/projects/SephoraLips/9.jpg",
                     "/images/projects/SephoraLips/10.jpg"
                 ],
-                "en": []
+                "en": [
+                    "/images/projects/SephoraLips/1.jpg",
+                    "/images/projects/SephoraLips/2.jpg",
+                    "/images/projects/SephoraLips/3.jpg",
+                    "/images/projects/SephoraLips/4.jpg",
+                    "/images/projects/SephoraLips/5.jpg",
+                    "/images/projects/SephoraLips/6.jpg",
+                    "/images/projects/SephoraLips/7.jpg",
+                    "/images/projects/SephoraLips/8.jpg",
+                    "/images/projects/SephoraLips/9.jpg",
+                    "/images/projects/SephoraLips/10.jpg"
+                ]
             }
         },
         {
@@ -34,7 +45,6 @@
         {
             "title": "File Browser",
             "img": "https://chonky.io/chonky-sphere-v2.png",
-            "url": "",
             "carousel": {
                 "fr": [],
                 "en": []
@@ -43,7 +53,6 @@
         {
             "title": "Uballers Mobile App",
             "img": "https://uballers.com/assets/img/brand/BallonRouge.png",
-            "url": "",
             "carousel": {
                 "fr": [],
                 "en": []
@@ -54,46 +63,85 @@
         {
             "title": "Voltventure",
             "img": "https://img.itch.zone/aW1nLzQ0MDAyOTQucG5n/315x250%23c/QrWZaG.png",
+            "src": "https://github.com/AntoninJuquel/The-Indie-Games-Lab-Jam-11",
             "url": "https://somindras.itch.io/voltventure",
             "carousel": {
-                "fr": [],
-                "en": []
+                "fr": [
+                    "https://img.itch.zone/aW1hZ2UvNzg2MDA2LzQ0MDAwNTQucG5n/original/rlv2iK.png",
+                    "https://img.itch.zone/aW1hZ2UvNzg2MDA2LzQ0MDAwNTcucG5n/original/m5mRsi.png",
+                    "https://img.itch.zone/aW1hZ2UvNzg2MDA2LzQ0MDAwNjYucG5n/original/pPMBl4.png",
+                    "https://img.itch.zone/aW1hZ2UvNzg2MDA2LzQ0MDAwNTYucG5n/original/iYDAGH.png",
+                    "https://img.itch.zone/aW1hZ2UvNzg2MDA2LzQ0MDAwNjgucG5n/original/5LD%2FmW.png"
+                ],
+                "en": [
+                    "https://img.itch.zone/aW1hZ2UvNzg2MDA2LzQ0MDAwNTQucG5n/original/rlv2iK.png",
+                    "https://img.itch.zone/aW1hZ2UvNzg2MDA2LzQ0MDAwNTcucG5n/original/m5mRsi.png",
+                    "https://img.itch.zone/aW1hZ2UvNzg2MDA2LzQ0MDAwNjYucG5n/original/pPMBl4.png",
+                    "https://img.itch.zone/aW1hZ2UvNzg2MDA2LzQ0MDAwNTYucG5n/original/iYDAGH.png",
+                    "https://img.itch.zone/aW1hZ2UvNzg2MDA2LzQ0MDAwNjgucG5n/original/5LD%2FmW.png"
+                ]
             }
         },
         {
             "title": "Cupgrade",
             "img": "https://img.itch.zone/aW1nLzM3MjMwMDcucG5n/315x250%23c/FRfmbU.png",
+            "src": "https://github.com/AntoninJuquel/The-Indie-Games-Lab-Jam-07",
             "url": "https://somindras.itch.io/cupgrade",
             "carousel": {
-                "fr": [],
-                "en": []
+                "fr": [
+                    "https://img.itch.zone/aW1hZ2UvNjc4MDgxLzM3MjI0MzMucG5n/original/8wCRtK.png",
+                    "https://img.itch.zone/aW1hZ2UvNjc4MDgxLzM3MjI0NDcucG5n/original/FWgepQ.png",
+                    "https://img.itch.zone/aW1hZ2UvNjc4MDgxLzM3MjI0NzAucG5n/original/fXHQAv.png",
+                    "https://img.itch.zone/aW1hZ2UvNjc4MDgxLzM3MjI3MDQucG5n/original/12bVJb.png"
+                ],
+                "en": [
+                    "https://img.itch.zone/aW1hZ2UvNjc4MDgxLzM3MjI0MzMucG5n/original/8wCRtK.png",
+                    "https://img.itch.zone/aW1hZ2UvNjc4MDgxLzM3MjI0NDcucG5n/original/FWgepQ.png",
+                    "https://img.itch.zone/aW1hZ2UvNjc4MDgxLzM3MjI0NzAucG5n/original/fXHQAv.png",
+                    "https://img.itch.zone/aW1hZ2UvNjc4MDgxLzM3MjI3MDQucG5n/original/12bVJb.png"
+                ]
             }
         },
         {
             "title": "Train your mind",
             "img": "https://img.itch.zone/aW1nLzM1OTk5MzAucG5n/315x250%23c/5IOjSk.png",
+            "src": "https://github.com/AntoninJuquel/The-Indie-Games-Lab-Jam-06",
             "url": "https://somindras.itch.io/train-your-mind",
             "carousel": {
-                "fr": [],
-                "en": []
+                "fr": [
+                    "https://img.itch.zone/aW1nLzM1OTk5MzAucG5n/original/lgCcTB.png"
+                ],
+                "en": [
+                    "https://img.itch.zone/aW1nLzM1OTk5MzAucG5n/original/lgCcTB.png"
+                ]
             }
         },
         {
             "title": "Island Invasion",
             "img": "https://img.itch.zone/aW1nLzM0MzAxMDkucG5n/315x250%23c/zfBCp1.png",
+            "src": "https://github.com/AntoninJuquel/The-Indie-Games-Lab-Jam-04",
             "url": "https://somindras.itch.io/island-invasion",
             "carousel": {
-                "fr": [],
-                "en": []
+                "fr": [
+                    "https://img.itch.zone/aW1nLzM0MzAxMDkucG5n/original/pmb2Pd.png"
+                ],
+                "en": [
+                    "https://img.itch.zone/aW1nLzM0MzAxMDkucG5n/original/pmb2Pd.png"
+                ]
             }
         },
         {
             "title": "Crazy lights",
             "img": "https://img.itch.zone/aW1nLzMzMzY5MTMucG5n/315x250%23c/%2FEjA15.png",
+            "src": "https://github.com/AntoninJuquel/The-Indie-Games-Lab-Jam-03",
             "url": "https://somindras.itch.io/crazy-lights",
             "carousel": {
-                "fr": [],
-                "en": []
+                "fr": [
+                    "https://img.itch.zone/aW1nLzMzMzY5MTMucG5n/original/WbJzJS.png"
+                ],
+                "en": [
+                    "https://img.itch.zone/aW1nLzMzMzY5MTMucG5n/original/WbJzJS.png"
+                ]
             }
         }
     ],

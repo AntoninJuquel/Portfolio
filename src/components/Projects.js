@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container, Grid, ButtonBase, Button } from "@material-ui/core";
 
 import { Carousel, Hero } from "./CustomComponents";
@@ -9,8 +9,25 @@ import { useLanguage } from "../providers/LanguageContext";
 
 function Projects(props) {
     const modal = useModal()
-    const { language, GetLanguageFile } = useLanguage();
+    const { language, GetLanguageFile } = useLanguage()
     const { classes, isMobile } = props
+
+    useEffect(() => {
+        Object.keys(projects).map(
+            category => projects[category].forEach(
+                project => {
+                    project.carousel.fr.forEach(imgSrc => {
+                        const img = new Image();
+                        img.src = imgSrc
+                    })
+                    project.carousel.en.forEach(imgSrc => {
+                        const img = new Image();
+                        img.src = imgSrc
+                    })
+                }
+            )
+        )
+    }, [])
 
     function ProjectsRenderer() {
         return (
@@ -67,7 +84,7 @@ function Projects(props) {
                     project.carousel[language].length > 0 && <Carousel>
                         {
                             project.carousel[language].map((url, i) =>
-                                <img key={i} src={process.env.PUBLIC_URL + url} alt={i} width={isMobile ? "360" : "1080"} />)
+                                <img key={i} src={url[0] === "/" ? process.env.PUBLIC_URL + url : url} alt={i} width={isMobile ? "360" : "1080"} />)
                         }
                     </Carousel>
                 }
