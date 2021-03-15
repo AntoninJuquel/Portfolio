@@ -1,6 +1,5 @@
 import React, { forwardRef, useImperativeHandle, useState } from "react";
 import { Typography, Modal, Container, Box, Button, Grid, Icon, useMediaQuery, useTheme } from "@material-ui/core";
-import { useModal } from "../providers/ModalContext";
 
 export function Hero({ title, subTitle, center, classes }) {
     return (
@@ -33,7 +32,6 @@ export const MyModal = forwardRef((props, ref) => {
 export function Carousel({ children }) {
     const [index, setIndex] = useState(0)
     const length = children && children.length
-    const modal = useModal()
     const isMobile = useMediaQuery(useTheme().breakpoints.down("sm"))
 
     return (

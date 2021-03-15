@@ -3,7 +3,7 @@
         {
             "title": "Sephora Lips",
             "img": "https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/033b81b839890e8e47434f5aee579e02",
-            "url": "",
+            "src": "https://github.com/AntoninJuquel/Sephora-Lips",
             "carousel": {
                 "fr": [
                     "/images/projects/SephoraLips/1.jpg",
@@ -23,7 +23,7 @@
         {
             "title": "AC19",
             "img": "https://raw.githubusercontent.com/deromeem/AC19/master/images/ac19/logo_ac19.png",
-            "url": "",
+            "src": "https://github.com/deromeem/AC19",
             "carousel": {
                 "fr": [],
                 "en": []
@@ -54,7 +54,7 @@
         {
             "title": "Voltventure",
             "img": "https://img.itch.zone/aW1nLzQ0MDAyOTQucG5n/315x250%23c/QrWZaG.png",
-            "url": "",
+            "url": "https://somindras.itch.io/voltventure",
             "carousel": {
                 "fr": [],
                 "en": []
@@ -63,7 +63,7 @@
         {
             "title": "Cupgrade",
             "img": "https://img.itch.zone/aW1nLzM3MjMwMDcucG5n/315x250%23c/FRfmbU.png",
-            "url": "",
+            "url": "https://somindras.itch.io/cupgrade",
             "carousel": {
                 "fr": [],
                 "en": []
@@ -72,7 +72,7 @@
         {
             "title": "Train your mind",
             "img": "https://img.itch.zone/aW1nLzM1OTk5MzAucG5n/315x250%23c/5IOjSk.png",
-            "url": "",
+            "url": "https://somindras.itch.io/train-your-mind",
             "carousel": {
                 "fr": [],
                 "en": []
@@ -81,7 +81,7 @@
         {
             "title": "Island Invasion",
             "img": "https://img.itch.zone/aW1nLzM0MzAxMDkucG5n/315x250%23c/zfBCp1.png",
-            "url": "",
+            "url": "https://somindras.itch.io/island-invasion",
             "carousel": {
                 "fr": [],
                 "en": []
@@ -90,7 +90,7 @@
         {
             "title": "Crazy lights",
             "img": "https://img.itch.zone/aW1nLzMzMzY5MTMucG5n/315x250%23c/%2FEjA15.png",
-            "url": "",
+            "url": "https://somindras.itch.io/crazy-lights",
             "carousel": {
                 "fr": [],
                 "en": []
@@ -101,7 +101,8 @@
         {
             "title": "Tindog",
             "img": "https://raw.githubusercontent.com/AntoninJuquel/tindog/master/images/dog-img.jpg",
-            "url": "",
+            "url": "https://antoninjuquel.github.io/tindog/",
+            "src": "https://github.com/AntoninJuquel/tindog",
             "carousel": {
                 "fr": [],
                 "en": []
@@ -110,7 +111,8 @@
         {
             "title": "Drumkit",
             "img": "https://raw.githubusercontent.com/AntoninJuquel/drumkit/master/images/kick.png",
-            "url": "",
+            "url": "https://antoninjuquel.github.io/drumkit/",
+            "src": "https://github.com/AntoninJuquel/drumkit",
             "carousel": {
                 "fr": [],
                 "en": []
@@ -119,7 +121,8 @@
         {
             "title": "Simon",
             "img": "https://raw.githubusercontent.com/AntoninJuquel/simon/master/simonIco.png",
-            "url": "",
+            "url": "https://antoninjuquel.github.io/simon/",
+            "src": "https://github.com/AntoninJuquel/simon",
             "carousel": {
                 "fr": [],
                 "en": []
@@ -128,7 +131,8 @@
         {
             "title": "Finger dice",
             "img": "https://raw.githubusercontent.com/AntoninJuquel/fingerdice/master/images/dice.png",
-            "url": "",
+            "url": "https://antoninjuquel.github.io/fingerdice/",
+            "src": "https://github.com/AntoninJuquel/fingerdice",
             "carousel": {
                 "fr": [],
                 "en": []
@@ -139,7 +143,7 @@
         {
             "title": "Cheat Alleycat",
             "img": "https://raw.githubusercontent.com/AntoninJuquel/Cheat_Alleycat/master/assets/icon.png",
-            "url": "",
+            "src": "https://github.com/AntoninJuquel/Cheat_Alleycat",
             "carousel": {
                 "fr": [],
                 "en": []

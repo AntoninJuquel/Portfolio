@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Grid, Typography, ButtonBase, Button } from "@material-ui/core";
+import { Container, Grid, ButtonBase, Button } from "@material-ui/core";
 
 import { Carousel, Hero } from "./CustomComponents";
 
@@ -41,16 +41,41 @@ function Projects(props) {
     function ProjectModal({ project }) {
         return (
             <>
-                <a href={project.url} target="_blank" rel="noopener noreferrer">{project.title}</a>
-                <Carousel>
-                    {
-                        project.carousel[language].map((url, i) =>
-                            <img key={i} src={process.env.PUBLIC_URL + url} alt={i} width={isMobile ? "360" : "1080"} />)
-                    }
-                </Carousel>
-                <Button color="primary" variant="contained" size="large" onClick={() => modal.current.setModal(null)}>
-                    Close
+                {project.src && <Button
+                    color="primary"
+                    variant="contained"
+                    size="large"
+                    href={project.src}
+                    onClick={() => modal.current.setModal(null)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    CODE
+                </Button>}
+                {project.url && <Button
+                    color="primary"
+                    variant="contained"
+                    size="large"
+                    href={project.url}
+                    onClick={() => modal.current.setModal(null)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    VOIR
+                </Button>}
+                {
+                    project.carousel[language].length > 0 && <Carousel>
+                        {
+                            project.carousel[language].map((url, i) =>
+                                <img key={i} src={process.env.PUBLIC_URL + url} alt={i} width={isMobile ? "360" : "1080"} />)
+                        }
+                    </Carousel>
+                }
+                {
+                    isMobile && <Button color="primary" variant="contained" size="large" onClick={() => modal.current.setModal(null)}>
+                        Close
                 </Button>
+                }
             </>
         )
     }
