@@ -18,11 +18,11 @@ function Projects(props) {
                 project => {
                     project.carousel.fr.forEach(imgSrc => {
                         const img = new Image();
-                        img.src = imgSrc
+                        img.src = (imgSrc[0] === "/" ? process.env.PUBLIC_URL + imgSrc : imgSrc)
                     })
                     project.carousel.en.forEach(imgSrc => {
                         const img = new Image();
-                        img.src = imgSrc
+                        img.src = (imgSrc[0] === "/" ? process.env.PUBLIC_URL + imgSrc : imgSrc)
                     })
                 }
             )
