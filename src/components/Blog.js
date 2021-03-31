@@ -11,7 +11,7 @@ import blogs from "../json/blogs.json";
 function Blog(props) {
     const modal = useModal()
     const { language } = useLanguage();
-    const { classes } = props
+    const { classes, isMobile } = props
 
     function Blogs() {
         return (
@@ -33,7 +33,7 @@ function Blog(props) {
                 <Carousel>
                     {
                         blog.carousel[language].map((url, i) =>
-                            <img key={i} src={process.env.PUBLIC_URL + url} alt={i} />)
+                            <img key={i} src={process.env.PUBLIC_URL + url} alt={i} width={isMobile ? "360" : "1080"} />)
                     }
                 </Carousel>
                 <Button color="primary" variant="contained" size="large" onClick={() => modal.current.setModal(null)}>

@@ -6,8 +6,30 @@
         },
         "img" : "https://splashlogics.com/wp-content/uploads/2017/02/thumbnail-quel-moteur-de-jeu-choisir.png",
         "carousel": {
-            "fr": [],
-            "en": []
+            "fr": [
+                "/images/blogs/GameEngines/1.jpg",
+                "/images/blogs/GameEngines/2.jpg",
+                "/images/blogs/GameEngines/3.jpg",
+                "/images/blogs/GameEngines/4.jpg",
+                "/images/blogs/GameEngines/5.jpg",
+                "/images/blogs/GameEngines/6.jpg",
+                "/images/blogs/GameEngines/7.jpg",
+                "/images/blogs/GameEngines/8.jpg",
+                "/images/blogs/GameEngines/9.jpg",
+                "/images/blogs/GameEngines/10.jpg"
+            ],
+            "en": [
+                "/images/blogs/GameEngines/1.jpg",
+                "/images/blogs/GameEngines/2.jpg",
+                "/images/blogs/GameEngines/3.jpg",
+                "/images/blogs/GameEngines/4.jpg",
+                "/images/blogs/GameEngines/5.jpg",
+                "/images/blogs/GameEngines/6.jpg",
+                "/images/blogs/GameEngines/7.jpg",
+                "/images/blogs/GameEngines/8.jpg",
+                "/images/blogs/GameEngines/9.jpg",
+                "/images/blogs/GameEngines/10.jpg"
+            ]
         },
         "pdf": ""
     }

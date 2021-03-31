@@ -3,29 +3,45 @@
         {
             "name": "BTS SIO",
             "location": "Lycée Louis Armand",
-            "year": "2019 - 2021"
+            "year": "2019 - 2021",
+            "carousel": [
+                "/images/experiences/bts/1.png",
+                "/images/experiences/bts/2.png"
+            ]
         },
         {
             "name": "CPGE MPSI",
             "location": "Lycée Michelet",
-            "year": "2018 - 2019"
+            "year": "2018 - 2019",
+            "carousel": [
+                "/images/experiences/cpge/1.png"
+            ]
         },
         {
             "name": "BAC S",
             "location": "Lycée Politzer",
-            "year": "2018"
+            "year": "2018",
+            "carousel": [
+                "/images/experiences/bac/1.png"
+            ]
         }
     ],
     "work": [
         {
             "name": "Front end dev",
             "location": "WOODY",
-            "year": "2021 (8 weeks)"
+            "year": "2021 (8 weeks)",
+            "carousel": [
+                "/images/experiences/woody/1.png"
+            ]
         },
         {
             "name": "Mobile dev",
             "location": "Uballers",
-            "year": "2020 (8 weeks)"
+            "year": "2020 (8 weeks)",
+            "carousel": [
+                "/images/experiences/uballers/1.png"
+            ]
         }
     ]
 }

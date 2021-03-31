@@ -46,16 +46,60 @@
             "title": "File Browser",
             "img": "https://chonky.io/chonky-sphere-v2.png",
             "carousel": {
-                "fr": [],
-                "en": []
+                "fr": [
+                    "/images/projects/FileBrowser/1.jpg",
+                    "/images/projects/FileBrowser/2.jpg",
+                    "/images/projects/FileBrowser/3.jpg",
+                    "/images/projects/FileBrowser/4.jpg",
+                    "/images/projects/FileBrowser/5.jpg",
+                    "/images/projects/FileBrowser/6.jpg",
+                    "/images/projects/FileBrowser/7.jpg",
+                    "/images/projects/FileBrowser/8.jpg",
+                    "/images/projects/FileBrowser/9.jpg",
+                    "/images/projects/FileBrowser/10.jpg"
+                ],
+                "en": [
+                    "/images/projects/FileBrowser/1.jpg",
+                    "/images/projects/FileBrowser/2.jpg",
+                    "/images/projects/FileBrowser/3.jpg",
+                    "/images/projects/FileBrowser/4.jpg",
+                    "/images/projects/FileBrowser/5.jpg",
+                    "/images/projects/FileBrowser/6.jpg",
+                    "/images/projects/FileBrowser/7.jpg",
+                    "/images/projects/FileBrowser/8.jpg",
+                    "/images/projects/FileBrowser/9.jpg",
+                    "/images/projects/FileBrowser/10.jpg"
+                ]
             }
         },
         {
             "title": "Uballers Mobile App",
             "img": "https://uballers.com/assets/img/brand/BallonRouge.png",
             "carousel": {
-                "fr": [],
-                "en": []
+                "fr": [
+                    "/images/projects/UballersMobileApp/1.jpg",
+                    "/images/projects/UballersMobileApp/2.jpg",
+                    "/images/projects/UballersMobileApp/3.jpg",
+                    "/images/projects/UballersMobileApp/4.jpg",
+                    "/images/projects/UballersMobileApp/5.jpg",
+                    "/images/projects/UballersMobileApp/6.jpg",
+                    "/images/projects/UballersMobileApp/7.jpg",
+                    "/images/projects/UballersMobileApp/8.jpg",
+                    "/images/projects/UballersMobileApp/9.jpg",
+                    "/images/projects/UballersMobileApp/10.jpg"
+                ],
+                "en": [
+                    "/images/projects/UballersMobileApp/1.jpg",
+                    "/images/projects/UballersMobileApp/2.jpg",
+                    "/images/projects/UballersMobileApp/3.jpg",
+                    "/images/projects/UballersMobileApp/4.jpg",
+                    "/images/projects/UballersMobileApp/5.jpg",
+                    "/images/projects/UballersMobileApp/6.jpg",
+                    "/images/projects/UballersMobileApp/7.jpg",
+                    "/images/projects/UballersMobileApp/8.jpg",
+                    "/images/projects/UballersMobileApp/9.jpg",
+                    "/images/projects/UballersMobileApp/10.jpg"
+                ]
             }
         }
     ],
