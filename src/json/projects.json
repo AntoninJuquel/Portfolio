@@ -188,7 +188,11 @@
                         "C1.2.1.2 Estimer le coût d’une solution",
                         "C1.2.1.3 Rédiger un dossier de choix et un argumentaire technique"
                     ],
-                    "reformulations": [""],
+                    "reformulations": [
+                        "Ma mission est de trouver une librairie, autrement dit, un logiciel permettant de développer rapidement l'interface graphique Material Design. Le design est déjà fait dans la librairie, il reste plus qu'à l'implémenter en code dans l'application mobile.",
+                        "J'ai discuté avec mon collègue développeur, et nous avons retenu 3 librairies gratuites les plus pertinents à tester à l'aide d'un article de Bits Piece",
+                        "Nous avons ensuite réalisé un tableau de comparaison des 3 librairies Material Design."
+                    ],
                     "images" : [
                         {
                             "src": "/images/projects/UballersMobileApp/librairies.jpg",
@@ -207,6 +211,10 @@
                     "images" : [
                         {
                             "src": "/images/projects/UballersMobileApp/trello.jpg",
+                            "legend": ""
+                        },
+                        {
+                            "src":"/images/projects/UballersMobileApp/trellorn.jpg",
                             "legend": ""
                         }
                     ],
@@ -240,16 +248,20 @@
                     "reformulations": [""],
                     "images" : [
                         {
+                            "src": "/images/projects/UballersMobileApp/signin.jpg",
+                            "legend": "Signin screen"
+                        },
+                        {
+                            "src": "/images/projects/UballersMobileApp/signup.jpg",
+                            "legend": "Signup screen"
+                        },
+                        {
                             "src": "/images/projects/UballersMobileApp/language.jpg",
-                            "legend": ""
+                            "legend": "Language"
                         },
                         {
-                            "src": "/images/projects/UballersMobileApp/navigation.jpg",
-                            "legend": ""
-                        },
-                        {
-                            "src": "/images/projects/UballersMobileApp/connexion.jpg",
-                            "legend": ""
+                            "src": "/images/projects/UballersMobileApp/authentification.jpg",
+                            "legend": "Authentification"
                         }
                     ],
                     "conclusion": ""
@@ -281,36 +293,10 @@
                         {
                             "src": "/images/projects/UballersMobileApp/trellojsbug.jpg",
                             "legend": ""
-                        }
-                    ],
-                    "conclusion": ""
-                },
-                {
-                    "title":"A4.2.4 Mise à jour d'une documentation technique ",
-                    "subSkills": [
-                        "C4.2.4.1 Repérer les éléments de la documentation à mettre à jour",
-                        "C4.2.4.2 Mettre à jour une documentation"
-                    ],
-                    "reformulations": [""],
-                    "images" : [
+                        },
                         {
-                            "src": "/images/projects/UballersMobileApp/docsection.jpg",
-                            "legend": ""
-                        }
-                    ],
-                    "conclusion": ""
-                },
-                {
-                    "title": "A5.2.3 Repérage des compléments de formation ou d'auto-formation",
-                    "subSkills": [
-                        "C.5.2.3.1 Identifier les besoins de formation pour mettre en œuvre une technologie, un composant, un outil ou une méthode",
-                        "C.5.2.3.2 Repérer l’offre et les dispositifs de formation"
-                    ],
-                    "reformulations": [""],
-                    "images" : [
-                        {
-                            "src": "/images/projects/UballersMobileApp/docsection.jpg",
-                            "legend": ""
+                            "src": "/images/projects/UballersMobileApp/trellobug.jpg",
+                            "legend" :""
                         }
                     ],
                     "conclusion": ""
@@ -330,12 +316,12 @@
                             "legend": ""
                         },
                         {
-                            "src": "/images/projects/UballersMobileApp/react.jpg",
+                            "src": "/images/projects/UballersMobileApp/reactnative.jpg",
                             "legend": ""
                         },
                         {
                             "src": "/images/projects/UballersMobileApp/reactnativepaper.jpg",
-                            "legend": ""
+                            "legend": "React native paper"
                         }
                     ],
                     "conclusion": ""
