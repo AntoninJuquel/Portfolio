@@ -18,6 +18,11 @@ const theme = createMuiTheme({
     }
   },
   overrides: {
+    MuiDialog:{
+      paper:{
+        color: "white"
+      }
+    },
     MuiDrawer: {
       paperAnchorRight: {
         color: "white"
