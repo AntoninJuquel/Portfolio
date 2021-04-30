@@ -38,11 +38,21 @@
                         "C1.1.1.3 Préparer sa participation à une réunion",
                         "C1.1.1.4 Rédiger un compte-rendu d’entretien, de réunion"
                     ],
-                    "reformulations": [""],
+                    "reformulations": [
+                        "Après analyse du cahier des charges nous avons présenté un choix de solutions par groupe de 4 ou 3 personnes"
+                    ],
                     "images" : [
                         {
-                            "src": "",
-                            "legend": ""
+                            "src": "/images/projects/AC19/besoins.jpg",
+                            "legend": "Analyse des besoins"
+                        },
+                        {
+                            "src": "/images/projects/AC19/solutions.jpg",
+                            "legend": "Solution proposée"
+                        },
+                        {
+                            "src": "/images/projects/AC19/mtask.jpg",
+                            "legend": "Prévisions des tâches"
                         }
                     ],
                     "conclusion": ""
@@ -59,11 +69,15 @@
                     ],
                     "images" : [
                         {
-                            "src": "",
+                            "src": "/images/projects/AC19/github.jpg",
                             "legend": "Commits sur github"
                         },
                         {
-                            "src": "",
+                            "src": "/images/projects/AC19/planning.jpg",
+                            "legend": "Planning d'activité"
+                        },
+                        {
+                            "src": "/images/projects/AC19/task.jpg",
                             "legend": "Tableau d'activité"
                         }
                     ],
@@ -104,7 +118,11 @@
                     ],
                     "images" : [
                         {
-                            "src": "",
+                            "src": "/images/projects/AC19/docpart1.jpg",
+                            "legend": ""
+                        },
+                        {
+                            "src": "/images/projects/AC19/docpart2.jpg",
                             "legend": "Ma partie de la documentation technique"
                         }
                     ],
@@ -122,11 +140,11 @@
                     ],
                     "images" : [
                         {
-                            "src": "",
+                            "src": "/images/projects/AC19/tpcomm.jpg",
                             "legend": "TP - COMM ANNUAIRE"
                         },
                         {
-                            "src": "",
+                            "src": "/images/projects/AC19/tpandroid.jpg",
                             "legend": "TP - Android"
                         }
                     ],
