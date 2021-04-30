@@ -29,10 +29,110 @@
             "title": "AC19",
             "img": "https://raw.githubusercontent.com/deromeem/AC19/master/images/ac19/logo_ac19.png",
             "src": "https://github.com/deromeem/AC19",
-            "carousel": {
-                "fr": [],
-                "en": []
-            }
+            "skills":[
+                {
+                    "title":"A1.1.1 Analyse du cahier des charges d'un service à produire",
+                    "subSkills": [
+                        "C1.1.1.1 Recenser et caractériser les contextes d’utilisation, les processus et les acteurs sur lesquels le service à produire aura un impact",
+                        "C1.1.1.2 Identifier les fonctionnalités attendues du service à produire",
+                        "C1.1.1.3 Préparer sa participation à une réunion",
+                        "C1.1.1.4 Rédiger un compte-rendu d’entretien, de réunion"
+                    ],
+                    "reformulations": [""],
+                    "images" : [
+                        {
+                            "src": "",
+                            "legend": ""
+                        }
+                    ],
+                    "conclusion": ""
+                },
+                {
+                    "title":"A1.4.1 Participation à un projet",
+                    "subSkills": [
+                        "C1.4.1.1 Établir son planning personnel en fonction des exigences et du déroulement du projet",
+                        "C1.4.1.2 Rendre compte de son activité"
+                    ],
+                    "reformulations": [
+                        "J'ai participer au projet AC19 et rendu compte de mon activité à travers github ou on peut voir tous les collaborateurs",
+                        "Le planning des tâches était sous forme de tableau ou chaque nom était associé à une ou plusieurs tâches"
+                    ],
+                    "images" : [
+                        {
+                            "src": "",
+                            "legend": "Commits sur github"
+                        },
+                        {
+                            "src": "",
+                            "legend": "Tableau d'activité"
+                        }
+                    ],
+                    "conclusion": ""
+                },
+                {
+                    "title":"A4.1.7 Développement, utilisation ou adaptation de composants logiciels",
+                    "subSkills": [
+                        "C4.1.7.1 Développer les éléments d’une solution",
+                        "C4.1.7.2 Créer un composant logiciel",
+                        "C4.1.7.3 Analyser et modifier le code d’un composant logiciel",
+                        "C4.1.7.4 Utiliser des composants d’accès aux données",
+                        "C4.1.7.5 Mettre en place des éléments de sécurité liés à l’utilisation d’un composant logiciel"
+                    ],
+                    "reformulations": [
+                        "J'ai programmé la vue liste de ... et la vue de détail de ...",
+                        "En plus de développer les premiers écrans de l'application android de AC19"
+                    ],
+                    "images" : [
+                        {
+                            "src": "",
+                            "legend": "Code vue liste"
+                        },
+                        {
+                            "src": "",
+                            "legend": "Code vue détail"
+                        }
+                    ],
+                    "conclusion": ""
+                },
+                {
+                    "title":"A4.1.9 Rédaction d'une documentation technique",
+                    "subSkills": [
+                        "C4.1.9.1 Produire ou mettre à jour la documentation technique d’une solution applicative et de ses composants logiciels"
+                    ],
+                    "reformulations": [
+                        "Puisque j'ai développé l'application android ac19 je me suis chargé de documenter ce sujet"
+                    ],
+                    "images" : [
+                        {
+                            "src": "",
+                            "legend": "Ma partie de la documentation technique"
+                        }
+                    ],
+                    "conclusion": ""
+                },
+                {
+                    "title":"A5.2.4 Étude d'une technologie, d'un composant, d'un outil",
+                    "subSkills": [
+                        "C5.2.4.1 Se documenter à propos d‘une technologie, d’un composant, d’un outil ou d’une méthode",
+                        "C5.2.4.2 Identifier le potentiel et les limites d’une technologie, d’un composant, d’un outil ou d’une méthode par rapport à un service à produire"
+                    ],
+                    "reformulations": [
+                        "A travers les TP j'ai étudié dans un premier temps PHP et HTML",
+                        "Et dans un second temps Java"
+                    ],
+                    "images" : [
+                        {
+                            "src": "",
+                            "legend": "TP - COMM ANNUAIRE"
+                        },
+                        {
+                            "src": "",
+                            "legend": "TP - Android"
+                        }
+                    ],
+                    "conclusion": ""
+                }
+            ]
         }
     ],
     "Pro": [
@@ -196,7 +296,7 @@
                     "images" : [
                         {
                             "src": "/images/projects/UballersMobileApp/librairies.jpg",
-                            "legend": ""
+                            "legend": "Tableau comparatif des 3 librairies retenues"
                         }
                     ],
                     "conclusion": ""
@@ -207,15 +307,15 @@
                         "C1.4.1.1 Établir son planning personnel en fonction des exigences et du déroulement du projet",
                         "C1.4.1.2 Rendre compte de son activité"
                     ],
-                    "reformulations": [""],
+                    "reformulations": ["Chaque jour nous devions consulter et actualiser le trello par rapport à notre avancée quotidienne"],
                     "images" : [
                         {
                             "src": "/images/projects/UballersMobileApp/trello.jpg",
-                            "legend": ""
+                            "legend": "Trello list"
                         },
                         {
                             "src":"/images/projects/UballersMobileApp/trellorn.jpg",
-                            "legend": ""
+                            "legend": "Discussion/Débat sur trello"
                         }
                     ],
                     "conclusion": ""
@@ -227,11 +327,14 @@
                         "C4.1.2.2 Maquetter un élément de la solution applicative",
                         "C4.1.2.3 Concevoir et valider la maquette en collaboration avec des utilisateurs"
                     ],
-                    "reformulations": [""],
+                    "reformulations": [
+                        "Je me suis occupé de développer l'interface graphique de l'écran de connexion avec pour model celui du site web",
+                        "Ici il ne s'agit que d'un prototype le but principale était qu'il soit fonctionnel"
+                    ],
                     "images" : [
                         {
                             "src": "/images/projects/UballersMobileApp/app.jpg",
-                            "legend": ""
+                            "legend": "Connexion - Inscription"
                         }
                     ],
                     "conclusion": ""
@@ -245,7 +348,13 @@
                         "C4.1.7.4 Utiliser des composants d’accès aux données",
                         "C4.1.7.5 Mettre en place des éléments de sécurité liés à l’utilisation d’un composant logiciel"
                     ],
-                    "reformulations": [""],
+                    "reformulations": [
+                        "J'ai développé différents composants par moi même pour l'application",
+                        "- Les écrans de connexion et d'inscription",
+                        "- La gestion de la traduction en plus de l'écran pour modifier la langue sur l'application",
+                        "- Le code de l'authentification",
+                        "- La base de la navigation dans l'application avec le drawer et le bottom tab menu"
+                    ],
                     "images" : [
                         {
                             "src": "/images/projects/UballersMobileApp/signin.jpg",
@@ -271,11 +380,20 @@
                     "subSkills": [
                         "C4.1.9.1 Produire ou mettre à jour la documentation technique d’une solution applicative et de ses composants logiciels"
                     ],
-                    "reformulations": [""],
+                    "reformulations": [
+                        "J'ai rédiger le premier jet de la documentation technique de l'application mobile",
+                        "Son premier but était d'expliquer comment installer les différents outils de développement mobile :",
+                        "- NodeJS",
+                        "- Git",
+                        "- Expo",
+                        "- Android studio",
+                        "- React et React Native",
+                        "Et ensuite d'explique la logique de la structure du projet avec l'aborescence, l'organisation du code et les règles de nommage"
+                    ],
                     "images" : [
                         {
                             "src": "/images/projects/UballersMobileApp/doc.jpg",
-                            "legend": ""
+                            "legend": "Documentation technique de l'application mobile"
                         }
                     ],
                     "conclusion": ""
@@ -288,15 +406,19 @@
                         "C4.2.1.3 Concevoir les mises à jour à effectuer",
                         "C4.2.1.4 Réaliser les mises à jour"
                     ],
-                    "reformulations": [""],
+                    "reformulations": [
+                        "Au début du stage j'ai été confronté à des bug en javascript sur le site web qui étaient déjà présents avant mon arrivée",
+                        "Ils n'étaient pas bloquant, c'est pour cela que leur résolution a été remise à plus tard",
+                        "Une liste de ces bugs était dréssée sur Trello ainsi chaque jour on s'attibuait un bug et nous devions rendre compte de l'avancée de sa résolution"
+                    ],
                     "images" : [
                         {
                             "src": "/images/projects/UballersMobileApp/trellojsbug.jpg",
-                            "legend": ""
+                            "legend": "Bugs javascript"
                         },
                         {
                             "src": "/images/projects/UballersMobileApp/trellobug.jpg",
-                            "legend" :""
+                            "legend" :"D'autres bugs javascript"
                         }
                     ],
                     "conclusion": ""
@@ -308,20 +430,22 @@
                         "C5.2.4.2 Identifier le potentiel et les limites d’une technologie, d’un composant, d’un outil ou d’une méthode par rapport à un service à produire"
                     ],
                     "reformulations": [
-                        ""
+                        "Au cour de ce stage j'ai eu un accès illimité à un cours sur la plateforme Udemy pour React Native",
+                        "La documentation de React Native a aussi été très utile pour rechercher directement l'information que je voulais",
+                        "Enfin la documentation technique de React Native Paper m'a beacoup servie pour développer le prototype de l'écran de connexion et d'inscription très rapidement"
                     ],
                     "images" : [
                         {
                             "src": "/images/projects/UballersMobileApp/udemy.jpg",
-                            "legend": ""
+                            "legend": "Cours Udemy sur react-native"
                         },
                         {
                             "src": "/images/projects/UballersMobileApp/reactnative.jpg",
-                            "legend": ""
+                            "legend": "Documentation du framework react-native"
                         },
                         {
                             "src": "/images/projects/UballersMobileApp/reactnativepaper.jpg",
-                            "legend": "React native paper"
+                            "legend": "Documentation de la librairie react-native-paper"
                         }
                     ],
                     "conclusion": ""

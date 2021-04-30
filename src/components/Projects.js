@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Container, Grid, ButtonBase, Button, Dialog, Divider} from "@material-ui/core";
 
 import { Hero } from "./CustomComponents";
