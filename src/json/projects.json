@@ -93,17 +93,21 @@
                         "C4.1.7.5 Mettre en place des éléments de sécurité liés à l’utilisation d’un composant logiciel"
                     ],
                     "reformulations": [
-                        "J'ai programmé la vue liste de ... et la vue de détail de ...",
+                        "J'ai programmé dans le model MVC catal_categs, categories et produits",
                         "En plus de développer les premiers écrans de l'application android de AC19"
                     ],
                     "images" : [
                         {
-                            "src": "",
-                            "legend": "Code vue liste"
+                            "src": "/images/projects/AC19/modelcatalcategs.jpg",
+                            "legend": "Code model catal categs"
                         },
                         {
-                            "src": "",
-                            "legend": "Code vue détail"
+                            "src": "/images/projects/AC19/modelcategories.jpg",
+                            "legend": "Code model categories"
+                        },
+                        {
+                            "src": "/images/projects/AC19/modelproduits.jpg",
+                            "legend": "Code model categories"
                         }
                     ],
                     "conclusion": ""
