@@ -1,142 +1,144 @@
 [
     {
         "title": {
-            "fr": "Les moteurs de rendus graphique",
+            "fr": "Veille Techno.",
             "en": "Graphics engines"
         },
-        "img" : "https://splashlogics.com/wp-content/uploads/2017/02/thumbnail-quel-moteur-de-jeu-choisir.png",
-        "sections" : [
+        "subTitle": "Les moteurs de jeu",
+        "img": "https://splashlogics.com/wp-content/uploads/2017/02/thumbnail-quel-moteur-de-jeu-choisir.png",
+        "sections": [
             {
                 "title": "Choix du sujet",
-                "text":"Au cours de mes années de BTS, j’ai décidé d’aborder le sujet des moteurs de jeu vidéo afin de voir leur impact et leurs évolutions dans divers domaines. J’ai choisi ce sujet car j’utilise régulièrement un moteur de jeu (Unity) pour développer mes propres jeux et donc je trouvais ça intéressant de briser le 4ème mur et comprendre son fonctionnement pour pourquoi pas développer mon propre moteur de jeu à l’avenir."
+                "text": "Au cours de mes années de BTS, j’ai décidé d’aborder le sujet des moteurs de jeu vidéo afin de voir leur impact et leurs évolutions dans divers domaines. J’ai choisi ce sujet, car j’utilise régulièrement un moteur de jeu (Unity) pour développer mes propres jeux et donc je trouvais ça intéressant de briser le 4e mur et comprendre comment il fonctionnait pour pourquoi pas développer mon propre moteur de jeu à l’avenir."
             },
             {
-                "title":"D'abord qu'est ce qu'un moteur de jeu ?",
-                "text":"Un moteur de jeu c’est un ensemble de composants logiciels."
+                "title": "D'abord qu'est ce qu'un moteur de jeu ?",
+                "text": "Un moteur de jeu, c’est un ensemble de composants logiciels.",
+                "image": "/images/blogs/GameEngines/intro.jpg"
             },
             {
-                "text": "En effet le moteur de jeu sera responsable du rendu graphique mais aussi du rendu son, de la gestion de la physique, de la gestion du réseau pour les jeux en ligne, du fenêtrage, de l’affichage de l’interface utilisateur etc…"
+                "text": "En effet, le moteur de jeu sera responsable du rendu graphique, mais aussi du rendu son, de la gestion de la physique, de la gestion du réseau pour les jeux en ligne, du fenêtrage, de l’affichage de l’interface utilisateur etc…"
             },
             {
-                "title":"Et quel est l'intérêt d'un moteur de jeu",
-                "text":"L’intérêt d’un moteur de jeu est de permettre une distinction claire entre ses propres composants et les ressources numérique propre au jeu telles que les sprites ou models 3D, les autres choix d’assets comme la musique, l’apparence de l’interface utilisateur et les règles propres à chaque jeu.",
-                "image":"/images/blogs/GameEngines/interest.jpg"
+                "title": "Et quel est l'intérêt d'un moteur de jeu",
+                "text": "L’intérêt d’un moteur de jeu est de permettre une distinction claire entre ses propres composants et les ressources numérique propre au jeu telles que les sprites ou models 3D, les autres choix d’assets comme la musique, l’apparence de l’interface utilisateur et les règles propres à chaque jeu.",
+                "image": "/images/blogs/GameEngines/interest.jpg"
             },
             {
-                "text":"Ainsi un même moteur de jeu et ses composants pourront être utilisés dans différents jeux ou les règles, les personnages et même la perspective ne seront pas les mêmes permettant la mise en production de jeux plus rapidement et plus efficacement."
+                "text": "Ainsi, un même moteur de jeu et ses composants pourront être utilisés dans différents jeux ou les règles, les personnages, et même la perspective ne seront pas les mêmes permettant la mise en production de jeux plus rapidement et plus efficacement."
             },
             {
-                "title":"Outils et sources de ma veille",
-                "text":"Pour ma veille j’ai utilisé des outils comme google alert, les notes de patch des différents moteur de jeu du marché (Unity, Godot, Unreal), "
+                "title": "Outils et sources de ma veille",
+                "text": "Pour ma veille, j’ai utilisé des outils comme Google alert, les notes de patch des différents moteurs de jeu sur le marché (Unity, Godot, Unreal)."
             },
             {
-                "text":"Et je me suis aussi tenu informé à travers les différentes conférences comme l’Unite 2020, la Game Developers Conference (GDC), la chaine youtube CodeDay et les notes de patch des moteurs de jeu les plus populaire ainsi que de google news."
+                "text": "Et je me suis aussi tenu informé à travers les différentes conférences comme l’Unite 2020, la Game Developers Conference (GDC) et la chaine youtube CodeDay."
             },
             {
-                "title":"Domaines d'application et exemples de solutions métier",
-                "text":"Contrairement à ce que l’on peut penser un moteur de jeu ne s’utilise pas uniquement pour faire des jeux vidéo."
+                "title": "Domaines d'application et exemples de solutions métiers",
+                "text": "Contrairement à ce que l’on peut penser, un moteur de jeu ne s’utilise pas uniquement pour faire des jeux vidéo."
             },
             {
-                "text":"En effet, ils peuvent être utilisés dans le domaine cinématographique, dans la série Star Wars Mandalorian visible sur Disney+ les différents effets spéciaux sont réalisés avec l’Unreal Engine.",
-                "source":"https://www.clubic.com/star-wars/actualite-886513-comment-unreal-engine-permi-creer-univers-mandalorian.html",
+                "text": "En effet, ils peuvent être utilisés dans le domaine cinématographique, dans la série Star Wars Mandalorian visible sur Disney+, les différents effets spéciaux sont réalisés avec l’Unreal Engine.",
+                "source": "https://www.clubic.com/star-wars/actualite-886513-comment-unreal-engine-permi-creer-univers-mandalorian.html",
                 "image": "/images/blogs/GameEngines/mandalorian.jpg"
             },
             {
-                "text":"De plus ils peuvent être utilisés dans l’automobile, BMW a signé un partenariat technologique pour développer des nouveaux modèles de pointe avec Unreal Engine",
-                "source":"https://www.bmwblog.com/2020/11/30/how-bmw-uses-unreal-engine-to-develop-cutting-edge-new-models/",
-                "image":"/images/blogs/GameEngines/bmw.jpg"
+                "text": "De plus, ils peuvent être utilisés dans l’automobile, BMW a signé un partenariat technologique pour développer des nouveaux modèle de pointe avec Unreal Engine",
+                "source": "https://www.bmwblog.com/2020/11/30/how-bmw-uses-unreal-engine-to-develop-cutting-edge-new-models/",
+                "image": "/images/blogs/GameEngines/bmw.jpg"
             },
             {
-                "text":"Et même dans l’architecture avec l’outil Architizer de Unreal Engine 4.",
-                "source":"https://architizer.com/blog/practice/tools/the-art-of-rendering-unreal-engine/",
-                "image":"/images/blogs/GameEngines/architizer.jpg"
+                "text": "Et même dans l’architecture avec l’outil Architizer de Unreal Engine 4.",
+                "source": "https://architizer.com/blog/practice/tools/the-art-of-rendering-unreal-engine/",
+                "image": "/images/blogs/GameEngines/architizer.jpg"
             },
             {
-                "title":"Choix d'un domaine en particulier",
-                "text":"Cependant pour ma veille je me suis intéressé au domaine plus courant de l’utilisation des moteurs de jeu pour le jeu vidéo car je suis moi-même développeur de jeux vidéo."
+                "title": "Choix d'un domaine en particulier",
+                "text": "Cependant, pour ma veille, je me suis intéressé au domaine plus courant de l’utilisation des moteurs de jeu pour le jeu vidéo, car je suis moi-même développeur de jeux vidéo."
             },
             {
-                "title":"Diagramme montrant les nombreux composants d'un échantillon de moteur de jeu sur Linux.",
-                "image":"/images/blogs/GameEngines/architecture.jpg"
+                "title": "Diagramme montrant les nombreux composants d'un échantillon de moteur de jeu sur Linux.",
+                "image": "/images/blogs/GameEngines/architecture.jpg"
             },
             {
-                "title":"Vue de détail du composant de rendu",
-                "image":"/images/blogs/GameEngines/renderer.jpg"
+                "title": "Vue de détail du composant de rendu",
+                "image": "/images/blogs/GameEngines/renderer.jpg"
             },
             {
-                "title":"Simplification de la boucle évennementielle d'un moteur de jeu",
-                "image":"/images/blogs/GameEngines/loop.jpg"
+                "title": "Simplification de la boucle événementielle d'un moteur de jeu",
+                "image": "/images/blogs/GameEngines/loop.jpg"
             },
             {
-                "text":"L’enjeu pour un moteur de jeu est de produire des jeux toujours plus époustouflants et exigeants sans qu’ils soient trop gourmand en ressources pour limiter la latence par exemple.",
-                "image":"/images/blogs/GameEngines/loopdetailled.jpg",
-                "source":"https://gameprogrammingpatterns.com/game-loop.html"
+                "text": "L’enjeu pour un moteur de jeu est de produire des jeux toujours plus époustouflants et exigeants sans qu’ils soient trop gourmands en ressources pour limiter la latence par exemple.",
+                "image": "/images/blogs/GameEngines/loopdetailled.jpg",
+                "source": "https://gameprogrammingpatterns.com/game-loop.html"
             },
             {
-                "text":"Un autre enjeu est concurrentiel, en effet les moteurs de jeu se multiplient et chacun tente de se démarquer des autres par l’ajout régulier de nouvelles fonctionnalités :",
-                "image":"/images/blogs/GameEngines/engines.jpg"
+                "text": "Un autre enjeu est concurrentiel, en effet, les moteurs de jeu se multiplient et chacun tente de se démarquer des autres par l’ajout régulier de nouvelles fonctionnalités :",
+                "image": "/images/blogs/GameEngines/engines.jpg"
             },
             {
-                "text":"Fin 2021 - Sortie de Unreal Engine 5",
-                "image":"/images/blogs/GameEngines/ue5.jpg",
-                "source":"https://www.unrealengine.com/en-US/blog/a-first-look-at-unreal-engine-5"
+                "text": "Fin 2021 - Sortie de Unreal Engine 5",
+                "image": "/images/blogs/GameEngines/ue5.jpg",
+                "source": "https://www.unrealengine.com/en-US/blog/a-first-look-at-unreal-engine-5"
             },
             {
-                "text":"Mi-2021 - Sortie de Godot 4",
-                "image":"/images/blogs/GameEngines/godot4.jpg",
-                "source":"https://www.youtube.com/watch?v=3lm-veva15g"
+                "text": "Mi-2021 - Sortie de Godot 4",
+                "image": "/images/blogs/GameEngines/godot4.jpg",
+                "source": "https://www.youtube.com/watch?v=3lm-veva15g"
             },
             {
-                "text":"15 Avril 2021 - Implémentation du DLSS chez Unity",
-                "image":"/images/blogs/GameEngines/dlss.jpg",
-                "source":"https://www.gameblog.fr/news/95714-le-moteur-unity-recoit-le-support-du-dlss"
+                "text": "15 Avril 2021 - Implémentation du DLSS chez Unity",
+                "image": "/images/blogs/GameEngines/dlss.jpg",
+                "source": "https://www.gameblog.fr/news/95714-le-moteur-unity-recoit-le-support-du-dlss"
             },
             {
-                "text":"30 Septembre 2020 - Nouvelles méthodes de gestion du jeu en réseau chez Unity",
-                "image":"/images/blogs/GameEngines/mlapi.jpg",
-                "source":"https://github.com/Unity-Technologies/com.unity.multiplayer.mlapi"
+                "text": "30 Septembre 2020 - Nouvelles méthodes de gestion du jeu en réseau chez Unity",
+                "image": "/images/blogs/GameEngines/mlapi.jpg",
+                "source": "https://github.com/Unity-Technologies/com.unity.multiplayer.mlapi"
             },
             {
-                "text":"1 Juin 2020 - Implémentation de Mars Studio, outil de réalité augmenté chez Unity",
-                "image":"/images/blogs/GameEngines/mars.jpg",
-                "source":"https://unity.com/products/unity-mars"
+                "text": "1 Juin 2020 - Implémentation de Mars Studio, outil de réalité augmenté chez Unity",
+                "image": "/images/blogs/GameEngines/mars.jpg",
+                "source": "https://unity.com/products/unity-mars"
             },
             {
-                "text":"20 Mars 2020 - Arrivée du Data Oriented Tech Stack (DOTS)",
-                "image":"/images/blogs/GameEngines/dots.jpg",
-                "source":"http://www.unity3dtechguru.com/2020/03/dots-unity3d.html"
+                "text": "20 Mars 2020 - Arrivée du Data Oriented Tech Stack (DOTS)",
+                "image": "/images/blogs/GameEngines/dots.jpg",
+                "source": "http://www.unity3dtechguru.com/2020/03/dots-unity3d.html"
             },
             {
-                "text":"3 Mars 2020 - Amélioration de la technologie auto exposure sur Unreal Engine 4",
-                "image":"/images/blogs/GameEngines/autoexposure.jpg",
-                "source":"https://www.unrealengine.com/en-US/tech-blog/how-epic-games-is-handling-auto-exposure-in-4-25"
+                "text": "3 Mars 2020 - Amélioration de la technologie auto exposure sur Unreal Engine 4",
+                "image": "/images/blogs/GameEngines/autoexposure.jpg",
+                "source": "https://www.unrealengine.com/en-US/tech-blog/how-epic-games-is-handling-auto-exposure-in-4-25"
             },
             {
-                "text":"14 janvier 2020 - Implémentation du ray tracing chez Unity",
-                "image":"/images/blogs/GameEngines/rtx.jpg",
-                "source":"https://unity.com/ray-tracing"
+                "text": "14 janvier 2020 - Implémentation du ray tracing chez Unity",
+                "image": "/images/blogs/GameEngines/rtx.jpg",
+                "source": "https://unity.com/ray-tracing"
             },
             {
-                "image":"/images/blogs/GameEngines/rtxcode.jpg"
+                "image": "/images/blogs/GameEngines/rtxcode.jpg"
             },
             {
-                "text":"2018 - Grosse évolution graphique avec les Scriptable Render Pipeline chez Unity (SRP, URP, HDRP)",
-                "image":"/images/blogs/GameEngines/srp.jpg",
-                "source":"https://unity.com/srp"
+                "text": "2018 - Grosse évolution graphique avec les Scriptable Render Pipeline chez Unity (SRP, URP, HDRP)",
+                "image": "/images/blogs/GameEngines/srp.jpg",
+                "source": "https://unity.com/srp"
             },
             {
-                "text":"Le multiplateforme un argument chez Unity depuis 2005 :",
-                "image":"/images/blogs/GameEngines/compilation.jpg"
+                "text": "Le multi-plateforme un argument chez Unity depuis 2005 :",
+                "image": "/images/blogs/GameEngines/compilation.jpg"
             },
             {
-                "title":"Les perspectives d'évolution",
-                "text":"- Le visual scripting pour les non-programmeur",
-                "source":"https://unity.com/fr/products/unity-visual-scripting",
+                "title": "Les perspectives d'évolution",
+                "text": "- Le visual scripting pour les non-programmeur",
+                "source": "https://unity.com/fr/products/unity-visual-scripting",
                 "image": "/images/blogs/GameEngines/visualscripting.gif"
             },
             {
-                "text":"- L'utilisation de l'intelligence artificielle",
-                "source":"https://www.journaldunet.com/media/publishers/1498995-la-technologie-moteur-de-creativite-dans-les-jeux-video/"
+                "text": "- L'utilisation de l'intelligence artificielle",
+                "source": "https://www.journaldunet.com/media/publishers/1498995-la-technologie-moteur-de-creativite-dans-les-jeux-video/"
             }
         ]
     }

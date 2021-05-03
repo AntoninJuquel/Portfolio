@@ -1,46 +1,80 @@
 {
     "school": [
         {
-            "name": "BTS SIO",
+            "name": "BTS SIO SLAM",
             "location": "Lycée Louis Armand",
             "year": "2019 - 2021",
-            "carousel": [
-                "/images/experiences/bts/1.png",
-                "/images/experiences/bts/2.png"
+            "content": [
+                {
+                    "title": "Présentation de la filière",
+                    "text": "BTS SIO (Service informatique aux Organisations)",
+                    "image": "/images/experiences/bts/sio.jpg"
+                },
+                {
+                    "text": "Le BTS SIO est un diplôme de niveau BAC+2 spécialisé dans des matières en lien avec l'ingénierie informatique"
+                },
+                {
+                    "text": "Il propose aussi également des enseignements de culture générale, d’anglais (avec la possibilité de continuer une LV2), de mathématiques appliquées à l’informatique, ainsi que sur les outils d’analyse économique, managériale et juridique des services informatiques.",
+                    "image":"/images/experiences/bts/mat.png"
+                },
+                {
+                    "text": "L'option SLAM (Solutions logicielles et applications métiers forme des spécialistes des logiciels) prépare au métier de développeur d'applications informatiques et à la programmation",
+                    "image":"/images/experiences/bts/slam.jpg"
+                },
+                {
+                    "title": "Principales compétences acquises"
+                },
+                {
+                    "title": "Analyse d'un cahier des charges",
+                    "text":"- Analyse des besoins\n- Analyse de l'éxistant\n- Présentation d'un dossier de solutions",
+                    "image":"/images/experiences/bts/cdc.jpg"
+                },
+                {
+                    "title": "Base de données",
+                    "text":"- CRUD\n- Jointures\n- Vues & Permissions",
+                    "image":"/images/experiences/bts/bdd.jpg"
+                },
+                {
+                    "title": "Programmation Orientée Objet (POO)",
+                    "text":"- Classes\n- Méthodes\n- Héritages",
+                    "image":"/images/experiences/bts/poo.jpg"
+                }
             ]
         },
         {
             "name": "CPGE MPSI",
             "location": "Lycée Michelet",
             "year": "2018 - 2019",
-            "carousel": [
-                "/images/experiences/cpge/1.png"
+            "content": [
+                {
+
+                }
             ]
         },
         {
             "name": "BAC S",
             "location": "Lycée Politzer",
             "year": "2018",
-            "carousel": [
-                "/images/experiences/bac/1.png"
+            "content": [
+                
             ]
         }
     ],
     "work": [
         {
-            "name": "Front end dev",
-            "location": "WOODY",
+            "name": "Développeur web",
+            "location": "Woody Tech.",
             "year": "2021 (8 weeks)",
-            "carousel": [
-                "/images/experiences/woody/1.png"
+            "content": [
+                
             ]
         },
         {
-            "name": "Mobile dev",
+            "name": "Développeur mobile",
             "location": "Uballers",
             "year": "2020 (8 weeks)",
-            "carousel": [
-                "/images/experiences/uballers/1.png"
+            "content": [
+                
             ]
         }
     ]

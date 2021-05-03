@@ -1,19 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Timeline, TimelineItem, TimelineSeparator, TimelineDot, TimelineConnector, TimelineContent, TimelineOppositeContent } from "@material-ui/lab";
-import { Button, ButtonBase, Container, Grid, Paper, Typography } from "@material-ui/core";
+import { Button, ButtonBase, Container, Dialog, Grid, Paper, Typography } from "@material-ui/core";
 import { FaSchool, FaBuilding } from "react-icons/fa";
 
 import { Hero } from "./CustomComponents";
 
 import experiences from "../json/experiences.json";
 
-import { useModal } from "../providers/ModalContext";
 import { useLanguage } from "../providers/LanguageContext";
 
 function Experience(props) {
-    const modal = useModal()
     const { classes } = props
     const { GetLanguageFile } = useLanguage()
+    const [experience, setExperience] = useState(null)
 
     function MyTimeLine(props) {
         return (
@@ -38,7 +37,7 @@ function Experience(props) {
                             <TimelineContent>
                                 <ButtonBase
                                     style={{ width: "100%", height: "100%" }}
-                                    onClick={() => modal.current.setModal(<ExperienceModal experience={experience} />)}
+                                    onClick={() => setExperience(experience)}
                                 >
                                     <Paper elevation={3} className={classes.paper}>
                                         <Typography variant="h6" component="h1">
@@ -56,19 +55,6 @@ function Experience(props) {
         )
     }
 
-    function ExperienceModal({ experience }) {
-        return (
-            <>
-                {experience.name}
-                {experience.location}
-                {experience.year}
-                <Button color="primary" variant="contained" size="large" onClick={() => modal.current.setModal(null)}>
-                    Close
-                </Button>
-            </>
-        )
-    }
-
     return (
         <Container ref={props.refProp} className={classes.container}>
             <Hero classes={classes} title={GetLanguageFile().experience.title} />
@@ -80,6 +66,25 @@ function Experience(props) {
                     <MyTimeLine title={GetLanguageFile().experience.pro} align="left" experiences={experiences.work} icon={<FaBuilding />} />
                 </Grid>
             </Grid>
+            {
+                experience ?
+                    <Dialog fullScreen open={true} style={{ padding: 25 }}>
+                        <Button style={{ position: "fixed", width: "5%", backgroundColor: "black", fontWeight: "bold", top: 30, left: 30 }} onClick={() => setExperience(null)} color="primary">CLOSE</Button>
+                        <Container>
+                            {
+                                experience.content.map(content => {
+                                    return (
+                                        <>
+                                            <Hero classes={classes} title={content.title ?? ""} subTitle={content.text ?? ""} />
+                                            {content.image ? <img style={{ alignSelf: "center" }} src={process.env.PUBLIC_URL + content.image} alt={content.image} /> : null}
+                                        </>
+                                    )
+                                })
+                            }
+                        </Container>
+                    </Dialog>
+                    : null
+            }
         </Container>
     )
 }

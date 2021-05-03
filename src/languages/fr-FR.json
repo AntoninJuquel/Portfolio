@@ -3,10 +3,10 @@
         "title": "À propos de moi",
         "hire": "Recrutez moi !",
         "cv": "Télécharger mon CV",
-        "story": "\nJe suis un apprenti développeur.\nJ'ai commencé avec Python et depuis j'ai appris le C# avec Unity et Javascript avec React et React Native.\nLe développement c'est ma passion, alors j'aime toucher à tout : \n\n- web \n- logiciel \n- jeux vidéos"
+        "story": "\nJe suis un développeur informatique passionné par la programmation.\n\nJ'ai découvert la programmation en 2018 avec le langage Python en spécialité ISN (Informatique et Sciences du Numérique).\n\nPar la suite, j'ai continué à apprendre le JavaScript et les frameworks React et React Native en autodidacte.\n\nRécemment, je me suis lancé dans le développement de jeux vidéo principalement en C# avec le moteur de jeu Unity."
     },
     "blog": {
-        "title": "Blog"
+        "title": "Blogs"
     },
     "contact": {
         "title": "Me contacter",
@@ -31,13 +31,13 @@
         "about": "À propos",
         "experience": "Experience",
         "projects": "Projets",
-        "blog": "Blog",
+        "blog": "Blogs",
         "contact": "Contact"
     },
     "projects": {
         "title": "Mes projets",
-        "school": "Scolaire",
-        "pro": "Professionnel",
+        "school": "Scolaires",
+        "pro": "Stages",
         "games": "Jeux vidéos",
         "web": "Web",
         "mobiles": "Mobiles"

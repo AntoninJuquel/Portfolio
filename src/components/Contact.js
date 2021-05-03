@@ -43,7 +43,7 @@ function Contact(props) {
 
     return (
         <Container ref={props.refProp} className={classes.container}>
-            <Hero classes={classes} title={GetLanguageFile().contact.title}/>
+            <Hero classes={classes} title={GetLanguageFile().contact.title} />
             <form onSubmit={SendEmail}>
                 <Grid container spacing={3}>
                     <Grid item xs={12} lg={6} >

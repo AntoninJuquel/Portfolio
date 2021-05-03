@@ -20,6 +20,7 @@ function Blog(props) {
                         <img src={blog.img} width="250" alt={blog.title[language]} onClick={() => setBlog(blog)}/>
                     </ButtonBase>
                     <Hero classes={classes} subTitle={blog.title[language]} center />
+                    <Hero classes={classes} subTitle={blog.subTitle} center />
                 </Grid>
             )
         )
@@ -27,12 +28,12 @@ function Blog(props) {
 
     return (
         <Container ref={props.refProp} className={classes.container}>
-            <Hero classes={classes} title="Blog" />
+            <Hero classes={classes} title="Blogs" />
             <Blogs />
             {
                 blog != null ?
                     <Dialog fullScreen open={true} style={{padding: 25}}>
-                        <Hero classes={classes} title={blog.title[language]} center />
+                        <Hero classes={classes} title={blog.title[language]} subTitle={blog.subTitle} center />
                         <Button style={{position: "fixed", width: "25%", backgroundColor: "black", fontWeight: "bold"}} onClick={() => setBlog(null)} color="primary">CLOSE</Button>
                         <Container>
                         {
