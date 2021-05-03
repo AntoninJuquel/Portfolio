@@ -32,6 +32,7 @@ function Projects(props) {
                         <img src={project.img} width="250" alt={project.title} onClick={() => setProject(project)} />
                     </ButtonBase>
                     <Hero classes={classes} subTitle={project.title} center />
+                    {project.subTitle ? <p>{project.subTitle}</p> : null}
                 </Grid>
             )
         )
