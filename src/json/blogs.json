@@ -38,15 +38,18 @@
             },
             {
                 "text":"En effet, ils peuvent être utilisés dans le domaine cinématographique, dans la série Star Wars Mandalorian visible sur Disney+ les différents effets spéciaux sont réalisés avec l’Unreal Engine.",
-                "source":"https://www.clubic.com/star-wars/actualite-886513-comment-unreal-engine-permi-creer-univers-mandalorian.html"
+                "source":"https://www.clubic.com/star-wars/actualite-886513-comment-unreal-engine-permi-creer-univers-mandalorian.html",
+                "image": "/images/blogs/GameEngines/mandalorian.jpg"
             },
             {
                 "text":"De plus ils peuvent être utilisés dans l’automobile, BMW a signé un partenariat technologique pour développer des nouveaux modèles de pointe avec Unreal Engine",
-                "source":"https://www.bmwblog.com/2020/11/30/how-bmw-uses-unreal-engine-to-develop-cutting-edge-new-models/"
+                "source":"https://www.bmwblog.com/2020/11/30/how-bmw-uses-unreal-engine-to-develop-cutting-edge-new-models/",
+                "image":"/images/blogs/GameEngines/bmw.jpg"
             },
             {
                 "text":"Et même dans l’architecture avec l’outil Architizer de Unreal Engine 4.",
-                "source":"https://architizer.com/blog/practice/tools/the-art-of-rendering-unreal-engine/"
+                "source":"https://architizer.com/blog/practice/tools/the-art-of-rendering-unreal-engine/",
+                "image":"/images/blogs/GameEngines/architizer.jpg"
             },
             {
                 "title":"Choix d'un domaine en particulier",

@@ -262,7 +262,7 @@
                         },
                         {
                             "src": "/images/projects/FileBrowser/actionshandler.jpg",
-                            "legend": "Comment les actions sont prisent en charge"
+                            "legend": "La prise en charge des actions"
                         },
                         {
                             "src": "/images/projects/FileBrowser/websocket.jpg",
@@ -270,7 +270,7 @@
                         },
                         {
                             "src": "/images/projects/FileBrowser/iconshandler.jpg",
-                            "legend": "Comment sont prisent en charge les icones"
+                            "legend": "La prise en charge des icones"
                         }
                     ],
                     "conclusion": ""
