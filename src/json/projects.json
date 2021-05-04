@@ -525,7 +525,23 @@
                         "2D"
                     ],
                     "reformulations": [],
-                    "images": []
+                    "images": [
+                        {
+                            "src":"/images/projects/Voltventure/1.jpg"
+                        },
+                        {
+                            "src":"/images/projects/Voltventure/2.jpg"
+                        },
+                        {
+                            "src":"/images/projects/Voltventure/3.jpg"
+                        },
+                        {
+                            "src":"/images/projects/Voltventure/4.jpg"
+                        },
+                        {
+                            "src":"/images/projects/Voltventure/5.jpg"
+                        }
+                    ]
                 }
             ]
         },
@@ -543,7 +559,23 @@
                         "2D"
                     ],
                     "reformulations": [],
-                    "images": []
+                    "images": [
+                        {
+                            "src":"/images/projects/Cupgrade/1.jpg"
+                        },
+                        {
+                            "src":"/images/projects/Cupgrade/2.jpg"
+                        },
+                        {
+                            "src":"/images/projects/Cupgrade/3.jpg"
+                        },
+                        {
+                            "src":"/images/projects/Cupgrade/4.jpg"
+                        },
+                        {
+                            "src":"/images/projects/Cupgrade/5.gif"
+                        }
+                    ]
                 }
             ]
         },
@@ -561,7 +593,20 @@
                         "3D"
                     ],
                     "reformulations": [],
-                    "images": []
+                    "images": [
+                        {
+                            "src":"/images/projects/Train/1.jpg"
+                        },
+                        {
+                            "src":"/images/projects/Train/2.jpg"
+                        },
+                        {
+                            "src":"/images/projects/Train/3.jpg"
+                        },
+                        {
+                            "src":"/images/projects/Train/4.jpg"
+                        }
+                    ]
                 }
             ]
         },
@@ -579,7 +624,20 @@
                         "3D"
                     ],
                     "reformulations": [],
-                    "images": []
+                    "images": [
+                        {
+                            "src":"/images/projects/Island/1.jpg"
+                        },
+                        {
+                            "src":"/images/projects/Island/2.jpg"
+                        },
+                        {
+                            "src":"/images/projects/Island/3.jpg"
+                        },
+                        {
+                            "src":"/images/projects/Island/4.jpg"
+                        }
+                    ]
                 }
             ]
         },
@@ -597,7 +655,17 @@
                         "2D"
                     ],
                     "reformulations": [],
-                    "images": []
+                    "images": [
+                        {
+                            "src":"/images/projects/Crazy/1.jpg"
+                        },
+                        {
+                            "src":"/images/projects/Crazy/2.jpg"
+                        },
+                        {
+                            "src":"/images/projects/Crazy/3.jpg"
+                        }
+                    ]
                 }
             ]
         }
