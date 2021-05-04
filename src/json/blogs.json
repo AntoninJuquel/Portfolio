@@ -4,9 +4,33 @@
             "fr":"Gestion des configurations",
             "en":""
         },
-        "subTitle": "Github",
-        "img":"https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png",
-        "sections":[]
+        "subTitle": "Git",
+        "img":"https://humancoders-formations.s3.amazonaws.com/uploads/course/logo/10/formation-git.png",
+        "sections":[
+            {
+                "image":"/images/blogs/Github/git.jpg"
+            },
+            {
+                "image":"/images/blogs/Github/gitpres.jpg",
+                "title":"Présentation",
+                "text":"Un logiciel de versioning, ou logiciel de gestion de version est un logiciel qui permet de conserver un historique des modifications effectués sur un projet afin de pouvoir rapidement identifier les changements effectuées et de revenir à une ancienne version en cas de problème.\n\nLes logiciels de gestion de versions sont quasiment incontournables aujourd’hui, car ils facilitent grandement la gestion de projets et, car ils permettent de travailler en équipe de manière beaucoup plus efficace."
+            },
+            {
+                "image":"/images/blogs/Github/github.jpg",
+                "title":"Github Desktop",
+                "text":"Le logiciel GitHub Desktop est la solution la plus facile pour intégrer le service en ligne GitHub\n\nIl est d'une simplicité remarquable, les options les plus communes sont disposés de façon évidente et les options les moins communes dans les menus déroulant.\n\nEnfin, pour les personnes non-familières, il ne se contente pas d'utiliser la terminologie de Git, il y a des messages explicatifs pour aider à la compréhension de ses actions. Aussi, des améliorations pour résoudre les conflits de fusion d'intégration de code source ont également été apporté."
+            },
+            {
+                "image":"/images/blogs/Github/historique.jpg",
+                "title":"Avantages",
+                "text":"- Rapide, quelques clics suffisent\n- Visualisation claire de l'historique des changements"
+            },
+            {
+                "image":"/images/blogs/Github/branches.jpg",
+                "title":"Inconvénients",
+                "text":"- Visibilité des branches\n- Basique sur les commandes de git"
+            }
+        ]
     },
     {
         "title": {
