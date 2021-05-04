@@ -527,19 +527,19 @@
                     "reformulations": [],
                     "images": [
                         {
-                            "src":"/images/projects/Voltventure/1.jpg"
+                            "src": "/images/projects/Voltventure/1.jpg"
                         },
                         {
-                            "src":"/images/projects/Voltventure/2.jpg"
+                            "src": "/images/projects/Voltventure/2.jpg"
                         },
                         {
-                            "src":"/images/projects/Voltventure/3.jpg"
+                            "src": "/images/projects/Voltventure/3.jpg"
                         },
                         {
-                            "src":"/images/projects/Voltventure/4.jpg"
+                            "src": "/images/projects/Voltventure/4.jpg"
                         },
                         {
-                            "src":"/images/projects/Voltventure/5.jpg"
+                            "src": "/images/projects/Voltventure/5.jpg"
                         }
                     ]
                 }
@@ -561,19 +561,19 @@
                     "reformulations": [],
                     "images": [
                         {
-                            "src":"/images/projects/Cupgrade/1.jpg"
+                            "src": "/images/projects/Cupgrade/1.jpg"
                         },
                         {
-                            "src":"/images/projects/Cupgrade/2.jpg"
+                            "src": "/images/projects/Cupgrade/2.jpg"
                         },
                         {
-                            "src":"/images/projects/Cupgrade/3.jpg"
+                            "src": "/images/projects/Cupgrade/3.jpg"
                         },
                         {
-                            "src":"/images/projects/Cupgrade/4.jpg"
+                            "src": "/images/projects/Cupgrade/4.jpg"
                         },
                         {
-                            "src":"/images/projects/Cupgrade/5.gif"
+                            "src": "/images/projects/Cupgrade/5.gif"
                         }
                     ]
                 }
@@ -595,16 +595,16 @@
                     "reformulations": [],
                     "images": [
                         {
-                            "src":"/images/projects/Train/1.jpg"
+                            "src": "/images/projects/Train/1.jpg"
                         },
                         {
-                            "src":"/images/projects/Train/2.jpg"
+                            "src": "/images/projects/Train/2.jpg"
                         },
                         {
-                            "src":"/images/projects/Train/3.jpg"
+                            "src": "/images/projects/Train/3.jpg"
                         },
                         {
-                            "src":"/images/projects/Train/4.jpg"
+                            "src": "/images/projects/Train/4.jpg"
                         }
                     ]
                 }
@@ -626,16 +626,16 @@
                     "reformulations": [],
                     "images": [
                         {
-                            "src":"/images/projects/Island/1.jpg"
+                            "src": "/images/projects/Island/1.jpg"
                         },
                         {
-                            "src":"/images/projects/Island/2.jpg"
+                            "src": "/images/projects/Island/2.jpg"
                         },
                         {
-                            "src":"/images/projects/Island/3.jpg"
+                            "src": "/images/projects/Island/3.jpg"
                         },
                         {
-                            "src":"/images/projects/Island/4.jpg"
+                            "src": "/images/projects/Island/4.jpg"
                         }
                     ]
                 }
@@ -657,13 +657,13 @@
                     "reformulations": [],
                     "images": [
                         {
-                            "src":"/images/projects/Crazy/1.jpg"
+                            "src": "/images/projects/Crazy/1.jpg"
                         },
                         {
-                            "src":"/images/projects/Crazy/2.jpg"
+                            "src": "/images/projects/Crazy/2.jpg"
                         },
                         {
-                            "src":"/images/projects/Crazy/3.jpg"
+                            "src": "/images/projects/Crazy/3.jpg"
                         }
                     ]
                 }
@@ -685,7 +685,11 @@
                     "reformulations": [
                         "Il s'agit de mon premier site web, je l'ai réalisé en suivant un cours Udemy sur le web development"
                     ],
-                    "images": [{"src":"/images/projects/Tindog/main.jpg"}]
+                    "images": [
+                        {
+                            "src": "/images/projects/Tindog/main.jpg"
+                        }
+                    ]
                 }
             ]
         },
@@ -705,7 +709,11 @@
                         "Il s'agit de mon deuxième site web, je l'ai réalisé en suivant un cours Udemy sur le web development",
                         "Ici je fais mes premier pas avec le javascript et le son sur les sites web"
                     ],
-                    "images": [{"src":"/images/projects/Drumkit/main.jpg"}]
+                    "images": [
+                        {
+                            "src": "/images/projects/Drumkit/main.jpg"
+                        }
+                    ]
                 }
             ]
         },
@@ -726,7 +734,11 @@
                         "Dans celui ci je réutilise mes connaissances dans l'utilisation des sons sur un site web",
                         "J'y ajoute une logique de type jeu avec un début, un déroulement et une fin, donc une boucle de jeu"
                     ],
-                    "images": [{"src":"/images/projects/Simon/main.jpg"}]
+                    "images": [
+                        {
+                            "src": "/images/projects/Simon/main.jpg"
+                        }
+                    ]
                 }
             ]
         },
@@ -746,7 +758,11 @@
                         "Il s'agit de mon quatrième site web, je l'ai réalisé en suivant un cours Udemy sur le web development",
                         "Il est très basique j'apprend le random en javascript et l'affichage conditionnel"
                     ],
-                    "images": [{"src":"/images/projects/FingerDice/main.jpg"}]
+                    "images": [
+                        {
+                            "src": "/images/projects/FingerDice/main.jpg"
+                        }
+                    ]
                 }
             ]
         }
